@@ -61,7 +61,11 @@ function App() {
           <p>Join the Vite community</p>
           <ul>
             <li>
-              <a href="https://github.com/vitejs/vite" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/vitejs/vite"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg
                   className="button-icon"
                   role="presentation"
@@ -97,7 +101,11 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank" rel="noreferrer">
+              <a
+                href="https://bsky.app/profile/vite.dev"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg
                   className="button-icon"
                   role="presentation"
