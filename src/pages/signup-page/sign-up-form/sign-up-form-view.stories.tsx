@@ -28,5 +28,6 @@ export const SignUpFormFilled: Story = {
         age: 20,
         address: 'address',
         phoneNumber: '1234567890',
+        role: 'BUYER',
     },
 };

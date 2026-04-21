@@ -1,14 +1,4 @@
-import {
-    Box,
-    Button,
-    FormControl,
-    InputAdornment,
-    InputLabel,
-    MenuItem,
-    Select,
-    Stack,
-    TextField,
-} from '@mui/material';
+import { Box, Button, InputAdornment, Stack, TextField } from '@mui/material';
 import { UserRole, type SignUpFormViewProps } from './sign-up-form.types';
 import { capitalize, upperCase } from 'lodash';
 import {
@@ -20,10 +10,16 @@ import {
     LocalPhone,
     LocationOn,
 } from '@mui/icons-material';
+import { CustomSelect } from '../../../components/select';
 
 export const SignUpFormView = (props: SignUpFormViewProps) => {
     const { address, age, email, firstname, lastname, password, phoneNumber, username, role } =
         props;
+
+    const options = Object.values(UserRole).map((role) => ({
+        label: capitalize(role),
+        value: upperCase(role),
+    }));
 
     return (
         <Box
@@ -33,6 +29,11 @@ export const SignUpFormView = (props: SignUpFormViewProps) => {
                 alignItems: 'center',
                 height: '100vh',
                 width: '100vwx',
+            }}
+            component="form"
+            onSubmit={(e) => {
+                e.preventDefault();
+                console.log('Form submitted');
             }}
         >
             <Stack
@@ -200,32 +201,17 @@ export const SignUpFormView = (props: SignUpFormViewProps) => {
                         },
                     }}
                 />
-                <FormControl sx={{ m: 1, minWidth: 80 }} size="small">
-                    <InputLabel id="demo-simple-select-autowidth-label">Role</InputLabel>
-                    <Select
-                        labelId="demo-simple-select-autowidth-label"
-                        id="demo-simple-select-autowidth"
-                        value={role}
-                        onChange={() => {}}
-                        fullWidth
-                        label="Age"
-                        aria-placeholder="Age"
-                        startAdornment={
-                            <InputAdornment position="start">
-                                <PersonAddAltOutlined />
-                            </InputAdornment>
-                        }
-                    >
-                        {Object.values(UserRole).map((role, index) => (
-                            <MenuItem key={role + index} value={upperCase(role)}>
-                                {capitalize(role)}
-                            </MenuItem>
-                        ))}
-                    </Select>
-                </FormControl>
+
+                <CustomSelect
+                    label="Role"
+                    onChange={() => {}}
+                    options={options}
+                    value={role}
+                    icon={<PersonAddAltOutlined />}
+                />
 
                 {/* Sign up button  */}
-                <Button variant="contained" color="success">
+                <Button variant="contained" color="success" type="submit">
                     Create Account
                 </Button>
             </Stack>
