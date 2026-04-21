@@ -1,4 +1,4 @@
-import { Box, Button, InputAdornment, Stack, TextField } from '@mui/material';
+import { Box, Button, Stack } from '@mui/material';
 import { UserRole, type SignUpFormViewProps } from './sign-up-form.types';
 import { capitalize, upperCase } from 'lodash';
 import {
@@ -11,6 +11,7 @@ import {
     LocationOn,
 } from '@mui/icons-material';
 import { CustomSelect } from '../../../components/select';
+import { CustomInput } from '../../../components/input';
 
 export const SignUpFormView = (props: SignUpFormViewProps) => {
     const { address, age, email, firstname, lastname, password, phoneNumber, username, role } =
@@ -43,163 +44,67 @@ export const SignUpFormView = (props: SignUpFormViewProps) => {
                 }}
             >
                 <Stack direction="row" spacing={2}>
-                    <TextField
-                        id="outlined-basic"
+                    <CustomInput
                         label="First Name"
-                        variant="outlined"
-                        fullWidth
-                        size="small"
                         value={firstname}
                         placeholder="First Name"
                         onChange={() => {}}
-                        slotProps={{
-                            input: {
-                                startAdornment: (
-                                    <InputAdornment position="start">
-                                        <AccountCircle />
-                                    </InputAdornment>
-                                ),
-                            },
-                        }}
+                        icon={<AccountCircle />}
                     />
-                    <TextField
-                        id="outlined-basic"
+                    <CustomInput
                         label="Last Name"
-                        placeholder="Last Name"
-                        variant="outlined"
-                        fullWidth
-                        size="small"
                         value={lastname}
+                        placeholder="Last Name"
                         onChange={() => {}}
-                        slotProps={{
-                            input: {
-                                startAdornment: (
-                                    <InputAdornment position="start">
-                                        <AccountCircle />
-                                    </InputAdornment>
-                                ),
-                            },
-                        }}
+                        icon={<AccountCircle />}
                     />
                 </Stack>
-                <TextField
-                    id="outlined-basic"
+                <CustomInput
                     label="User Name"
-                    placeholder="Enter username"
-                    variant="outlined"
-                    fullWidth
-                    size="small"
                     value={username}
+                    placeholder="Enter Username"
                     onChange={() => {}}
-                    slotProps={{
-                        input: {
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                    <PersonAddAltOutlined />
-                                </InputAdornment>
-                            ),
-                        },
-                    }}
+                    icon={<PersonAddAltOutlined />}
                 />
-                <TextField
-                    id="outlined-basic"
+                <CustomInput
                     label="Email"
-                    placeholder="Email"
-                    variant="outlined"
-                    type="email"
-                    fullWidth
-                    size="small"
                     value={email}
+                    placeholder="Email"
                     onChange={() => {}}
-                    slotProps={{
-                        input: {
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                    <Email />
-                                </InputAdornment>
-                            ),
-                        },
-                    }}
+                    type="email"
+                    icon={<Email />}
                 />
-                <TextField
-                    id="outlined-basic"
+                <CustomInput
                     label="Password"
-                    placeholder="Password"
-                    variant="outlined"
-                    type="password"
-                    fullWidth
-                    size="small"
                     value={password}
+                    placeholder="Enter Password"
                     onChange={() => {}}
-                    slotProps={{
-                        input: {
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                    <LockOutlined />
-                                </InputAdornment>
-                            ),
-                        },
-                    }}
+                    icon={<LockOutlined />}
+                    type="password"
                 />
                 <Stack direction="row" spacing={2}>
-                    <TextField
-                        id="outlined-basic"
+                    <CustomInput
                         label="Age"
-                        placeholder="Age"
-                        variant="outlined"
-                        fullWidth
-                        size="small"
-                        type="number"
                         value={age}
+                        placeholder="Enter Age"
                         onChange={() => {}}
-                        slotProps={{
-                            input: {
-                                startAdornment: (
-                                    <InputAdornment position="start">
-                                        <CalendarMonth />
-                                    </InputAdornment>
-                                ),
-                            },
-                        }}
+                        icon={<CalendarMonth />}
+                        type="number"
                     />
-                    <TextField
-                        id="outlined-basic"
+                    <CustomInput
                         label="Phone Number"
-                        placeholder="Phone Number"
-                        variant="outlined"
-                        fullWidth
-                        size="small"
                         value={phoneNumber}
+                        placeholder="Enter Phonenumber"
                         onChange={() => {}}
-                        slotProps={{
-                            input: {
-                                startAdornment: (
-                                    <InputAdornment position="start">
-                                        <LocalPhone />
-                                    </InputAdornment>
-                                ),
-                            },
-                        }}
+                        icon={<LocalPhone />}
                     />
                 </Stack>
-                <TextField
-                    id="outlined-basic"
+                <CustomInput
                     label="Address"
-                    placeholder="Address"
-                    variant="outlined"
-                    fullWidth
-                    size="small"
                     value={address}
+                    placeholder="Enter Address"
                     onChange={() => {}}
-                    slotProps={{
-                        input: {
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                    <LocationOn />
-                                </InputAdornment>
-                            ),
-                        },
-                    }}
+                    icon={<LocationOn />}
                 />
 
                 <CustomSelect
