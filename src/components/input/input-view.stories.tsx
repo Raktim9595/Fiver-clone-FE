@@ -62,6 +62,6 @@ export const CustomInputWithIconOnEnd: Story = {
     args: {
         ...CustomInputFilled.args,
         icon: <Person2Outlined />,
-        iconPosition: 'end',
+        iconposition: 'end',
     },
 };

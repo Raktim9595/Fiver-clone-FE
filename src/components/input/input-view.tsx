@@ -7,12 +7,12 @@ const InputView = (props: InputViewProps) => {
         value,
         onChange,
         icon,
-        iconPosition = 'start',
+        iconposition = 'start',
         variant = 'outlined',
         placeholder,
     } = props;
 
-    const adornment = icon && <InputAdornment position={iconPosition}>{icon}</InputAdornment>;
+    const adornment = icon && <InputAdornment position={iconposition}>{icon}</InputAdornment>;
 
     return (
         <TextField
@@ -26,7 +26,7 @@ const InputView = (props: InputViewProps) => {
             onChange={onChange}
             slotProps={{
                 input: {
-                    ...(iconPosition === 'start'
+                    ...(iconposition === 'start'
                         ? { startAdornment: adornment }
                         : { endAdornment: adornment }),
                 },
