@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { SignUpFormView } from './sign-up-form-view';
+import SignUpFormView from './sign-up-form-view';
 import { signUpFormInitialValues } from './sign-up-form.types';
 
 const meta = {

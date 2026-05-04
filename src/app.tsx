@@ -1,6 +1,3 @@
-import { createBrowserRouter } from 'react-router';
-import { SignUpPage } from './pages/signup-page';
-
 const App = () => {
     return (
         <div>

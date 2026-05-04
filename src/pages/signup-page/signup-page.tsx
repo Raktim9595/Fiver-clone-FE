@@ -1,5 +1,7 @@
+import SignUpPageView from './signup-page-view';
+
 const SignUpPage = () => {
-    return <div>SignUpPage</div>;
+    return <SignUpPageView />;
 };
 
 export default SignUpPage;
