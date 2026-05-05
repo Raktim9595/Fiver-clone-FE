@@ -10,6 +10,7 @@ const InputView = (props: InputViewProps) => {
         iconposition = 'start',
         variant = 'outlined',
         placeholder,
+        ...rest
     } = props;
 
     const adornment = icon && <InputAdornment position={iconposition}>{icon}</InputAdornment>;
@@ -31,7 +32,7 @@ const InputView = (props: InputViewProps) => {
                         : { endAdornment: adornment }),
                 },
             }}
-            {...props}
+            {...rest}
         />
     );
 };

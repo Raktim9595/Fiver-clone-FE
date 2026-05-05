@@ -1,8 +1,9 @@
 import SignUpFormView from './sign-up-form-view';
-import { signUpFormInitialValues } from './sign-up-form.types';
+import { useSignupForm } from './use-sign-up-form';
 
 const SignUpForm = () => {
-    return <SignUpFormView {...signUpFormInitialValues} />;
+    const props = useSignupForm();
+    return <SignUpFormView {...props} />;
 };
 
 export default SignUpForm;

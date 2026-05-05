@@ -1,5 +1,5 @@
 import { Button, Stack, Typography } from '@mui/material';
-import { UserRole, type SignUpFormViewProps } from './sign-up-form.types';
+import { type SignupFormViewProps, UserRole } from './sign-up-form.types';
 import { capitalize, upperCase } from 'lodash';
 import {
     AccountCircle,
@@ -11,26 +11,23 @@ import {
     LocationOn,
 } from '@mui/icons-material';
 import { CustomSelect } from '../../../components/select';
-import { CustomInput } from '../../../components/input';
+import { Controller } from 'react-hook-form';
+import { FormInput } from '../../../components/form-input';
 
-const SignUpFormView = (props: SignUpFormViewProps) => {
-    const { address, age, email, firstname, lastname, password, phoneNumber, username, role } =
-        props;
-
+const SignUpFormView = ({
+    control,
+    errors,
+    handleSubmit,
+    isSubmitting,
+    onSubmit,
+}: SignupFormViewProps) => {
     const options = Object.values(UserRole).map((role) => ({
         label: capitalize(role),
         value: upperCase(role),
     }));
 
     return (
-        <Stack
-            spacing={3}
-            component="form"
-            onSubmit={(e) => {
-                e.preventDefault();
-                console.log('Form submitted');
-            }}
-        >
+        <Stack spacing={3} component="form" onSubmit={handleSubmit(onSubmit)}>
             <Stack>
                 <Typography variant="h5" align="center">
                     Create your account
@@ -40,79 +37,94 @@ const SignUpFormView = (props: SignUpFormViewProps) => {
                 </Typography>
             </Stack>
             <Stack direction="row" spacing={2}>
-                <CustomInput
+                <FormInput
+                    name="firstname"
+                    control={control}
                     label="First Name"
-                    value={firstname}
                     placeholder="First Name"
-                    onChange={() => {}}
                     icon={<AccountCircle />}
+                    error={errors.firstname}
                 />
-                <CustomInput
+
+                <FormInput
+                    name="lastname"
+                    control={control}
                     label="Last Name"
-                    value={lastname}
                     placeholder="Last Name"
-                    onChange={() => {}}
                     icon={<AccountCircle />}
+                    error={errors.lastname}
                 />
             </Stack>
-            <CustomInput
+            <FormInput
+                name="username"
+                control={control}
                 label="User Name"
-                value={username}
                 placeholder="Enter Username"
-                onChange={() => {}}
                 icon={<PersonAddAltOutlined />}
+                error={errors.username}
             />
-            <CustomInput
+            <FormInput
+                name="email"
+                control={control}
                 label="Email"
-                value={email}
                 placeholder="Email"
-                onChange={() => {}}
                 type="email"
                 icon={<Email />}
+                error={errors.email}
             />
-            <CustomInput
-                label="Password"
-                value={password}
-                placeholder="Enter Password"
-                onChange={() => {}}
-                icon={<LockOutlined />}
+            <FormInput
+                name="password"
+                control={control}
+                label="Confirm Password"
+                placeholder="Confirm Password"
                 type="password"
+                icon={<LockOutlined />}
+                error={errors.password}
             />
             <Stack direction="row" spacing={2}>
-                <CustomInput
+                <FormInput
+                    name="age"
+                    control={control}
                     label="Age"
-                    value={age}
                     placeholder="Enter Age"
-                    onChange={() => {}}
                     icon={<CalendarMonth />}
+                    error={errors.age}
                     type="number"
                 />
-                <CustomInput
-                    label="Phone Number"
-                    value={phoneNumber}
-                    placeholder="Enter Phonenumber"
-                    onChange={() => {}}
+                <FormInput
+                    name="phoneNumber"
+                    control={control}
+                    label="Phome Number"
+                    placeholder="Enter PhoneNumber"
                     icon={<LocalPhone />}
+                    error={errors.phoneNumber}
                 />
             </Stack>
-            <CustomInput
+            <FormInput
+                name="address"
+                control={control}
                 label="Address"
-                value={address}
                 placeholder="Enter Address"
-                onChange={() => {}}
                 icon={<LocationOn />}
+                error={errors.address}
             />
 
-            <CustomSelect
-                label="Role"
-                onChange={() => {}}
-                options={options}
-                value={role}
-                icon={<PersonAddAltOutlined />}
+            <Controller
+                control={control}
+                name="role"
+                render={({ field }) => (
+                    <CustomSelect
+                        value={field.value}
+                        label="Role"
+                        onChange={field.onChange}
+                        options={options}
+                        icon={<PersonAddAltOutlined />}
+                    />
+                )}
             />
 
             {/* Sign up button  */}
-            <Button variant="contained" color="success" type="submit">
+            <Button variant="contained" color="success" type="submit" disabled={isSubmitting}>
                 Create Account
             </Button>
         </Stack>
