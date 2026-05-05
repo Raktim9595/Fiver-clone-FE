@@ -1068,6 +1068,10 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     tabindex="0"
     type="submit"
   >
+    <span
+      class="MuiButton-loadingWrapper"
+      style="display: contents;"
+    />
     Create Account
   </button>
 </form>
@@ -1649,6 +1653,10 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     tabindex="0"
     type="submit"
   >
+    <span
+      class="MuiButton-loadingWrapper"
+      style="display: contents;"
+    />
     Create Account
   </button>
 </form>
@@ -2226,11 +2234,41 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     </div>
   </div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess Mui-disabled MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess css-1elmdwi-MuiButtonBase-root-MuiButton-root"
+    class="MuiButtonBase-root MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter Mui-disabled MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter css-1elmdwi-MuiButtonBase-root-MuiButton-root"
     disabled=""
+    id="_r_1b_"
     tabindex="-1"
     type="submit"
   >
+    <span
+      class="MuiButton-loadingWrapper"
+      style="display: contents;"
+    >
+      <span
+        class="MuiButton-loadingIndicator css-14m8o6v-MuiButton-loadingIndicator"
+      >
+        <span
+          aria-labelledby="_r_1b_"
+          class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorInherit css-gxw4l9-MuiCircularProgress-root"
+          role="progressbar"
+          style="width: 16px; height: 16px;"
+        >
+          <svg
+            class="MuiCircularProgress-svg css-54pwck-MuiCircularProgress-svg"
+            viewBox="22 22 44 44"
+          >
+            <circle
+              class="MuiCircularProgress-circle css-19t5dcl-MuiCircularProgress-circle"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
+        </span>
+      </span>
+    </span>
     Create Account
   </button>
 </form>
@@ -2868,6 +2906,10 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     tabindex="0"
     type="submit"
   >
+    <span
+      class="MuiButton-loadingWrapper"
+      style="display: contents;"
+    />
     Create Account
   </button>
 </form>
@@ -3604,6 +3646,10 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
           tabindex="0"
           type="submit"
         >
+          <span
+            class="MuiButton-loadingWrapper"
+            style="display: contents;"
+          />
           Create Account
         </button>
       </form>

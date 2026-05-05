@@ -8,7 +8,7 @@ export const signupFormSchema = z.object({
     firstname: z.string().nonempty('First name is required'),
     lastname: z.string().nonempty('Last name is required'),
     username: z.string().nonempty('Username is required'),
-    age: z.coerce.number<number>().min(1),
+    age: z.coerce.number<number>().min(12, 'Age must be greater than 12'),
     phoneNumber: z.string().nonempty('Phone number is required'),
     role: z.enum(UserRole, {
         error: 'Invalid role',
