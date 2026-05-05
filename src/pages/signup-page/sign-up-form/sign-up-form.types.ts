@@ -1,3 +1,5 @@
+import { type Control, type FieldErrors, type UseFormHandleSubmit } from 'react-hook-form';
+
 export const UserRole = {
     ADMIN: 'ADMIN',
     BUYER: 'BUYER',
@@ -6,7 +8,7 @@ export const UserRole = {
 
 export type UserRole = (typeof UserRole)[keyof typeof UserRole];
 
-export type SignUpFormViewProps = {
+export type SignUpFormType = {
     firstname: string;
     lastname: string;
     username: string;
@@ -18,7 +20,7 @@ export type SignUpFormViewProps = {
     role: UserRole;
 };
 
-export const signUpFormInitialValues: SignUpFormViewProps = {
+export const signUpFormInitialValues: SignUpFormType = {
     address: '',
     age: 0,
     email: '',
@@ -29,3 +31,13 @@ export const signUpFormInitialValues: SignUpFormViewProps = {
     username: '',
     role: UserRole.BUYER,
 };
+
+export type UseSignupForm = () => {
+    control: Control<SignUpFormType, any, SignUpFormType>;
+    handleSubmit: UseFormHandleSubmit<SignUpFormType, SignUpFormType>;
+    errors: FieldErrors<SignUpFormType>;
+    isSubmitting: boolean;
+    onSubmit: (data: SignUpFormType) => Promise<void>;
+};
+
+export type SignupFormViewProps = ReturnType<UseSignupForm>;
