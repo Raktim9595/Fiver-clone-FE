@@ -497,132 +497,28 @@ exports[`Storybook snapshots > /src/components/select/select-view.stories.tsx - 
 
 exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-view.stories.tsx -  SignUpForm matches snapshot 1`] = `
 <form
-  class="MuiBox-root css-1qwd09o"
+  class="MuiStack-root css-v2woy3-MuiStack-root"
 >
   <div
-    class="MuiStack-root css-1duy2hz-MuiStack-root"
+    class="MuiStack-root css-nen11g-MuiStack-root"
+  >
+    <h5
+      class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-laos7x-MuiTypography-root"
+      style="--Typography-textAlign: center;"
+    >
+      Create your account
+    </h5>
+    <p
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-11r2klu-MuiTypography-root"
+      style="--Typography-textAlign: center;"
+    >
+      Fill in the details below to get started
+    </p>
+  </div>
+  <div
+    class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiStack-root css-pl8gqh-MuiStack-root"
-    >
-      <div
-        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-        icon="[object Object]"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-          for="outlined-basic"
-          id="outlined-basic-label"
-        >
-          First Name
-        </label>
-        <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-        >
-          <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-          >
-            <span
-              aria-hidden="true"
-              class="notranslate"
-            >
-              ​
-            </span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="AccountCircleIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
-              />
-            </svg>
-          </div>
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-            id="outlined-basic"
-            placeholder="First Name"
-            type="text"
-            value=""
-          />
-          <fieldset
-            aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-          >
-            <legend
-              class="css-ex8a5f-MuiNotchedOutlined-root"
-            >
-              <span>
-                First Name
-              </span>
-            </legend>
-          </fieldset>
-        </div>
-      </div>
-      <div
-        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-        icon="[object Object]"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-          for="outlined-basic"
-          id="outlined-basic-label"
-        >
-          Last Name
-        </label>
-        <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-        >
-          <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-          >
-            <span
-              aria-hidden="true"
-              class="notranslate"
-            >
-              ​
-            </span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="AccountCircleIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
-              />
-            </svg>
-          </div>
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-            id="outlined-basic"
-            placeholder="Last Name"
-            type="text"
-            value=""
-          />
-          <fieldset
-            aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-          >
-            <legend
-              class="css-ex8a5f-MuiNotchedOutlined-root"
-            >
-              <span>
-                Last Name
-              </span>
-            </legend>
-          </fieldset>
-        </div>
-      </div>
-    </div>
-    <div
       class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       icon="[object Object]"
     >
@@ -632,7 +528,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         for="outlined-basic"
         id="outlined-basic-label"
       >
-        User Name
+        First Name
       </label>
       <div
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
@@ -649,12 +545,12 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="PersonAddAltOutlinedIcon"
+            data-testid="AccountCircleIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
             />
           </svg>
         </div>
@@ -662,7 +558,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
           id="outlined-basic"
-          placeholder="Enter Username"
+          placeholder="First Name"
           type="text"
           value=""
         />
@@ -674,7 +570,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
             class="css-ex8a5f-MuiNotchedOutlined-root"
           >
             <span>
-              User Name
+              First Name
             </span>
           </legend>
         </fieldset>
@@ -690,7 +586,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         for="outlined-basic"
         id="outlined-basic-label"
       >
-        Email
+        Last Name
       </label>
       <div
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
@@ -707,12 +603,12 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="EmailIcon"
+            data-testid="AccountCircleIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
             />
           </svg>
         </div>
@@ -720,243 +616,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
           id="outlined-basic"
-          placeholder="Email"
-          type="email"
-          value=""
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Email
-            </span>
-          </legend>
-        </fieldset>
-      </div>
-    </div>
-    <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-      icon="[object Object]"
-    >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Password
-      </label>
-      <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-      >
-        <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-        >
-          <span
-            aria-hidden="true"
-            class="notranslate"
-          >
-            ​
-          </span>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="LockOutlinedIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
-            />
-          </svg>
-        </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          placeholder="Enter Password"
-          type="password"
-          value=""
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Password
-            </span>
-          </legend>
-        </fieldset>
-      </div>
-    </div>
-    <div
-      class="MuiStack-root css-pl8gqh-MuiStack-root"
-    >
-      <div
-        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-        icon="[object Object]"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-          for="outlined-basic"
-          id="outlined-basic-label"
-        >
-          Age
-        </label>
-        <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-        >
-          <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-          >
-            <span
-              aria-hidden="true"
-              class="notranslate"
-            >
-              ​
-            </span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="CalendarMonthIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V10h14zM9 14H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm-8 4H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2z"
-              />
-            </svg>
-          </div>
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-            id="outlined-basic"
-            placeholder="Enter Age"
-            type="number"
-            value="0"
-          />
-          <fieldset
-            aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-          >
-            <legend
-              class="css-ex8a5f-MuiNotchedOutlined-root"
-            >
-              <span>
-                Age
-              </span>
-            </legend>
-          </fieldset>
-        </div>
-      </div>
-      <div
-        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-        icon="[object Object]"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-          for="outlined-basic"
-          id="outlined-basic-label"
-        >
-          Phone Number
-        </label>
-        <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-        >
-          <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-          >
-            <span
-              aria-hidden="true"
-              class="notranslate"
-            >
-              ​
-            </span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="LocalPhoneIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"
-              />
-            </svg>
-          </div>
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-            id="outlined-basic"
-            placeholder="Enter Phonenumber"
-            type="text"
-            value=""
-          />
-          <fieldset
-            aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-          >
-            <legend
-              class="css-ex8a5f-MuiNotchedOutlined-root"
-            >
-              <span>
-                Phone Number
-              </span>
-            </legend>
-          </fieldset>
-        </div>
-      </div>
-    </div>
-    <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-      icon="[object Object]"
-    >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Address
-      </label>
-      <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-      >
-        <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-        >
-          <span
-            aria-hidden="true"
-            class="notranslate"
-          >
-            ​
-          </span>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="LocationOnIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
-            />
-          </svg>
-        </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          placeholder="Enter Address"
+          placeholder="Last Name"
           type="text"
           value=""
         />
@@ -968,77 +628,234 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
             class="css-ex8a5f-MuiNotchedOutlined-root"
           >
             <span>
-              Address
+              Last Name
             </span>
           </legend>
         </fieldset>
       </div>
     </div>
-    <div
-      class="MuiFormControl-root css-10gia0a-MuiFormControl-root"
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+    icon="[object Object]"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="outlined-basic"
+      id="outlined-basic-label"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        id="demo-simple-select-autowidth-label"
-      >
-        Role
-      </label>
+      User Name
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+    >
       <div
-        aria-placeholder="Role"
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart MuiSelect-root css-1ro09j7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
       >
-        <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-        >
-          <span
-            aria-hidden="true"
-            class="notranslate"
-          >
-            ​
-          </span>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="PersonAddAltOutlinedIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
-            />
-          </svg>
-        </div>
-        <div
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          aria-labelledby="demo-simple-select-autowidth-label demo-simple-select-autowidth"
-          class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1qgzegr-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-          id="demo-simple-select-autowidth"
-          role="combobox"
-          tabindex="0"
-        >
-          Buyer
-        </div>
-        <input
+        <span
           aria-hidden="true"
-          aria-invalid="false"
-          class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-          id="_r_k_"
-          tabindex="-1"
-          value="BUYER"
-        />
+          class="notranslate"
+        >
+          ​
+        </span>
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
-          data-testid="ArrowDropDownIcon"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="PersonAddAltOutlinedIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
           />
         </svg>
+      </div>
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+        id="outlined-basic"
+        placeholder="Enter Username"
+        type="text"
+        value=""
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            User Name
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+    icon="[object Object]"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="outlined-basic"
+      id="outlined-basic-label"
+    >
+      Email
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+      >
+        <span
+          aria-hidden="true"
+          class="notranslate"
+        >
+          ​
+        </span>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="EmailIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"
+          />
+        </svg>
+      </div>
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+        id="outlined-basic"
+        placeholder="Email"
+        type="email"
+        value=""
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            Email
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+    icon="[object Object]"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="outlined-basic"
+      id="outlined-basic-label"
+    >
+      Password
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+      >
+        <span
+          aria-hidden="true"
+          class="notranslate"
+        >
+          ​
+        </span>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="LockOutlinedIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
+          />
+        </svg>
+      </div>
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+        id="outlined-basic"
+        placeholder="Enter Password"
+        type="password"
+        value=""
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            Password
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    class="MuiStack-root css-pl8gqh-MuiStack-root"
+  >
+    <div
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      icon="[object Object]"
+    >
+      <label
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+        data-shrink="true"
+        for="outlined-basic"
+        id="outlined-basic-label"
+      >
+        Age
+      </label>
+      <div
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+      >
+        <div
+          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+        >
+          <span
+            aria-hidden="true"
+            class="notranslate"
+          >
+            ​
+          </span>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="CalendarMonthIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V10h14zM9 14H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm-8 4H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2z"
+            />
+          </svg>
+        </div>
+        <input
+          aria-invalid="false"
+          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+          id="outlined-basic"
+          placeholder="Enter Age"
+          type="number"
+          value="0"
+        />
         <fieldset
           aria-hidden="true"
           class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
@@ -1047,151 +864,242 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
             class="css-ex8a5f-MuiNotchedOutlined-root"
           >
             <span>
-              Role
+              Age
             </span>
           </legend>
         </fieldset>
       </div>
     </div>
-    <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess css-1elmdwi-MuiButtonBase-root-MuiButton-root"
-      tabindex="0"
-      type="submit"
+    <div
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      icon="[object Object]"
     >
-      Create Account
-    </button>
+      <label
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+        data-shrink="true"
+        for="outlined-basic"
+        id="outlined-basic-label"
+      >
+        Phone Number
+      </label>
+      <div
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+      >
+        <div
+          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+        >
+          <span
+            aria-hidden="true"
+            class="notranslate"
+          >
+            ​
+          </span>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="LocalPhoneIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"
+            />
+          </svg>
+        </div>
+        <input
+          aria-invalid="false"
+          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+          id="outlined-basic"
+          placeholder="Enter Phonenumber"
+          type="text"
+          value=""
+        />
+        <fieldset
+          aria-hidden="true"
+          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            class="css-ex8a5f-MuiNotchedOutlined-root"
+          >
+            <span>
+              Phone Number
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+    </div>
   </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+    icon="[object Object]"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="outlined-basic"
+      id="outlined-basic-label"
+    >
+      Address
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+      >
+        <span
+          aria-hidden="true"
+          class="notranslate"
+        >
+          ​
+        </span>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="LocationOnIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+          />
+        </svg>
+      </div>
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+        id="outlined-basic"
+        placeholder="Enter Address"
+        type="text"
+        value=""
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            Address
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    class="MuiFormControl-root css-10gia0a-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      id="demo-simple-select-autowidth-label"
+    >
+      Role
+    </label>
+    <div
+      aria-placeholder="Role"
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart MuiSelect-root css-1ro09j7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    >
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+      >
+        <span
+          aria-hidden="true"
+          class="notranslate"
+        >
+          ​
+        </span>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="PersonAddAltOutlinedIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
+          />
+        </svg>
+      </div>
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-labelledby="demo-simple-select-autowidth-label demo-simple-select-autowidth"
+        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1qgzegr-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        id="demo-simple-select-autowidth"
+        role="combobox"
+        tabindex="0"
+      >
+        Buyer
+      </div>
+      <input
+        aria-hidden="true"
+        aria-invalid="false"
+        class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
+        id="_r_k_"
+        tabindex="-1"
+        value="BUYER"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
+        data-testid="ArrowDropDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            Role
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess css-1elmdwi-MuiButtonBase-root-MuiButton-root"
+    tabindex="0"
+    type="submit"
+  >
+    Create Account
+  </button>
 </form>
 `;
 
 exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-view.stories.tsx -  SignUpFormFilled matches snapshot 1`] = `
 <form
-  class="MuiBox-root css-1qwd09o"
+  class="MuiStack-root css-v2woy3-MuiStack-root"
 >
   <div
-    class="MuiStack-root css-1duy2hz-MuiStack-root"
+    class="MuiStack-root css-nen11g-MuiStack-root"
+  >
+    <h5
+      class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-laos7x-MuiTypography-root"
+      style="--Typography-textAlign: center;"
+    >
+      Create your account
+    </h5>
+    <p
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-11r2klu-MuiTypography-root"
+      style="--Typography-textAlign: center;"
+    >
+      Fill in the details below to get started
+    </p>
+  </div>
+  <div
+    class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiStack-root css-pl8gqh-MuiStack-root"
-    >
-      <div
-        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-        icon="[object Object]"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-          for="outlined-basic"
-          id="outlined-basic-label"
-        >
-          First Name
-        </label>
-        <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-        >
-          <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-          >
-            <span
-              aria-hidden="true"
-              class="notranslate"
-            >
-              ​
-            </span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="AccountCircleIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
-              />
-            </svg>
-          </div>
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-            id="outlined-basic"
-            placeholder="First Name"
-            type="text"
-            value="firstname"
-          />
-          <fieldset
-            aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-          >
-            <legend
-              class="css-ex8a5f-MuiNotchedOutlined-root"
-            >
-              <span>
-                First Name
-              </span>
-            </legend>
-          </fieldset>
-        </div>
-      </div>
-      <div
-        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-        icon="[object Object]"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-          for="outlined-basic"
-          id="outlined-basic-label"
-        >
-          Last Name
-        </label>
-        <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-        >
-          <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-          >
-            <span
-              aria-hidden="true"
-              class="notranslate"
-            >
-              ​
-            </span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="AccountCircleIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
-              />
-            </svg>
-          </div>
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-            id="outlined-basic"
-            placeholder="Last Name"
-            type="text"
-            value="lastname"
-          />
-          <fieldset
-            aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-          >
-            <legend
-              class="css-ex8a5f-MuiNotchedOutlined-root"
-            >
-              <span>
-                Last Name
-              </span>
-            </legend>
-          </fieldset>
-        </div>
-      </div>
-    </div>
-    <div
       class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       icon="[object Object]"
     >
@@ -1201,7 +1109,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         for="outlined-basic"
         id="outlined-basic-label"
       >
-        User Name
+        First Name
       </label>
       <div
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
@@ -1218,12 +1126,12 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="PersonAddAltOutlinedIcon"
+            data-testid="AccountCircleIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
             />
           </svg>
         </div>
@@ -1231,9 +1139,9 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
           id="outlined-basic"
-          placeholder="Enter Username"
+          placeholder="First Name"
           type="text"
-          value="username"
+          value="firstname"
         />
         <fieldset
           aria-hidden="true"
@@ -1243,7 +1151,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
             class="css-ex8a5f-MuiNotchedOutlined-root"
           >
             <span>
-              User Name
+              First Name
             </span>
           </legend>
         </fieldset>
@@ -1259,7 +1167,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         for="outlined-basic"
         id="outlined-basic-label"
       >
-        Email
+        Last Name
       </label>
       <div
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
@@ -1276,12 +1184,12 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
           <svg
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="EmailIcon"
+            data-testid="AccountCircleIcon"
             focusable="false"
             viewBox="0 0 24 24"
           >
             <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
             />
           </svg>
         </div>
@@ -1289,245 +1197,9 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
           id="outlined-basic"
-          placeholder="Email"
-          type="email"
-          value="email"
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Email
-            </span>
-          </legend>
-        </fieldset>
-      </div>
-    </div>
-    <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-      icon="[object Object]"
-    >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Password
-      </label>
-      <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-      >
-        <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-        >
-          <span
-            aria-hidden="true"
-            class="notranslate"
-          >
-            ​
-          </span>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="LockOutlinedIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
-            />
-          </svg>
-        </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          placeholder="Enter Password"
-          type="password"
-          value="password"
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Password
-            </span>
-          </legend>
-        </fieldset>
-      </div>
-    </div>
-    <div
-      class="MuiStack-root css-pl8gqh-MuiStack-root"
-    >
-      <div
-        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-        icon="[object Object]"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-          for="outlined-basic"
-          id="outlined-basic-label"
-        >
-          Age
-        </label>
-        <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-        >
-          <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-          >
-            <span
-              aria-hidden="true"
-              class="notranslate"
-            >
-              ​
-            </span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="CalendarMonthIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V10h14zM9 14H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm-8 4H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2z"
-              />
-            </svg>
-          </div>
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-            id="outlined-basic"
-            placeholder="Enter Age"
-            type="number"
-            value="20"
-          />
-          <fieldset
-            aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-          >
-            <legend
-              class="css-ex8a5f-MuiNotchedOutlined-root"
-            >
-              <span>
-                Age
-              </span>
-            </legend>
-          </fieldset>
-        </div>
-      </div>
-      <div
-        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-        icon="[object Object]"
-      >
-        <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-          data-shrink="true"
-          for="outlined-basic"
-          id="outlined-basic-label"
-        >
-          Phone Number
-        </label>
-        <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-        >
-          <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-          >
-            <span
-              aria-hidden="true"
-              class="notranslate"
-            >
-              ​
-            </span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="LocalPhoneIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"
-              />
-            </svg>
-          </div>
-          <input
-            aria-invalid="false"
-            class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-            id="outlined-basic"
-            placeholder="Enter Phonenumber"
-            type="text"
-            value="1234567890"
-          />
-          <fieldset
-            aria-hidden="true"
-            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-          >
-            <legend
-              class="css-ex8a5f-MuiNotchedOutlined-root"
-            >
-              <span>
-                Phone Number
-              </span>
-            </legend>
-          </fieldset>
-        </div>
-      </div>
-    </div>
-    <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
-      icon="[object Object]"
-    >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Address
-      </label>
-      <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
-      >
-        <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-        >
-          <span
-            aria-hidden="true"
-            class="notranslate"
-          >
-            ​
-          </span>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="LocationOnIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
-            />
-          </svg>
-        </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          placeholder="Enter Address"
+          placeholder="Last Name"
           type="text"
-          value="address"
+          value="lastname"
         />
         <fieldset
           aria-hidden="true"
@@ -1537,77 +1209,234 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
             class="css-ex8a5f-MuiNotchedOutlined-root"
           >
             <span>
-              Address
+              Last Name
             </span>
           </legend>
         </fieldset>
       </div>
     </div>
-    <div
-      class="MuiFormControl-root css-10gia0a-MuiFormControl-root"
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+    icon="[object Object]"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="outlined-basic"
+      id="outlined-basic-label"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        id="demo-simple-select-autowidth-label"
-      >
-        Role
-      </label>
+      User Name
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+    >
       <div
-        aria-placeholder="Role"
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart MuiSelect-root css-1ro09j7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
       >
-        <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
-        >
-          <span
-            aria-hidden="true"
-            class="notranslate"
-          >
-            ​
-          </span>
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="PersonAddAltOutlinedIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
-            />
-          </svg>
-        </div>
-        <div
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          aria-labelledby="demo-simple-select-autowidth-label demo-simple-select-autowidth"
-          class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1qgzegr-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-          id="demo-simple-select-autowidth"
-          role="combobox"
-          tabindex="0"
-        >
-          Buyer
-        </div>
-        <input
+        <span
           aria-hidden="true"
-          aria-invalid="false"
-          class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-          id="_r_v_"
-          tabindex="-1"
-          value="BUYER"
-        />
+          class="notranslate"
+        >
+          ​
+        </span>
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
-          data-testid="ArrowDropDownIcon"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="PersonAddAltOutlinedIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
           />
         </svg>
+      </div>
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+        id="outlined-basic"
+        placeholder="Enter Username"
+        type="text"
+        value="username"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            User Name
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+    icon="[object Object]"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="outlined-basic"
+      id="outlined-basic-label"
+    >
+      Email
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+      >
+        <span
+          aria-hidden="true"
+          class="notranslate"
+        >
+          ​
+        </span>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="EmailIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"
+          />
+        </svg>
+      </div>
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+        id="outlined-basic"
+        placeholder="Email"
+        type="email"
+        value="email"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            Email
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+    icon="[object Object]"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="outlined-basic"
+      id="outlined-basic-label"
+    >
+      Password
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+      >
+        <span
+          aria-hidden="true"
+          class="notranslate"
+        >
+          ​
+        </span>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="LockOutlinedIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
+          />
+        </svg>
+      </div>
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+        id="outlined-basic"
+        placeholder="Enter Password"
+        type="password"
+        value="password"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            Password
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    class="MuiStack-root css-pl8gqh-MuiStack-root"
+  >
+    <div
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      icon="[object Object]"
+    >
+      <label
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+        data-shrink="true"
+        for="outlined-basic"
+        id="outlined-basic-label"
+      >
+        Age
+      </label>
+      <div
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+      >
+        <div
+          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+        >
+          <span
+            aria-hidden="true"
+            class="notranslate"
+          >
+            ​
+          </span>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="CalendarMonthIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V10h14zM9 14H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm-8 4H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2z"
+            />
+          </svg>
+        </div>
+        <input
+          aria-invalid="false"
+          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+          id="outlined-basic"
+          placeholder="Enter Age"
+          type="number"
+          value="20"
+        />
         <fieldset
           aria-hidden="true"
           class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
@@ -1616,19 +1445,953 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
             class="css-ex8a5f-MuiNotchedOutlined-root"
           >
             <span>
-              Role
+              Age
             </span>
           </legend>
         </fieldset>
       </div>
     </div>
-    <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess css-1elmdwi-MuiButtonBase-root-MuiButton-root"
-      tabindex="0"
-      type="submit"
+    <div
+      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      icon="[object Object]"
     >
-      Create Account
-    </button>
+      <label
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+        data-shrink="true"
+        for="outlined-basic"
+        id="outlined-basic-label"
+      >
+        Phone Number
+      </label>
+      <div
+        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+      >
+        <div
+          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+        >
+          <span
+            aria-hidden="true"
+            class="notranslate"
+          >
+            ​
+          </span>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="LocalPhoneIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"
+            />
+          </svg>
+        </div>
+        <input
+          aria-invalid="false"
+          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+          id="outlined-basic"
+          placeholder="Enter Phonenumber"
+          type="text"
+          value="1234567890"
+        />
+        <fieldset
+          aria-hidden="true"
+          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            class="css-ex8a5f-MuiNotchedOutlined-root"
+          >
+            <span>
+              Phone Number
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+    </div>
   </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+    icon="[object Object]"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="outlined-basic"
+      id="outlined-basic-label"
+    >
+      Address
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+      >
+        <span
+          aria-hidden="true"
+          class="notranslate"
+        >
+          ​
+        </span>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="LocationOnIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+          />
+        </svg>
+      </div>
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+        id="outlined-basic"
+        placeholder="Enter Address"
+        type="text"
+        value="address"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            Address
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    class="MuiFormControl-root css-10gia0a-MuiFormControl-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      id="demo-simple-select-autowidth-label"
+    >
+      Role
+    </label>
+    <div
+      aria-placeholder="Role"
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart MuiSelect-root css-1ro09j7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    >
+      <div
+        class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+      >
+        <span
+          aria-hidden="true"
+          class="notranslate"
+        >
+          ​
+        </span>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+          data-testid="PersonAddAltOutlinedIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
+          />
+        </svg>
+      </div>
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-labelledby="demo-simple-select-autowidth-label demo-simple-select-autowidth"
+        class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1qgzegr-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+        id="demo-simple-select-autowidth"
+        role="combobox"
+        tabindex="0"
+      >
+        Buyer
+      </div>
+      <input
+        aria-hidden="true"
+        aria-invalid="false"
+        class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
+        id="_r_v_"
+        tabindex="-1"
+        value="BUYER"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
+        data-testid="ArrowDropDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            Role
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess css-1elmdwi-MuiButtonBase-root-MuiButton-root"
+    tabindex="0"
+    type="submit"
+  >
+    Create Account
+  </button>
 </form>
+`;
+
+exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.tsx -  SignupPage matches snapshot 1`] = `
+<section
+  class="MuiStack-root page css-pl8gqh-MuiStack-root"
+>
+  <div
+    class="MuiStack-root css-1v62mbv-MuiStack-root"
+  >
+    <div
+      class="MuiBox-root css-5417f6"
+    >
+      <img
+        alt="fiver-logo"
+        height="100%"
+        src="/src/assets/fiver-logo.png"
+        width="100%"
+      />
+    </div>
+    <div
+      class="MuiStack-root css-1g92yro-MuiStack-root"
+    >
+      <div
+        class="MuiStack-root css-nen11g-MuiStack-root"
+      >
+        <h5
+          class="MuiTypography-root MuiTypography-h5 css-stnzmu-MuiTypography-root"
+        >
+          Create a new
+        </h5>
+        <h5
+          class="MuiTypography-root MuiTypography-h5 css-pv2u1k-MuiTypography-root"
+        >
+          account
+        </h5>
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-175qnwt-MuiTypography-root"
+      >
+        Join millions of people who use fiverr to get things done
+      </p>
+      <div
+        class="MuiStack-root css-pl8gqh-MuiStack-root"
+      >
+        <div
+          class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1087jq5-MuiAvatar-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="GroupIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3m-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3m0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5m8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5"
+            />
+          </svg>
+        </div>
+        <div
+          class="MuiStack-root css-nen11g-MuiStack-root"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-rt9437-MuiTypography-root"
+          >
+            Join a global community
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-175qnwt-MuiTypography-root"
+          >
+            Connect with talented freelancers and business worldwide
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiStack-root css-pl8gqh-MuiStack-root"
+      >
+        <div
+          class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1087jq5-MuiAvatar-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="GppGoodOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2 4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5zm6 9.09c0 4-2.55 7.7-6 8.83-3.45-1.13-6-4.82-6-8.83V6.31l6-2.12 6 2.12zm-9.18-.5L7.4 12l3.54 3.54 5.66-5.66-1.41-1.41-4.24 4.24z"
+            />
+          </svg>
+        </div>
+        <div
+          class="MuiStack-root css-nen11g-MuiStack-root"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-rt9437-MuiTypography-root"
+          >
+            Secure & Trusted
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-175qnwt-MuiTypography-root"
+          >
+            Your data is safe with enterprise-grade security
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiStack-root css-pl8gqh-MuiStack-root"
+      >
+        <div
+          class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1087jq5-MuiAvatar-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="RocketLaunchOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 15c-.83 0-1.58.34-2.12.88C2.7 17.06 2 22 2 22s4.94-.7 6.12-1.88c.54-.54.88-1.29.88-2.12 0-1.66-1.34-3-3-3m.71 3.71c-.28.28-2.17.76-2.17.76s.47-1.88.76-2.17c.17-.19.42-.3.7-.3.55 0 1 .45 1 1 0 .28-.11.53-.29.71m10.71-5.06c6.36-6.36 4.24-11.31 4.24-11.31S16.71.22 10.35 6.58l-2.49-.5c-.65-.13-1.33.08-1.81.55L2 10.69l5 2.14L11.17 17l2.14 5 4.05-4.05c.47-.47.68-1.15.55-1.81zM7.41 10.83l-1.91-.82 1.97-1.97 1.44.29c-.57.83-1.08 1.7-1.5 2.5m6.58 7.67-.82-1.91c.8-.42 1.67-.93 2.49-1.5l.29 1.44zM16 12.24c-1.32 1.32-3.38 2.4-4.04 2.73l-2.93-2.93c.32-.65 1.4-2.71 2.73-4.04 4.68-4.68 8.23-3.99 8.23-3.99s.69 3.55-3.99 8.23M15 11c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
+            />
+          </svg>
+        </div>
+        <div
+          class="MuiStack-root css-nen11g-MuiStack-root"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-rt9437-MuiTypography-root"
+          >
+            Unlimited Opportunities
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-175qnwt-MuiTypography-root"
+          >
+            Find work, offer services and grow your career
+          </p>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-1r26fed"
+      >
+        <img
+          alt="reference-image"
+          height="100%"
+          src="/src/assets/sign-in-helper.png"
+          width="100%"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiBox-root css-ieri5n"
+  >
+    <div
+      class="MuiBox-root css-1fr5ek"
+    >
+      <form
+        class="MuiStack-root css-v2woy3-MuiStack-root"
+      >
+        <div
+          class="MuiStack-root css-nen11g-MuiStack-root"
+        >
+          <h5
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter css-laos7x-MuiTypography-root"
+            style="--Typography-textAlign: center;"
+          >
+            Create your account
+          </h5>
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-11r2klu-MuiTypography-root"
+            style="--Typography-textAlign: center;"
+          >
+            Fill in the details below to get started
+          </p>
+        </div>
+        <div
+          class="MuiStack-root css-pl8gqh-MuiStack-root"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+            icon="[object Object]"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="true"
+              for="outlined-basic"
+              id="outlined-basic-label"
+            >
+              First Name
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <div
+                class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+              >
+                <span
+                  aria-hidden="true"
+                  class="notranslate"
+                >
+                  ​
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                  data-testid="AccountCircleIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+                id="outlined-basic"
+                placeholder="First Name"
+                type="text"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-ex8a5f-MuiNotchedOutlined-root"
+                >
+                  <span>
+                    First Name
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+            icon="[object Object]"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="true"
+              for="outlined-basic"
+              id="outlined-basic-label"
+            >
+              Last Name
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <div
+                class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+              >
+                <span
+                  aria-hidden="true"
+                  class="notranslate"
+                >
+                  ​
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                  data-testid="AccountCircleIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+                id="outlined-basic"
+                placeholder="Last Name"
+                type="text"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-ex8a5f-MuiNotchedOutlined-root"
+                >
+                  <span>
+                    Last Name
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+          icon="[object Object]"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="true"
+            for="outlined-basic"
+            id="outlined-basic-label"
+          >
+            User Name
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+            >
+              <span
+                aria-hidden="true"
+                class="notranslate"
+              >
+                ​
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="PersonAddAltOutlinedIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+              id="outlined-basic"
+              placeholder="Enter Username"
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-ex8a5f-MuiNotchedOutlined-root"
+              >
+                <span>
+                  User Name
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+          icon="[object Object]"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="true"
+            for="outlined-basic"
+            id="outlined-basic-label"
+          >
+            Email
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+            >
+              <span
+                aria-hidden="true"
+                class="notranslate"
+              >
+                ​
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="EmailIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+              id="outlined-basic"
+              placeholder="Email"
+              type="email"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-ex8a5f-MuiNotchedOutlined-root"
+              >
+                <span>
+                  Email
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+          icon="[object Object]"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="true"
+            for="outlined-basic"
+            id="outlined-basic-label"
+          >
+            Password
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+            >
+              <span
+                aria-hidden="true"
+                class="notranslate"
+              >
+                ​
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="LockOutlinedIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+              id="outlined-basic"
+              placeholder="Enter Password"
+              type="password"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-ex8a5f-MuiNotchedOutlined-root"
+              >
+                <span>
+                  Password
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiStack-root css-pl8gqh-MuiStack-root"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+            icon="[object Object]"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="true"
+              for="outlined-basic"
+              id="outlined-basic-label"
+            >
+              Age
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <div
+                class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+              >
+                <span
+                  aria-hidden="true"
+                  class="notranslate"
+                >
+                  ​
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                  data-testid="CalendarMonthIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V10h14zM9 14H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2zm-8 4H7v-2h2zm4 0h-2v-2h2zm4 0h-2v-2h2z"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+                id="outlined-basic"
+                placeholder="Enter Age"
+                type="number"
+                value="0"
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-ex8a5f-MuiNotchedOutlined-root"
+                >
+                  <span>
+                    Age
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+            icon="[object Object]"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="true"
+              for="outlined-basic"
+              id="outlined-basic-label"
+            >
+              Phone Number
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <div
+                class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+              >
+                <span
+                  aria-hidden="true"
+                  class="notranslate"
+                >
+                  ​
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                  data-testid="LocalPhoneIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+                id="outlined-basic"
+                placeholder="Enter Phonenumber"
+                type="text"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-ex8a5f-MuiNotchedOutlined-root"
+                >
+                  <span>
+                    Phone Number
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+          icon="[object Object]"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="true"
+            for="outlined-basic"
+            id="outlined-basic-label"
+          >
+            Address
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+            >
+              <span
+                aria-hidden="true"
+                class="notranslate"
+              >
+                ​
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="LocationOnIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+                />
+              </svg>
+            </div>
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
+              id="outlined-basic"
+              placeholder="Enter Address"
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-ex8a5f-MuiNotchedOutlined-root"
+              >
+                <span>
+                  Address
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root css-10gia0a-MuiFormControl-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="true"
+            id="demo-simple-select-autowidth-label"
+          >
+            Role
+          </label>
+          <div
+            aria-placeholder="Role"
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart MuiSelect-root css-1ro09j7-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+          >
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+            >
+              <span
+                aria-hidden="true"
+                class="notranslate"
+              >
+                ​
+              </span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="PersonAddAltOutlinedIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 9V6h-2v3h-3v2h3v3h2v-3h3V9zM9 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m6.39 8.56C13.71 13.7 11.53 13 9 13s-4.71.7-6.39 1.56C1.61 15.07 1 16.1 1 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M15 18H3v-.78c0-.38.2-.72.52-.88C4.71 15.73 6.63 15 9 15s4.29.73 5.48 1.34c.32.16.52.5.52.88z"
+                />
+              </svg>
+            </div>
+            <div
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-labelledby="demo-simple-select-autowidth-label demo-simple-select-autowidth"
+              class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1qgzegr-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+              id="demo-simple-select-autowidth"
+              role="combobox"
+              tabindex="0"
+            >
+              Buyer
+            </div>
+            <input
+              aria-hidden="true"
+              aria-invalid="false"
+              class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
+              id="_r_1a_"
+              tabindex="-1"
+              value="BUYER"
+            />
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
+              data-testid="ArrowDropDownIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-ex8a5f-MuiNotchedOutlined-root"
+              >
+                <span>
+                  Role
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess css-1elmdwi-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="submit"
+        >
+          Create Account
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
 `;
