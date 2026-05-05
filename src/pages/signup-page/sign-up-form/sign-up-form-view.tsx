@@ -124,7 +124,13 @@ const SignUpFormView = ({
             />
 
             {/* Sign up button  */}
-            <Button variant="contained" color="success" type="submit" disabled={isSubmitting}>
+            <Button
+                variant="contained"
+                color="success"
+                type="submit"
+                disabled={isSubmitting}
+                loading={isSubmitting}
+            >
                 Create Account
             </Button>
         </Stack>
