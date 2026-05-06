@@ -30,10 +30,10 @@ export const useSignupForm: UseSignupForm = () => {
 
     const signupMutation = useMutation<SignupApiResponse, ApiErrorResponse, SignUpFormType>({
         mutationFn: signUp,
-        onSuccess: () => {
+        onSuccess: async () => {
             showNotification('Successfully signed up', 'success');
             reset(signUpFormInitialValues);
-            navigate(PATH.LOGIN);
+            await navigate(PATH.LOGIN);
         },
         onError: (error) => {
             const errorMessage: string = error.response?.data.message ?? 'Something went wrong';

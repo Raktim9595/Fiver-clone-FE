@@ -1,4 +1,7 @@
-import { type SignUpFormType, UserRole } from '../pages/signup-page/sign-up-form/sign-up-form.types';
+import {
+    type SignUpFormType,
+    UserRole,
+} from '../pages/signup-page/sign-up-form/sign-up-form.types';
 
 export const mockUserFormData = (data?: Partial<SignUpFormType>): SignUpFormType => ({
     address: 'Melbourne, Australia',
