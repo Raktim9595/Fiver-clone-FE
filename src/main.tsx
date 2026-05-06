@@ -6,12 +6,15 @@ import theme from './theme';
 import { RouterProvider } from 'react-router';
 import { router } from './utils/routing';
 import './index.css';
+import { NotificationProvider } from './providers/notificaton-provider';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <ThemeProvider theme={theme}>
-            <RouterProvider router={router} />
-            <CssBaseline />
-        </ThemeProvider>
+        <NotificationProvider>
+            <ThemeProvider theme={theme}>
+                <RouterProvider router={router} />
+                <CssBaseline />
+            </ThemeProvider>
+        </NotificationProvider>
     </StrictMode>,
 );
