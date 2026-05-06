@@ -5,7 +5,7 @@ import SignUpFormView from './sign-up-form-view';
 import { type SignUpFormType, UserRole } from './sign-up-form.types';
 
 const meta: Meta<typeof SignUpFormView> = {
-    title: 'SignUpForm',
+    title: 'Forms/SignUpForm',
     component: SignUpFormView,
 };
 

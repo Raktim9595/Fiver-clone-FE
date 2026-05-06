@@ -1,6 +1,5 @@
-const PATH = {
+export const PATH = {
     HOME: '/',
     SIGNUP: '/signup',
+    LOGIN: '/login',
 };
-
-export default PATH;

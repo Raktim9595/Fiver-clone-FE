@@ -4,7 +4,7 @@ import SelectView from './select-view';
 import { PersonAddAltOutlined } from '@mui/icons-material';
 
 const meta = {
-    title: 'SelectView',
+    title: 'Components/SelectView',
     component: SelectView,
     tags: ['autodocs'],
     parameters: {

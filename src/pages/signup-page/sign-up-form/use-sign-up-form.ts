@@ -8,6 +8,11 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { signupFormSchema } from './validaton-schema';
 import { useMutation } from '@tanstack/react-query';
 import { signUp } from '../../../services/auth';
+import { useNotification } from '../../../providers/notification-provider';
+import { type SignupApiResponse } from '../../../types/auth.types';
+import { type ApiErrorResponse } from '../../../types/response.types';
+import { useNavigate } from 'react-router';
+import { PATH } from '../../../utils/routing/paths';
 
 export const useSignupForm: UseSignupForm = () => {
     const {
@@ -20,19 +25,23 @@ export const useSignupForm: UseSignupForm = () => {
         defaultValues: signUpFormInitialValues,
     });
 
-    const signupMutation = useMutation({
+    const { showNotification } = useNotification();
+    const navigate = useNavigate();
+
+    const signupMutation = useMutation<SignupApiResponse, ApiErrorResponse, SignUpFormType>({
         mutationFn: signUp,
         onSuccess: () => {
-            console.log('success');
+            showNotification('Successfully signed up', 'success');
             reset(signUpFormInitialValues);
+            navigate(PATH.LOGIN);
         },
-        onError: () => {
-            console.log('error');
+        onError: (error) => {
+            const errorMessage: string = error.response?.data.message ?? 'Something went wrong';
+            showNotification(errorMessage, 'error');
         },
     });
 
     const onSubmit = (data: SignUpFormType) => {
-        console.log(data);
         signupMutation.mutate(data);
     };
 

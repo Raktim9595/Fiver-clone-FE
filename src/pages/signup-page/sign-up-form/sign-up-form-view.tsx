@@ -1,4 +1,4 @@
-import { Alert, Button, Stack, Typography } from '@mui/material';
+import { Button, Stack, Typography } from '@mui/material';
 import { type SignupFormViewProps, UserRole } from './sign-up-form.types';
 import { capitalize, upperCase } from 'lodash';
 import {

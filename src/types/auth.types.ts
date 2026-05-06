@@ -1,4 +1,4 @@
-import { BaseApiResponse } from './response.types';
+import { type BaseApiResponse } from './response.types';
 
 export type SignupResponse = {
     id: string;

@@ -5,7 +5,7 @@ import InputView from './input-view';
 import { Person2Outlined } from '@mui/icons-material';
 
 const meta = {
-    title: 'InputView',
+    title: 'Components/InputView',
     component: InputView,
     tags: ['autodocs'],
     parameters: {
