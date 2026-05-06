@@ -4,6 +4,7 @@ import axios from 'axios';
 
 export const mockNavigate = vi.fn();
 export const mockShowNotification = vi.fn();
+export const mockedAxios = vi.mocked(axios);
 
 vi.mock('react-router', async () => {
     const actual = await vi.importActual('react-router');
