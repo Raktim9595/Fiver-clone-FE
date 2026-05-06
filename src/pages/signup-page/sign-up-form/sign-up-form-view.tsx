@@ -1,4 +1,4 @@
-import { Button, Stack, Typography } from '@mui/material';
+import { Alert, Button, Stack, Typography } from '@mui/material';
 import { type SignupFormViewProps, UserRole } from './sign-up-form.types';
 import { capitalize, upperCase } from 'lodash';
 import {
@@ -38,21 +38,21 @@ const SignUpFormView = ({
             </Stack>
             <Stack direction="row" spacing={2}>
                 <FormInput
-                    name="firstname"
+                    name="firstName"
                     control={control}
                     label="First Name"
                     placeholder="First Name"
                     icon={<AccountCircle />}
-                    error={errors.firstname}
+                    error={errors.firstName}
                 />
 
                 <FormInput
-                    name="lastname"
+                    name="lastName"
                     control={control}
                     label="Last Name"
                     placeholder="Last Name"
                     icon={<AccountCircle />}
-                    error={errors.lastname}
+                    error={errors.lastName}
                 />
             </Stack>
             <FormInput

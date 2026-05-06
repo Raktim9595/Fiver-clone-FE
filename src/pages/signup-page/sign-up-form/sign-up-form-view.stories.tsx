@@ -20,8 +20,8 @@ type StoryWrapperProps = {
 };
 
 const baseValues: SignUpFormType = {
-    firstname: '',
-    lastname: '',
+    firstName: '',
+    lastName: '',
     username: '',
     email: '',
     password: '',
@@ -32,8 +32,8 @@ const baseValues: SignUpFormType = {
 };
 
 const defaultValues: SignUpFormType = {
-    firstname: 'Raktim',
-    lastname: 'Thapa',
+    firstName: 'Raktim',
+    lastName: 'Thapa',
     username: 'raktimthapa',
     email: 'raktim@example.com',
     password: 'random',
@@ -86,11 +86,11 @@ export const SignupFormWithErrors: Story = {
     render: () => (
         <StoryWrapper
             errors={{
-                firstname: {
+                firstName: {
                     type: 'required',
                     message: 'First name is required',
                 },
-                lastname: {
+                lastName: {
                     type: 'required',
                     message: 'Last name is required',
                 },
