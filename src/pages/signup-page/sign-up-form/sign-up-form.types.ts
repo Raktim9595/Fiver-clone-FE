@@ -9,8 +9,8 @@ export const UserRole = {
 export type UserRole = (typeof UserRole)[keyof typeof UserRole];
 
 export type SignUpFormType = {
-    firstname: string;
-    lastname: string;
+    firstName: string;
+    lastName: string;
     username: string;
     email: string;
     password: string;
@@ -24,8 +24,8 @@ export const signUpFormInitialValues: SignUpFormType = {
     address: '',
     age: 0,
     email: '',
-    firstname: '',
-    lastname: '',
+    firstName: '',
+    lastName: '',
     password: '',
     phoneNumber: '',
     username: '',
@@ -37,7 +37,7 @@ export type UseSignupForm = () => {
     handleSubmit: UseFormHandleSubmit<SignUpFormType, SignUpFormType>;
     errors: FieldErrors<SignUpFormType>;
     isSubmitting: boolean;
-    onSubmit: (data: SignUpFormType) => Promise<void>;
+    onSubmit: (data: SignUpFormType) => void;
 };
 
 export type SignupFormViewProps = ReturnType<UseSignupForm>;
