@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router';
 import { SignUpPage } from '../../pages/signup-page';
 import App from '../../app';
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
         path: '/',
         Component: App,
@@ -12,5 +12,3 @@ const router = createBrowserRouter([
         Component: SignUpPage,
     },
 ]);
-
-export default router;
