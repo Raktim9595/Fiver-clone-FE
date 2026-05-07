@@ -1,15 +1,12 @@
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { useSignupForm } from './use-sign-up-form';
-import {
-    mockedAxios,
-    mockNavigate,
-    mockShowNotification,
-    renderHookWithWrapper,
-} from '../../../utils';
+
 import { mockUserFormData } from '../../../__mocks__/user-mock-data';
 import { act, waitFor } from '@testing-library/react';
 import axios from 'axios';
 import { PATH } from '../../../utils/routing/paths';
+import { renderHookWithWrapper } from '../../../utils/test-wrapper';
+import { mockedAxios, mockNavigate, mockShowNotification } from '../../../utils/test-setups';
 
 describe('useSignupFormHook, Unit Test', () => {
     beforeEach(() => {

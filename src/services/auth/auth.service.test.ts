@@ -1,8 +1,8 @@
 import { describe, expect, test } from 'vitest';
 import { mockUserFormData } from '../../__mocks__/user-mock-data';
 import { signUp } from './auth.service';
-import { mockedAxios } from '../../utils';
 import axios from 'axios';
+import { mockedAxios } from '../../utils/test-setups';
 
 describe('AuthService, Unit Test', () => {
     describe('Given signUp, when called', () => {
