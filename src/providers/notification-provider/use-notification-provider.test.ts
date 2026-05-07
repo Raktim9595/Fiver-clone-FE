@@ -55,8 +55,8 @@ describe('useNotificationProvider, Unit Test', () => {
                 });
 
                 expect(result.current.open).toBe(false);
-                expect(result.current.message).toBe('');
-                expect(result.current.severity).toBe('info');
+                expect(result.current.message).toBe('Success message');
+                expect(result.current.severity).toBe('success');
             });
         });
     });

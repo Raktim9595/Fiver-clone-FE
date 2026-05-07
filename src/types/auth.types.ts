@@ -14,4 +14,10 @@ export type SignupResponse = {
     role: string;
 };
 
+export type SigninResponse = {
+    token: string;
+};
+
 export type SignupApiResponse = BaseApiResponse<SignupResponse>;
+
+export type SigninApiResponse = BaseApiResponse<SigninResponse>;
