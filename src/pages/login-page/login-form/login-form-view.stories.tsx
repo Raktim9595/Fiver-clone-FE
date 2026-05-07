@@ -3,6 +3,7 @@ import { fn } from 'storybook/test';
 import { LoginFormView } from './login-form-view';
 import { loginFormInitialValues, type LoginFormType } from './login-form.types';
 import { type FieldErrors, useForm } from 'react-hook-form';
+import { MemoryRouter } from 'react-router';
 
 const meta: Meta<typeof LoginFormView> = {
     title: 'Forms/LoginForm',
@@ -40,13 +41,15 @@ const StoryWrapper = ({
     });
 
     return (
-        <LoginFormView
-            control={control}
-            errors={errorsOverride ?? errors}
-            handleSubmit={handleSubmit}
-            isSubmitting={isSubmitting ?? formIsSubmitting}
-            onSubmit={fn()}
-        />
+        <MemoryRouter>
+            <LoginFormView
+                control={control}
+                errors={errorsOverride ?? errors}
+                handleSubmit={handleSubmit}
+                isSubmitting={isSubmitting ?? formIsSubmitting}
+                onSubmit={fn()}
+            />
+        </MemoryRouter>
     );
 };
 

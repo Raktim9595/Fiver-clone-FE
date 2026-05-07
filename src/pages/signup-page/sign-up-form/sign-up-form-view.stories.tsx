@@ -3,6 +3,7 @@ import { fn } from 'storybook/test';
 import { useForm, type FieldErrors } from 'react-hook-form';
 import SignUpFormView from './sign-up-form-view';
 import { type SignUpFormType, UserRole } from './sign-up-form.types';
+import { MemoryRouter } from 'react-router';
 
 const meta: Meta<typeof SignUpFormView> = {
     title: 'Forms/SignUpForm',
@@ -60,13 +61,15 @@ const StoryWrapper = ({
     });
 
     return (
-        <SignUpFormView
-            control={control}
-            errors={errorsOverride ?? errors}
-            handleSubmit={handleSubmit}
-            isSubmitting={isSubmitting ?? formIsSubmitting}
-            onSubmit={fn()}
-        />
+        <MemoryRouter>
+            <SignUpFormView
+                control={control}
+                errors={errorsOverride ?? errors}
+                handleSubmit={handleSubmit}
+                isSubmitting={isSubmitting ?? formIsSubmitting}
+                onSubmit={fn()}
+            />
+        </MemoryRouter>
     );
 };
 
