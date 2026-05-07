@@ -13,6 +13,8 @@ import {
 import { CustomSelect } from '../../../components/select';
 import { Controller } from 'react-hook-form';
 import { FormInput } from '../../../components/form-input';
+import { Link } from 'react-router';
+import { PATH } from '../../../utils/routing/paths';
 
 const SignUpFormView = ({
     control,
@@ -133,6 +135,28 @@ const SignUpFormView = ({
             >
                 Create Account
             </Button>
+
+            <Stack
+                component="div"
+                direction="row"
+                spacing={1}
+                sx={{
+                    justifyContent: 'center',
+                }}
+            >
+                <Typography>Already have an account?</Typography>
+                <Typography
+                    component={Link}
+                    to={PATH.LOGIN}
+                    sx={{
+                        textDecoration: 'none',
+                        color: 'green',
+                        fontWeight: 500,
+                    }}
+                >
+                    Sign in
+                </Typography>
+            </Stack>
         </Stack>
     );
 };
