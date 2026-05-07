@@ -1,3 +1,4 @@
+import { type LoginFormType } from '../pages/login-page/login-form/login-form.types';
 import {
     type SignUpFormType,
     UserRole,
@@ -13,5 +14,11 @@ export const mockUserFormData = (data?: Partial<SignUpFormType>): SignUpFormType
     phoneNumber: '0412345678',
     username: 'random',
     role: UserRole.BUYER,
+    ...data,
+});
+
+export const mockLoginFormData = (data?: Partial<LoginFormType>): LoginFormType => ({
+    password: 'johnDoe',
+    username: 'johnDoe',
     ...data,
 });

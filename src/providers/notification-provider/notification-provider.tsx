@@ -23,7 +23,7 @@ export const NotificationProvider = ({ children }: { children: ReactNode }) => {
         () => ({
             showNotification,
         }),
-        [],
+        [showNotification],
     );
 
     return (

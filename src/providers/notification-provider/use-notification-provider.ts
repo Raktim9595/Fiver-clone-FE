@@ -21,11 +21,10 @@ const useNotificationProvider: UseNotificationProvider = () => {
     };
 
     const closeNotification = () => {
-        setNotification({
-            message: '',
+        setNotification((prevState) => ({
+            ...prevState,
             open: false,
-            severity: 'info',
-        });
+        }));
     };
 
     return {
