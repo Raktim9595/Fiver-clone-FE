@@ -5,6 +5,9 @@ import axios from 'axios';
 export const mockNavigate = vi.fn();
 export const mockShowNotification = vi.fn();
 export const mockedAxios = vi.mocked(axios);
+export const mockGetAuthToken = vi.fn();
+export const mockSetAuthToken = vi.fn();
+export const mockRemoveAuthToken = vi.fn();
 
 vi.mock('react-router', async () => {
     const actual = await vi.importActual('react-router');
@@ -21,6 +24,16 @@ vi.mock('../providers/notification-provider', async () => {
         useNotification: () => ({
             showNotification: mockShowNotification,
         }),
+    };
+});
+
+vi.mock('./auth-storage', async () => {
+    const actual = await vi.importActual('./auth-storage');
+    return {
+        ...actual,
+        getAuthToken: mockGetAuthToken,
+        setAuthToken: mockSetAuthToken,
+        removeAuthToken: mockRemoveAuthToken,
     };
 });
 

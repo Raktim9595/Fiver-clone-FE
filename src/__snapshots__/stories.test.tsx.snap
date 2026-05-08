@@ -1237,7 +1237,7 @@ exports[`Storybook snapshots > /src/pages/login-page/login-form/login-form-view.
 </form>
 `;
 
-exports[`Storybook snapshots > /src/pages/login-page/login-page-vierw.stories.tsx -  LoginPage matches snapshot 1`] = `
+exports[`Storybook snapshots > /src/pages/login-page/login-page-view.stories.tsx -  LoginPage matches snapshot 1`] = `
 <section
   class="MuiStack-root page css-pl8gqh-MuiStack-root"
 >

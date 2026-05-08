@@ -2,6 +2,10 @@ import { createBrowserRouter } from 'react-router';
 import { SignUpPage } from '../../pages/signup-page';
 import App from '../../app';
 import { LoginPage } from '../../pages/login-page';
+import { ProfilePage } from '../../pages/profile';
+import { protectedRouteLoader } from '../protected-route-loader';
+import { ProtectedLayout } from '../../components/protected-layout';
+import { publicOnlyLoader } from '../public-only-loader';
 
 export const router = createBrowserRouter([
     {
@@ -9,11 +13,26 @@ export const router = createBrowserRouter([
         Component: App,
     },
     {
-        path: '/signup',
-        Component: SignUpPage,
+        loader: publicOnlyLoader,
+        children: [
+            {
+                path: '/signup',
+                Component: SignUpPage,
+            },
+            {
+                path: '/login',
+                Component: LoginPage,
+            },
+        ],
     },
     {
-        path: '/login',
-        Component: LoginPage,
+        loader: protectedRouteLoader,
+        Component: ProtectedLayout,
+        children: [
+            {
+                path: '/profile',
+                Component: ProfilePage,
+            },
+        ],
     },
 ]);

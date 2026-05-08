@@ -2,7 +2,12 @@ import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { renderHookWithWrapper } from '../../../utils/test-wrapper';
 import { useLoginForm } from './use-login-form';
 import { mockLoginFormData } from '../../../__mocks__/user-mock-data';
-import { mockedAxios, mockShowNotification } from '../../../utils/test-setups';
+import {
+    mockedAxios,
+    mockNavigate,
+    mockSetAuthToken,
+    mockShowNotification,
+} from '../../../utils/test-setups';
 import { act, waitFor } from '@testing-library/react';
 import axios from 'axios';
 
@@ -40,10 +45,13 @@ describe('useLoginForm Hook, Unit Test', () => {
         describe('And server does not give any error', () => {
             test('Then it should create user and redirect to login', async () => {
                 const { result } = renderHookWithWrapper(() => useLoginForm());
+                const token = 'token';
 
                 mockedAxios.post.mockResolvedValue({
                     data: {
-                        data,
+                        data: {
+                            token,
+                        },
                     },
                 });
 
@@ -62,6 +70,8 @@ describe('useLoginForm Hook, Unit Test', () => {
                     'Successfully signed in',
                     'success',
                 );
+                expect(mockSetAuthToken).toHaveBeenCalledWith('token');
+                expect(mockNavigate).toHaveBeenCalledWith('/profile');
             });
         });
 
@@ -93,6 +103,8 @@ describe('useLoginForm Hook, Unit Test', () => {
                         'Incorrect Password',
                         'error',
                     );
+                    expect(mockNavigate).not.toHaveBeenCalled();
+                    expect(mockSetAuthToken).not.toHaveBeenCalled();
                 });
             });
 
@@ -117,6 +129,8 @@ describe('useLoginForm Hook, Unit Test', () => {
                         'Something went wrong',
                         'error',
                     );
+                    expect(mockNavigate).not.toHaveBeenCalled();
+                    expect(mockSetAuthToken).not.toHaveBeenCalled();
                 });
             });
         });

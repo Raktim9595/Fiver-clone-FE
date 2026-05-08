@@ -7,14 +7,20 @@ import { type SigninApiResponse } from '../../../types/auth.types';
 import { type ApiErrorResponse } from '../../../types/response.types';
 import { signin } from '../../../services/auth';
 import { useNotification } from '../../../providers/notification-provider';
+import { signUpFormInitialValues } from '../../signup-page/sign-up-form/sign-up-form.types';
+import { useNavigate } from 'react-router';
+import { PATH } from '../../../utils/routing/paths';
+import { setAuthToken } from '../../../utils/auth-storage';
 
 export const useLoginForm = () => {
     const { showNotification } = useNotification();
+    const navigate = useNavigate();
 
     const {
         control,
         handleSubmit,
         formState: { errors, isSubmitting },
+        reset,
     } = useForm<LoginFormType>({
         mode: 'onSubmit',
         defaultValues: loginFormInitialValues,
@@ -25,6 +31,9 @@ export const useLoginForm = () => {
         mutationFn: signin,
         onSuccess: ({ data }) => {
             showNotification('Successfully signed in', 'success');
+            setAuthToken(data.token);
+            reset(signUpFormInitialValues);
+            navigate(PATH.PROFILE);
         },
         onError: (error) => {
             const errorMessage: string = error.response?.data.message ?? 'Something went wrong';
