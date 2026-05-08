@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router';
 import { SignUpPage } from '../../pages/signup-page';
 import App from '../../app';
 import { LoginPage } from '../../pages/login-page';
-import { ProfilePage } from '../../pages/profile';
+import { ProfilePage } from '../../pages/profile-page';
 import { protectedRouteLoader } from '../protected-route-loader';
 import { ProtectedLayout } from '../../components/protected-layout';
 import { publicOnlyLoader } from '../public-only-loader';
