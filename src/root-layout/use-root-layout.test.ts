@@ -43,7 +43,7 @@ describe('useRootLayout, Unit Test', () => {
                 });
 
                 expect(axios.get).toHaveBeenCalledWith('http://raktim-backend:8080/api/user/me');
-                expect(mockGetAuthToken).toHaveBeenCalled();
+                expect(mockGetAuthToken).toHaveBeenCalledTimes(1);
             });
         });
     });
