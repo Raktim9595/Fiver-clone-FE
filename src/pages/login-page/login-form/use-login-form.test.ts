@@ -11,6 +11,18 @@ import {
 import { act, waitFor } from '@testing-library/react';
 import axios from 'axios';
 
+const { mockReload } = vi.hoisted(() => ({
+    mockReload: vi.fn(),
+}));
+
+Object.defineProperty(window, 'location', {
+    value: {
+        ...window.location,
+        reload: mockReload,
+    },
+    writable: true,
+});
+
 describe('useLoginForm Hook, Unit Test', () => {
     beforeEach(() => {
         vi.clearAllMocks();
@@ -72,6 +84,7 @@ describe('useLoginForm Hook, Unit Test', () => {
                 );
                 expect(mockSetAuthToken).toHaveBeenCalledWith('token');
                 expect(mockNavigate).toHaveBeenCalledWith('/profile');
+                expect(location.reload).toHaveBeenCalledTimes(1);
             });
         });
 
@@ -105,6 +118,7 @@ describe('useLoginForm Hook, Unit Test', () => {
                     );
                     expect(mockNavigate).not.toHaveBeenCalled();
                     expect(mockSetAuthToken).not.toHaveBeenCalled();
+                    expect(location.reload).not.toHaveBeenCalled();
                 });
             });
 
@@ -131,6 +145,7 @@ describe('useLoginForm Hook, Unit Test', () => {
                     );
                     expect(mockNavigate).not.toHaveBeenCalled();
                     expect(mockSetAuthToken).not.toHaveBeenCalled();
+                    expect(location.reload).not.toHaveBeenCalled();
                 });
             });
         });

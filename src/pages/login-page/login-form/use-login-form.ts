@@ -34,6 +34,7 @@ export const useLoginForm = () => {
             setAuthToken(data.token);
             reset(signUpFormInitialValues);
             navigate(PATH.PROFILE);
+            location.reload();
         },
         onError: (error) => {
             const errorMessage: string = error.response?.data.message ?? 'Something went wrong';

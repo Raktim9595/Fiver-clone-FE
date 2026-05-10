@@ -1,13 +1,14 @@
-import { AppBar, Box, Toolbar } from '@mui/material';
+import { AppBar, Avatar, Box, Toolbar } from '@mui/material';
 import logo from '../../assets/fiver-main.png';
 import { CustomInput } from '../input';
-import { AccountCircle, SearchOutlined } from '@mui/icons-material';
+import { SearchOutlined } from '@mui/icons-material';
 import { type CustomMenuAction } from '../custom-menu/custom-menu-view.types';
 import { CustomMenu } from '../custom-menu';
 import { type NavbarViewProps } from './navbar.types';
 import { PATH } from '../../utils/routing/paths';
+import { stringAvatar } from './helpers';
 
-export const NavbarView = ({ isLoggedin, navigate, logOut }: NavbarViewProps) => {
+export const NavbarView = ({ isLoggedin, navigate, logOut, user }: NavbarViewProps) => {
     const loggedInActions: CustomMenuAction[] = [
         {
             label: 'Profile',
@@ -30,7 +31,7 @@ export const NavbarView = ({ isLoggedin, navigate, logOut }: NavbarViewProps) =>
         },
     ];
 
-    const actions: CustomMenuAction[] = isLoggedin ? loggedInActions : loggedOutActions;
+    const actions: CustomMenuAction[] = isLoggedin && user ? loggedInActions : loggedOutActions;
 
     return (
         <Box
@@ -67,7 +68,17 @@ export const NavbarView = ({ isLoggedin, navigate, logOut }: NavbarViewProps) =>
                         iconposition="end"
                         placeholder="Search..."
                     />
-                    <CustomMenu actions={actions} iconButton icon={<AccountCircle />} />
+                    <CustomMenu
+                        actions={actions}
+                        iconButton
+                        icon={
+                            isLoggedin && user ? (
+                                <Avatar {...stringAvatar(`${user?.firstName} ${user?.lastName}`)} />
+                            ) : (
+                                <Avatar />
+                            )
+                        }
+                    />
                 </Toolbar>
             </AppBar>
         </Box>

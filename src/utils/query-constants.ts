@@ -1,0 +1,3 @@
+export const QUERY_CONSTANT = {
+    GET_LOGGED_IN_USER: 'GET_LOGGED_IN_USER',
+};
