@@ -17,7 +17,6 @@ export const router = createBrowserRouter([
                 index: true,
                 Component: HomePageView,
             },
-
             {
                 loader: protectedRouteLoader,
                 Component: ProtectedLayout,
