@@ -3,7 +3,7 @@ import { mockGetAuthToken } from '../test-setups';
 import publicOnlyLoader from './public-only-loader';
 
 describe('publicOnlyLoader, Unit Test', () => {
-    test.only('When token exists, then it should redirect to profile page', () => {
+    test('When token exists, then it should redirect to profile page', () => {
         mockGetAuthToken.mockReturnValue('token');
 
         try {
