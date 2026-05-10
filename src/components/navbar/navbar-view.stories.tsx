@@ -21,5 +21,16 @@ export const LoggedOutNavbar: Story = {};
 export const LoggedInNavbar: Story = {
     args: {
         isLoggedin: true,
+        user: {
+            firstName: 'John',
+            lastName: 'Doe',
+        } as any,
+    },
+};
+
+export const LoggedInNavbarWithoutUser: Story = {
+    args: {
+        isLoggedin: true,
+        user: undefined,
     },
 };
