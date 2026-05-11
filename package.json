@@ -13,8 +13,8 @@
         "preview": "vite preview",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build",
-        "test": "vitest --watch --reporter=verbose --fileParallelism=false",
-        "test:run": "vitest run --reporter=verbose --fileParallelism=false",
+        "test": "vitest --watch --reporter=verbose --fileParallelism=true",
+        "test:run": "vitest run --reporter=verbose --fileParallelism=true",
         "test:update": "vitest -u"
     },
     "dependencies": {
