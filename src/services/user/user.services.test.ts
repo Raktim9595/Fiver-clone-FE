@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { getCurrentUSer } from './user.services';
+import { getCurrentUser } from './user.services';
 import axios from 'axios';
 import { mockUserDataFromServer } from '../../__mocks__/user-mock-data';
 import { mockedAxios } from '../../utils/test-setups';
@@ -15,7 +15,7 @@ describe('UserService, Unit Test', () => {
                 },
             });
 
-            const res = await getCurrentUSer();
+            const res = await getCurrentUser();
             expect(axios.get).toHaveBeenCalledWith('http://raktim-backend:8080/api/user/me');
             expect(res).toEqual({ data: user });
         });
