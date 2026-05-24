@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { SidebarView } from './sidebar-view';
-import { HomeOutlined, Person2Outlined } from '@mui/icons-material';
 import { fn } from 'storybook/test';
 import { Box } from '@mui/material';
 

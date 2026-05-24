@@ -2132,6 +2132,30 @@ exports[`Storybook snapshots > /src/pages/login-page/login-page-view.stories.tsx
 </section>
 `;
 
+exports[`Storybook snapshots > /src/pages/profile-page/profile-page-view.stories.tsx -  ProfilePage matches snapshot 1`] = `
+<div
+  class="MuiStack-root css-1lquhhn-MuiStack-root"
+>
+  <div
+    class="MuiStack-root css-1bhsaly-MuiStack-root"
+  >
+    <div>
+      <h1>
+        Profile Highlights
+      </h1>
+      <p>
+        This is where the profile highlights will be displayed.
+      </p>
+    </div>
+  </div>
+  <div
+    class="MuiStack-root css-1ejla62-MuiStack-root"
+  >
+    done again
+  </div>
+</div>
+`;
+
 exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-view.stories.tsx -  SignupForm matches snapshot 1`] = `
 <form
   class="MuiStack-root css-v2woy3-MuiStack-root"
