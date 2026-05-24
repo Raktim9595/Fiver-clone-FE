@@ -1,11 +1,7 @@
-import { Box, Typography } from '@mui/material';
+import { ProfilePageView } from './profile-page-view';
 
 const ProfilePage = () => {
-    return (
-        <Box component="section">
-            <Typography>Profile info goes here</Typography>
-        </Box>
-    );
+    return <ProfilePageView />;
 };
 
 export default ProfilePage;
