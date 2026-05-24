@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { MemoryRouter } from 'react-router';
 import { RootLayoutView } from './root-layout-view';
-import { setAuthToken } from '../utils/auth-storage';
 
 const meta: Meta<typeof RootLayoutView> = {
     title: 'Layouts/RootLayoutView',

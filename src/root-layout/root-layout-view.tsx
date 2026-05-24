@@ -9,7 +9,12 @@ export const RootLayoutView = ({ isLoading, data }: RootLayoutViewProps) => {
     return (
         <>
             <Navbar user={data?.data} />
-            <Box component="main">
+            <Box
+                component="main"
+                sx={{
+                    backgroundColor: '#f2f5f3',
+                }}
+            >
                 <Outlet context={{ user: data }} />
             </Box>
         </>

@@ -8,12 +8,14 @@ export const mockedAxios = vi.mocked(axios);
 export const mockGetAuthToken = vi.fn();
 export const mockSetAuthToken = vi.fn();
 export const mockRemoveAuthToken = vi.fn();
+export const mockUseLocation = vi.fn();
 
 vi.mock('react-router', async () => {
     const actual = await vi.importActual('react-router');
     return {
         ...actual,
         useNavigate: () => mockNavigate,
+        useLocation: () => mockUseLocation(),
     };
 });
 
