@@ -1,7 +1,9 @@
 import { ProfileHighlightsView } from './profile-highlights-view';
+import { useProfileHighlights } from './use-profile-highlights';
 
 const ProfileHighlights = () => {
-    return <ProfileHighlightsView />;
+    const props = useProfileHighlights();
+    return <ProfileHighlightsView {...props} />;
 };
 
 export default ProfileHighlights;
