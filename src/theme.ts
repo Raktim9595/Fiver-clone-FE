@@ -2,7 +2,7 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
     typography: {
-        fontFamily: 'Inter, Roboto, Arial, sans-serif',
+        fontFamily: 'Roboto, Inter, Arial, sans-serif',
     },
 });
 
