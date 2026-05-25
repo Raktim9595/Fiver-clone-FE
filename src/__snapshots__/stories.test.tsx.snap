@@ -2132,6 +2132,71 @@ exports[`Storybook snapshots > /src/pages/login-page/login-page-view.stories.tsx
 </section>
 `;
 
+exports[`Storybook snapshots > /src/pages/profile-page/profile-page-view.stories.tsx -  ProfilePage matches snapshot 1`] = `
+<div
+  class="MuiStack-root css-1lquhhn-MuiStack-root"
+>
+  <div
+    class="MuiStack-root css-1bhsaly-MuiStack-root"
+  >
+    <div
+      class="MuiBox-root css-1npexfx"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root css-qi3mvf-MuiPaper-root-MuiCard-root"
+      >
+        <div
+          class="MuiCardContent-root css-1knibnu-MuiCardContent-root"
+        >
+          <div
+            class="MuiStack-root css-1lnw40d-MuiStack-root"
+          >
+            <div
+              class="MuiBox-root css-79elbk"
+            >
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-966ing-MuiAvatar-root"
+              >
+                JS
+              </div>
+              <button
+                actions="[object Object],[object Object]"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-q04u0u-MuiButtonBase-root-MuiIconButton-root"
+                icon="[object Object]"
+                tabindex="0"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                  data-testid="CameraAltIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="3.2"
+                  />
+                  <path
+                    d="M9 2 7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiStack-root css-1ejla62-MuiStack-root"
+  >
+    done again
+  </div>
+</div>
+`;
+
 exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-view.stories.tsx -  SignupForm matches snapshot 1`] = `
 <form
   class="MuiStack-root css-v2woy3-MuiStack-root"
@@ -2674,7 +2739,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_1j_"
+        id="_r_1k_"
         tabindex="-1"
         value="BUYER"
       />
@@ -3275,7 +3340,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_1u_"
+        id="_r_1v_"
         tabindex="-1"
         value="BUYER"
       />
@@ -3876,7 +3941,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_29_"
+        id="_r_2a_"
         tabindex="-1"
         value="BUYER"
       />
@@ -3908,7 +3973,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
   <button
     class="MuiButtonBase-root MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter Mui-disabled MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter css-1elmdwi-MuiButtonBase-root-MuiButton-root"
     disabled=""
-    id="_r_2a_"
+    id="_r_2b_"
     tabindex="-1"
     type="submit"
   >
@@ -3920,7 +3985,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         class="MuiButton-loadingIndicator css-14m8o6v-MuiButton-loadingIndicator"
       >
         <span
-          aria-labelledby="_r_2a_"
+          aria-labelledby="_r_2b_"
           class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorInherit css-gxw4l9-MuiCircularProgress-root"
           role="progressbar"
           style="width: 16px; height: 16px;"
@@ -4560,7 +4625,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_2k_"
+        id="_r_2l_"
         tabindex="-1"
         value="BUYER"
       />
@@ -5316,7 +5381,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
               aria-hidden="true"
               aria-invalid="false"
               class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-              id="_r_2v_"
+              id="_r_30_"
               tabindex="-1"
               value="BUYER"
             />
