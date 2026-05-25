@@ -1,7 +1,7 @@
 import { Box, Stack } from '@mui/material';
 import { Outlet, useOutletContext } from 'react-router';
 import { Sidebar } from '../sidebar';
-import { type GetCurrentUserApiResponse, User } from '../../types/user.types';
+import { type GetCurrentUserApiResponse } from '../../types/user.types';
 
 const ProtectedLayout = () => {
     const { user } = useOutletContext<{
@@ -33,7 +33,7 @@ const ProtectedLayout = () => {
                     flexGrow: 1,
                 }}
             >
-                <Outlet context={{}} />
+                <Outlet context={{ user }} />
             </Box>
         </Stack>
     );

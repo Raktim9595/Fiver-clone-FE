@@ -11,7 +11,7 @@ export const useProfilePage: UseProfilePage = () => {
     }>();
 
     const { data, isLoading } = useQuery({
-        queryKey: [QUERY_CONSTANT.GET_LOGGED_IN_USER, user?.data.id],
+        queryKey: [QUERY_CONSTANT.GET_LOGGED_IN_USER, user.data.id],
         queryFn: () => getUserById(user?.data.id),
         enabled: !!user?.data.id,
         initialData: user,

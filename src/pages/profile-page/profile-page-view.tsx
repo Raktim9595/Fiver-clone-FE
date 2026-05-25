@@ -1,7 +1,7 @@
 import { Stack } from '@mui/material';
 import { ProfileHighlights } from './profile-highlights';
-import { type ProfilePageViewProps } from './profile-page.types';
 import { LoadingView } from '../../components/loading';
+import { ProfilePageViewProps } from './profile-page.types';
 
 export const ProfilePageView = ({ user, isLoading }: ProfilePageViewProps) => {
     if (isLoading) return <LoadingView />;
