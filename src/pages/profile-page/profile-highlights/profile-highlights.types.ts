@@ -1,4 +1,9 @@
 import { type ChangeEventHandler, type ReactNode, type RefObject } from 'react';
+import { type User } from '../../../types/user.types';
+
+export type ProfileHighlightsProps = {
+    user: User;
+};
 
 export type ProfileHighligtsModalProps = {
     open: boolean;
@@ -21,4 +26,4 @@ export type UseProfileHighlights = () => {
     handleCancelUpload: () => void;
 };
 
-export type ProfileHighlightsViewProps = ReturnType<UseProfileHighlights>;
+export type ProfileHighlightsViewProps = ReturnType<UseProfileHighlights> & ProfileHighlightsProps;

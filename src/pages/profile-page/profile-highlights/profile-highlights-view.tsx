@@ -1,7 +1,7 @@
 import { Avatar, Box, Button, Card, CardContent, Stack, Typography } from '@mui/material';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
-import { Check, CloudUpload, DeleteOutlined } from '@mui/icons-material';
+import { Check, CloudUpload, DeleteOutlined, Person } from '@mui/icons-material';
 import { CustomMenu } from '../../../components/custom-menu';
 import { ProfileHighlightsModal } from './profile-highlights-modal';
 import { type ProfileHighlightsViewProps } from './profile-highlights.types';
@@ -19,6 +19,7 @@ export const ProfileHighlightsView = ({
     confirmationModal,
     ref,
     handleCancelUpload,
+    user,
 }: ProfileHighlightsViewProps) => {
     const actions: CustomMenuAction[] = useMemo(
         () => [
@@ -29,7 +30,7 @@ export const ProfileHighlightsView = ({
             },
             {
                 label: 'Remove Photo',
-                onClick: () => {},
+                onClick: () => {}, // TODO: Implement remove photo functionality from BE and then on s3
                 icon: <DeleteOutlined fontSize="small" color="error" />,
             },
         ],
@@ -40,36 +41,84 @@ export const ProfileHighlightsView = ({
         <Box sx={{ bgcolor: '#f7f7f7' }}>
             <Card variant="outlined" sx={{ borderRadius: 3, maxWidth: 760 }}>
                 <CardContent sx={{ p: { xs: 2, md: 4 } }}>
-                    <Stack direction="row" spacing={3} sx={{ alignItems: 'flex-start' }}>
-                        <Box sx={{ position: 'relative' }}>
-                            <Avatar
-                                src={selectedImage || undefined}
-                                alt="John Smith"
-                                sx={{
-                                    width: 120,
-                                    height: 120,
-                                    fontSize: 42,
-                                    bgcolor: '#d8d8d8',
-                                }}
-                            >
-                                JS
-                            </Avatar>
+                    <Stack spacing={1} sx={{ alignItems: 'center' }}>
+                        <Stack direction="row" spacing={3} sx={{ alignItems: 'flex-start' }}>
+                            <Box sx={{ position: 'relative' }}>
+                                <Avatar
+                                    src={selectedImage || undefined}
+                                    alt="John Smith"
+                                    sx={{
+                                        width: 120,
+                                        height: 120,
+                                        fontSize: 42,
+                                        bgcolor: '#d8d8d8',
+                                    }}
+                                >
+                                    {user.firstName[0].toUpperCase()}
+                                    {user.lastName[0].toUpperCase()}
+                                </Avatar>
 
-                            <CustomMenu
-                                actions={actions}
-                                iconButton
+                                <CustomMenu
+                                    actions={actions}
+                                    iconButton
+                                    sx={{
+                                        position: 'absolute',
+                                        right: 2,
+                                        bottom: 2,
+                                        bgcolor: '#222',
+                                        color: 'white',
+                                        border: '3px solid white',
+                                        '&:hover': { bgcolor: '#111' },
+                                    }}
+                                    icon={<CameraAltIcon fontSize="small" />}
+                                />
+                            </Box>
+                        </Stack>
+                        <Typography variant="h6" sx={{ fontWeight: 700 }}>
+                            {user.firstName} {user.lastName}
+                        </Typography>
+                        <Typography>@{user.username}</Typography>
+                        <Stack
+                            spacing={2}
+                            direction="row"
+                            sx={{
+                                alignItems: 'center',
+                                borderRadius: '0.5rem',
+                                bgcolor: '#DCE5E0',
+                                padding: '0.25rem 0.75rem',
+                                cursor: 'pointer',
+                            }}
+                        >
+                            <Person
+                                fontSize="small"
                                 sx={{
-                                    position: 'absolute',
-                                    right: 2,
-                                    bottom: 2,
-                                    bgcolor: '#222',
-                                    color: 'white',
-                                    border: '3px solid white',
-                                    '&:hover': { bgcolor: '#111' },
+                                    color: '#2e7d32',
                                 }}
-                                icon={<CameraAltIcon fontSize="small" />}
                             />
-                        </Box>
+                            <Typography
+                                sx={{
+                                    color: '#2e7d32',
+                                    fontWeight: 500,
+                                }}
+                                variant="body2"
+                            >
+                                Buyer Account
+                            </Typography>
+                        </Stack>
+                        <Stack
+                            sx={{
+                                width: '100%',
+                            }}
+                            spacing={2}
+                        >
+                            <DisplayHelper
+                                header="Member since"
+                                content={user.createdAt.toLocaleLowerCase().split('t')[0]}
+                            />
+                            <DisplayHelper header="Account status" content="Active" />
+                            <DisplayHelper header="Email" content={user.email} />
+                            <DisplayHelper header="Phone" content={'+' + user.phoneNumber} />
+                        </Stack>
                     </Stack>
                 </CardContent>
             </Card>
@@ -173,5 +222,34 @@ export const ProfileHighlightsView = ({
                 }
             />
         </Box>
+    );
+};
+
+const DisplayHelper = ({ header, content }: { header: string; content: string }) => {
+    return (
+        <Stack
+            direction="row"
+            sx={{
+                alignItems: 'center',
+                justifyContent: 'space-between',
+            }}
+        >
+            <Typography
+                variant="body2"
+                sx={{
+                    fontWeight: 500,
+                }}
+            >
+                {header}:
+            </Typography>
+            <Typography
+                variant="body2"
+                sx={{
+                    fontWeight: 500,
+                }}
+            >
+                {content}
+            </Typography>
+        </Stack>
     );
 };

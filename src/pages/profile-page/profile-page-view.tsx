@@ -1,7 +1,11 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Stack } from '@mui/material';
 import { ProfileHighlights } from './profile-highlights';
+import { type ProfilePageViewProps } from './profile-page.types';
+import { LoadingView } from '../../components/loading';
 
-export const ProfilePageView = () => {
+export const ProfilePageView = ({ user, isLoading }: ProfilePageViewProps) => {
+    if (isLoading) return <LoadingView />;
+
     return (
         <Stack
             direction="row"
@@ -17,7 +21,7 @@ export const ProfilePageView = () => {
                     bgcolor: 'red',
                 }}
             >
-                <ProfileHighlights />
+                <ProfileHighlights user={user!} />
             </Stack>
 
             {/* This one is a form like structure where we do the updates to the profile information */}
