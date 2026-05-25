@@ -3,7 +3,10 @@ import { ProfilePageView } from './profile-page-view';
 import { NotificationProvider } from '../../providers/notification-provider';
 import { mockUserDataFromServer } from '../../__mocks__/user-mock-data';
 
-const user = mockUserDataFromServer();
+const user = mockUserDataFromServer({
+    createdAt: '2025-01-01T00:00:00.000Z',
+    updatedAt: '2025-01-01T00:00:00.000Z',
+});
 
 const meta: Meta<typeof ProfilePageView> = {
     title: 'Pages/ProfilePage',
