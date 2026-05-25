@@ -1,4 +1,4 @@
-import { ChangeEventHandler, ReactNode, RefObject } from 'react';
+import { type ChangeEventHandler, type ReactNode, type RefObject } from 'react';
 
 export type ProfileHighligtsModalProps = {
     open: boolean;
@@ -12,12 +12,13 @@ export type UseProfileHighlights = () => {
     ref: RefObject<HTMLInputElement | null>;
     selectedImage: string | null;
     fileUploadModal: boolean;
-    uploadConfirmationModal: boolean;
+    confirmationModal: boolean;
     openFileUploadModal: () => void;
     closeFileUploadModal: () => void;
     handleFileChange: ChangeEventHandler<HTMLInputElement, HTMLInputElement>;
     handleSavePhoto: () => void;
     closeConfirmationModal: () => void;
+    handleCancelUpload: () => void;
 };
 
 export type ProfileHighlightsViewProps = ReturnType<UseProfileHighlights>;

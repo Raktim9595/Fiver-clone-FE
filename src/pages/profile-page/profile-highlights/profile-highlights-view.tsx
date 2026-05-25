@@ -4,7 +4,9 @@ import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import { Check, CloudUpload, DeleteOutlined } from '@mui/icons-material';
 import { CustomMenu } from '../../../components/custom-menu';
 import { ProfileHighlightsModal } from './profile-highlights-modal';
-import { ProfileHighlightsViewProps } from './profile-highlights.types';
+import { type ProfileHighlightsViewProps } from './profile-highlights.types';
+import { useMemo } from 'react';
+import { type CustomMenuAction } from '../../../components/custom-menu/custom-menu-view.types';
 
 export const ProfileHighlightsView = ({
     closeFileUploadModal,
@@ -13,10 +15,27 @@ export const ProfileHighlightsView = ({
     handleSavePhoto,
     openFileUploadModal,
     selectedImage,
-    uploadConfirmationModal,
     closeConfirmationModal,
+    confirmationModal,
     ref,
+    handleCancelUpload,
 }: ProfileHighlightsViewProps) => {
+    const actions: CustomMenuAction[] = useMemo(
+        () => [
+            {
+                label: 'Upload New Photo',
+                onClick: openFileUploadModal,
+                icon: <CloudUploadIcon fontSize="small" />,
+            },
+            {
+                label: 'Remove Photo',
+                onClick: () => {},
+                icon: <DeleteOutlined fontSize="small" color="error" />,
+            },
+        ],
+        [openFileUploadModal],
+    );
+
     return (
         <Box sx={{ bgcolor: '#f7f7f7' }}>
             <Card variant="outlined" sx={{ borderRadius: 3, maxWidth: 760 }}>
@@ -37,18 +56,7 @@ export const ProfileHighlightsView = ({
                             </Avatar>
 
                             <CustomMenu
-                                actions={[
-                                    {
-                                        label: 'Upload New Photo',
-                                        onClick: openFileUploadModal,
-                                        icon: <CloudUploadIcon fontSize="small" />,
-                                    },
-                                    {
-                                        label: 'Remove Photo',
-                                        onClick: () => {},
-                                        icon: <DeleteOutlined fontSize="small" color="error" />,
-                                    },
-                                ]}
+                                actions={actions}
                                 iconButton
                                 sx={{
                                     position: 'absolute',
@@ -118,7 +126,7 @@ export const ProfileHighlightsView = ({
             />
 
             <ProfileHighlightsModal
-                open={uploadConfirmationModal}
+                open={confirmationModal}
                 onClose={closeConfirmationModal}
                 headerText="Confirm Profile Photo"
                 body={
@@ -150,7 +158,7 @@ export const ProfileHighlightsView = ({
                 }
                 footer={
                     <Stack direction="row" spacing={2} sx={{ justifyContent: 'flex-end' }}>
-                        <Button variant="outlined" onClick={closeConfirmationModal}>
+                        <Button variant="outlined" onClick={handleCancelUpload}>
                             Cancel
                         </Button>
                         <Button

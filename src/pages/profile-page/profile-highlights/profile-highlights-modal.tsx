@@ -1,6 +1,6 @@
 import { Close } from '@mui/icons-material';
 import { Box, IconButton, Modal, Stack, Typography } from '@mui/material';
-import { ProfileHighligtsModalProps } from './profile-highlights.types';
+import { type ProfileHighligtsModalProps } from './profile-highlights.types';
 
 export const ProfileHighlightsModal = ({
     open,

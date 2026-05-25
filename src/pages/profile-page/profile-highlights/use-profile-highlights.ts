@@ -1,11 +1,14 @@
-import { ChangeEventHandler, useRef, useState } from 'react';
+import { type ChangeEventHandler, useRef, useState } from 'react';
+import { useNotification } from '../../../providers/notification-provider';
+import { type UseProfileHighlights } from './profile-highlights.types';
 
-export const useProfileHighlights = () => {
+export const useProfileHighlights: UseProfileHighlights = () => {
     const ref = useRef<HTMLInputElement>(null);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     const [fileUploadModal, setFileUploadModal] = useState(false);
-    const [uploadConfirmationModal, setUploadConfirmationModal] = useState(false);
+    const [confirmationModal, setConfirmationModal] = useState(false);
+    const { showNotification } = useNotification();
 
     const openFileUploadModal = () => {
         setFileUploadModal(true);
@@ -20,33 +23,39 @@ export const useProfileHighlights = () => {
         if (!file) return;
 
         if (!file.type.startsWith('image/')) {
-            alert('Please select a valid image file.');
+            showNotification('Please select a valid image file.', 'error');
             return;
         }
 
         const imageUrl: string = URL.createObjectURL(file);
         setSelectedImage(imageUrl);
         setFileUploadModal(false);
-        setUploadConfirmationModal(true);
+        setConfirmationModal(true);
     };
 
     const handleSavePhoto = () => {
-        setUploadConfirmationModal(false);
+        setConfirmationModal(false);
     };
 
     const closeConfirmationModal = () => {
-        setUploadConfirmationModal(false);
+        setConfirmationModal(false);
+    };
+
+    const handleCancelUpload = () => {
+        closeConfirmationModal();
+        setSelectedImage(null);
     };
 
     return {
         ref,
         selectedImage,
         fileUploadModal,
-        uploadConfirmationModal,
+        confirmationModal,
         openFileUploadModal,
         closeFileUploadModal,
         handleFileChange,
         handleSavePhoto,
         closeConfirmationModal,
+        handleCancelUpload,
     };
 };
