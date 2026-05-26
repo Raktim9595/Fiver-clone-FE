@@ -13,17 +13,21 @@ export type ProfileHighligtsModalProps = {
     footer?: ReactNode;
 };
 
-export type UseProfileHighlights = () => {
+export type UseProfileHighlights = (userId: string) => {
     ref: RefObject<HTMLInputElement | null>;
-    selectedImage: string | null;
-    fileUploadModal: boolean;
-    confirmationModal: boolean;
-    openFileUploadModal: () => void;
-    closeFileUploadModal: () => void;
+    profileImageUploadState: ProfileImageUplaodState;
+    changeProfileImageUploadState: (newState: Partial<ProfileImageUplaodState>) => void;
     handleFileChange: ChangeEventHandler<HTMLInputElement, HTMLInputElement>;
     handleSavePhoto: () => void;
-    closeConfirmationModal: () => void;
     handleCancelUpload: () => void;
+    isUploading: boolean;
 };
 
 export type ProfileHighlightsViewProps = ReturnType<UseProfileHighlights> & ProfileHighlightsProps;
+
+export type ProfileImageUplaodState = {
+    selectedImage: string | null;
+    fileUploadModal: boolean;
+    confirmationModal: boolean;
+    file: File | null;
+};

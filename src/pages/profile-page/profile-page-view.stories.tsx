@@ -2,6 +2,7 @@ import type { StoryObj, Meta } from '@storybook/react';
 import { ProfilePageView } from './profile-page-view';
 import { NotificationProvider } from '../../providers/notification-provider';
 import { mockUserDataFromServer } from '../../__mocks__/user-mock-data';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const user = mockUserDataFromServer({
     createdAt: '2025-01-01T00:00:00.000Z',
@@ -16,11 +17,16 @@ const meta: Meta<typeof ProfilePageView> = {
         layout: 'fullscreen',
     },
     decorators: [
-        (Story) => (
-            <NotificationProvider>
-                <Story />
-            </NotificationProvider>
-        ),
+        (Story) => {
+            const client = new QueryClient();
+            return (
+                <NotificationProvider>
+                    <QueryClientProvider client={client}>
+                        <Story />
+                    </QueryClientProvider>
+                </NotificationProvider>
+            );
+        },
     ],
     args: {
         isLoading: false,

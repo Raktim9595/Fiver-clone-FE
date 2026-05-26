@@ -5,6 +5,7 @@ const END_POINTS = {
     SIGN_IN: `${BASE_URL}/auth/signin`,
     CURRENT_USER: `${BASE_URL}/user/me`,
     USERS: (id: string) => `${BASE_URL}/user/${id}`,
+    UPLOAD_URL: `${BASE_URL}/files/upload-url`,
 };
 
 export default END_POINTS;
