@@ -9,23 +9,21 @@ import { useMemo } from 'react';
 import { type CustomMenuAction } from '../../../components/custom-menu/custom-menu-view.types';
 
 export const ProfileHighlightsView = ({
-    closeFileUploadModal,
-    fileUploadModal,
     handleFileChange,
     handleSavePhoto,
-    openFileUploadModal,
-    selectedImage,
-    closeConfirmationModal,
-    confirmationModal,
+    changeProfileImageUploadState,
+    profileImageUploadState,
     ref,
     handleCancelUpload,
     user,
+    isUploading,
 }: ProfileHighlightsViewProps) => {
+    const { selectedImage, fileUploadModal, confirmationModal } = profileImageUploadState;
     const actions: CustomMenuAction[] = useMemo(
         () => [
             {
                 label: 'Upload New Photo',
-                onClick: openFileUploadModal,
+                onClick: () => changeProfileImageUploadState({ fileUploadModal: true }),
                 icon: <CloudUploadIcon fontSize="small" />,
             },
             {
@@ -34,7 +32,7 @@ export const ProfileHighlightsView = ({
                 icon: <DeleteOutlined fontSize="small" color="error" />,
             },
         ],
-        [openFileUploadModal],
+        [changeProfileImageUploadState],
     );
 
     return (
@@ -125,7 +123,7 @@ export const ProfileHighlightsView = ({
 
             <ProfileHighlightsModal
                 open={fileUploadModal}
-                onClose={closeFileUploadModal}
+                onClose={() => changeProfileImageUploadState({ fileUploadModal: false })}
                 headerText="Upload Profile Photo"
                 body={
                     <>
@@ -176,7 +174,7 @@ export const ProfileHighlightsView = ({
 
             <ProfileHighlightsModal
                 open={confirmationModal}
-                onClose={closeConfirmationModal}
+                onClose={() => changeProfileImageUploadState({ confirmationModal: false })}
                 headerText="Confirm Profile Photo"
                 body={
                     <Box sx={{ display: 'flex', justifyContent: 'center', my: 3 }}>
@@ -215,6 +213,7 @@ export const ProfileHighlightsView = ({
                             startIcon={<Check />}
                             onClick={handleSavePhoto}
                             sx={{ bgcolor: '#1dbf73', '&:hover': { bgcolor: '#16a462' } }}
+                            loading={isUploading}
                         >
                             Save Photo
                         </Button>
