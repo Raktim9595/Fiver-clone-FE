@@ -1,6 +1,10 @@
 import { beforeEach, describe, expect, test, vi } from 'vitest';
-import { FileType, FileUploadPostRequest } from '../../types/file-upload.types';
-import { getUploadUrl, getUploadUrlAndUploadFile } from './file-upload.service';
+import { FileStatus, FileType, type FileUploadPostRequest } from '../../types/file-upload.types';
+import {
+    getUploadUrl,
+    getUploadUrlAndUploadFile,
+    updateFileUploadStatus,
+} from './file-upload.service';
 import { mockGetUploadUrlResponse } from '../../__mocks__/file-upload-mock.data';
 import { mockedAxios } from '../../utils/test-setups';
 import axios from 'axios';
@@ -37,33 +41,163 @@ describe('Given getUploadUrl, When called', () => {
     });
 });
 
-describe('Given getUploadUrlAndUploadFile, When called', () => {
-    describe('And the getUploadUrl returns the upload URL successfully', () => {
-        test('Then it should upload the file to the returned URL', async () => {
-            mockedAxios.post.mockResolvedValue({
+describe('Given updateFileUploadStatus, When called', () => {
+    describe('And the status of UPLOADED is passed', () => {
+        test('Then it should hit the correct end-point', async () => {
+            const fileId = 'fileId';
+
+            mockedAxios.patch.mockResolvedValue({
                 data: {
-                    data: mockResponse,
+                    data: {
+                        id: 'fileId',
+                        status: FileStatus.UPLOADED,
+                    },
                 },
             });
 
-            const file = new File(['image-content'], 'profile.png', {
-                type: 'image/png',
-            });
-
-            await getUploadUrlAndUploadFile({
-                body,
-                file,
-            });
-
-            expect(axios.post).toHaveBeenCalledWith(
-                'http://raktim-backend:8080/api/files/upload-url',
-                body,
+            const res = await updateFileUploadStatus(fileId, FileStatus.UPLOADED);
+            expect(axios.patch).toHaveBeenCalledWith(
+                `http://raktim-backend:8080/api/files/${fileId}/complete`,
             );
 
-            expect(axios.put).toHaveBeenCalledWith(mockResponse.uploadUrl, file, {
-                headers: {
-                    'Content-Type': body.contentType,
+            expect(axios.patch).not.toHaveBeenCalledWith(
+                `http://raktim-backend:8080/api/files/${fileId}/failed`,
+            );
+
+            expect(res).toEqual({
+                data: {
+                    id: 'fileId',
+                    status: FileStatus.UPLOADED,
                 },
+            });
+        });
+    });
+
+    describe('And the status of FAILED is passed', () => {
+        test('Then it should hit the correct end-point', async () => {
+            const fileId = 'fileId';
+
+            mockedAxios.patch.mockResolvedValue({
+                data: {
+                    data: {
+                        id: 'fileId',
+                        status: FileStatus.FAILED,
+                    },
+                },
+            });
+
+            const res = await updateFileUploadStatus(fileId, FileStatus.FAILED);
+            expect(axios.patch).toHaveBeenCalledWith(
+                `http://raktim-backend:8080/api/files/${fileId}/failed`,
+            );
+
+            expect(axios.patch).not.toHaveBeenCalledWith(
+                `http://raktim-backend:8080/api/files/${fileId}/complete`,
+            );
+
+            expect(res).toEqual({
+                data: {
+                    id: 'fileId',
+                    status: FileStatus.FAILED,
+                },
+            });
+        });
+    });
+
+    describe('And the random status is passed', () => {
+        test('Then it should do nothing and should throw an error', async () => {
+            const fileId = 'fileId';
+
+            await expect(updateFileUploadStatus(fileId, 'random' as FileStatus)).rejects.toThrow(
+                'Invalid file status passed',
+            );
+
+            expect(axios.patch).not.toHaveBeenCalled();
+        });
+    });
+});
+
+describe('Given getUploadUrlAndUploadFile, When called', () => {
+    describe('And the getUploadUrl returns the upload URL successfully', () => {
+        describe('And the put request to upload URL is a success', () => {
+            test('Then it should upload the file to the returned URL', async () => {
+                mockedAxios.post.mockResolvedValue({
+                    data: {
+                        data: mockResponse,
+                    },
+                });
+
+                mockedAxios.put.mockResolvedValue({});
+
+                const file = new File(['image-content'], 'profile.png', {
+                    type: 'image/png',
+                });
+
+                await getUploadUrlAndUploadFile({
+                    body,
+                    file,
+                });
+
+                expect(axios.post).toHaveBeenCalledWith(
+                    'http://raktim-backend:8080/api/files/upload-url',
+                    body,
+                );
+
+                expect(axios.put).toHaveBeenCalledWith(mockResponse.uploadUrl, file, {
+                    headers: {
+                        'Content-Type': body.contentType,
+                    },
+                });
+
+                expect(axios.patch).toHaveBeenCalledWith(
+                    `http://raktim-backend:8080/api/files/${mockResponse.id}/complete`,
+                );
+
+                expect(axios.patch).not.toHaveBeenCalledWith(
+                    `http://raktim-backend:8080/api/files/${mockResponse.id}/failed`,
+                );
+            });
+        });
+
+        describe('And the put request to upload URL is a failure', () => {
+            test('Then it should throw an error and update the status to failed', async () => {
+                mockedAxios.post.mockResolvedValue({
+                    data: {
+                        data: mockResponse,
+                    },
+                });
+
+                mockedAxios.put.mockRejectedValue(new Error('Failed to upload file'));
+
+                const file = new File(['image-content'], 'profile.png', {
+                    type: 'image/png',
+                });
+
+                await expect(
+                    getUploadUrlAndUploadFile({
+                        body,
+                        file,
+                    }),
+                ).rejects.toThrow(new Error('Failed to upload file'));
+
+                expect(axios.post).toHaveBeenCalledWith(
+                    'http://raktim-backend:8080/api/files/upload-url',
+                    body,
+                );
+
+                expect(axios.put).toHaveBeenCalledWith(mockResponse.uploadUrl, file, {
+                    headers: {
+                        'Content-Type': body.contentType,
+                    },
+                });
+
+                expect(axios.patch).toHaveBeenCalledWith(
+                    `http://raktim-backend:8080/api/files/${mockResponse.id}/failed`,
+                );
+
+                expect(axios.patch).not.toHaveBeenCalledWith(
+                    `http://raktim-backend:8080/api/files/${mockResponse.id}/complete`,
+                );
             });
         });
     });

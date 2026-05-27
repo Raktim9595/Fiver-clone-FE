@@ -6,6 +6,8 @@ const END_POINTS = {
     CURRENT_USER: `${BASE_URL}/user/me`,
     USERS: (id: string) => `${BASE_URL}/user/${id}`,
     UPLOAD_URL: `${BASE_URL}/files/upload-url`,
+    FILE_UPLOAD_COMPLETE: (fileId: string) => `${BASE_URL}/files/${fileId}/complete`,
+    FILE_UPLOAD_FAILED: (fileId: string) => `${BASE_URL}/files/${fileId}/failed`,
 };
 
 export default END_POINTS;

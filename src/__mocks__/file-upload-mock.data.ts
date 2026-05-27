@@ -1,4 +1,4 @@
-import { FileStatus, UploadUrlResponse } from '../types/file-upload.types';
+import { FileStatus, type UploadUrlResponse } from '../types/file-upload.types';
 
 export const mockGetUploadUrlResponse = (
     options?: Partial<UploadUrlResponse>,

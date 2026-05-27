@@ -3,7 +3,7 @@ import { renderHookWithWrapper } from '../../../utils/test-wrapper';
 import { useProfileHighlights } from './use-profile-highlights';
 import { act, waitFor } from '@testing-library/react';
 import { mockedAxios, mockShowNotification } from '../../../utils/test-setups';
-import { FileType, FileUploadPostRequest } from '../../../types/file-upload.types';
+import { FileStatus, FileType, type FileUploadPostRequest } from '../../../types/file-upload.types';
 import axios from 'axios';
 import { mockGetUploadUrlResponse } from '../../../__mocks__/file-upload-mock.data';
 
@@ -141,6 +141,16 @@ describe('useProfileHighlights Hook, Unit Test', () => {
                     data: { data: mockUploadUrlResponse },
                 });
 
+                mockedAxios.put.mockResolvedValue({});
+                mockedAxios.patch.mockResolvedValue({
+                    data: {
+                        data: {
+                            id: 'mocked-id',
+                            status: FileStatus.UPLOADED,
+                        },
+                    },
+                });
+
                 const { result } = renderHookWithWrapper(() => useProfileHighlights(userId));
 
                 act(() => {
@@ -169,6 +179,14 @@ describe('useProfileHighlights Hook, Unit Test', () => {
                     },
                 });
 
+                expect(axios.patch).toHaveBeenCalledWith(
+                    `http://raktim-backend:8080/api/files/${mockUploadUrlResponse.id}/complete`,
+                );
+
+                expect(axios.patch).not.toHaveBeenCalledWith(
+                    `http://raktim-backend:8080/api/files/${mockUploadUrlResponse.id}/failed`,
+                );
+
                 expect(mockShowNotification).toHaveBeenCalledWith(
                     'Profile picture updated successfully',
                     'success',
@@ -178,6 +196,72 @@ describe('useProfileHighlights Hook, Unit Test', () => {
                     selectedImage: 'mocked-image-url',
                     fileUploadModal: false,
                     confirmationModal: false,
+                    file,
+                });
+            });
+        });
+
+        describe('And there is an error uploading file to the provided upload-url', () => {
+            test('Then it should show error notification', async () => {
+                mockedAxios.post.mockResolvedValue({
+                    data: { data: mockUploadUrlResponse },
+                });
+
+                mockedAxios.put.mockRejectedValue(new Error('Upload error'));
+                mockedAxios.patch.mockResolvedValue({
+                    data: {
+                        data: {
+                            id: 'mocked-id',
+                            status: FileStatus.FAILED,
+                        },
+                    },
+                });
+
+                const { result } = renderHookWithWrapper(() => useProfileHighlights(userId));
+
+                act(() => {
+                    result.current.changeProfileImageUploadState({ confirmationModal: true });
+                    result.current.handleFileChange({
+                        target: {
+                            files: [file],
+                        },
+                    } as any);
+                });
+
+                act(() => {
+                    result.current.handleSavePhoto();
+                });
+
+                await waitFor(() => {
+                    expect(axios.post).toHaveBeenCalledWith(
+                        'http://raktim-backend:8080/api/files/upload-url',
+                        getUploadUrlRequestBody,
+                    );
+                });
+
+                expect(axios.put).toHaveBeenCalledWith(mockUploadUrlResponse.uploadUrl, file, {
+                    headers: {
+                        'Content-Type': file.type,
+                    },
+                });
+
+                expect(axios.patch).not.toHaveBeenCalledWith(
+                    `http://raktim-backend:8080/api/files/${mockUploadUrlResponse.id}/complete`,
+                );
+
+                expect(axios.patch).toHaveBeenCalledWith(
+                    `http://raktim-backend:8080/api/files/${mockUploadUrlResponse.id}/failed`,
+                );
+
+                expect(mockShowNotification).toHaveBeenCalledWith(
+                    'Failed to upload profile picture. Please try again.',
+                    'error',
+                );
+
+                expect(result.current.profileImageUploadState).toEqual({
+                    selectedImage: 'mocked-image-url',
+                    fileUploadModal: false,
+                    confirmationModal: true,
                     file,
                 });
             });

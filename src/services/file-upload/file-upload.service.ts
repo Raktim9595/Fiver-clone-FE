@@ -1,7 +1,9 @@
 import {
-    FileUploadPostRequest,
-    GetUploadUrlAndUploadFileArgs,
-    GetUploadUrlApiResponse,
+    type CompleteFileUploadApiResponse,
+    FileStatus,
+    type FileUploadPostRequest,
+    type GetUploadUrlAndUploadFileArgs,
+    type GetUploadUrlApiResponse,
 } from '../../types/file-upload.types';
 import { END_POINTS } from '../../api';
 import { privateRequest } from '../../api/axios';
@@ -12,12 +14,35 @@ export const getUploadUrl = async (body: FileUploadPostRequest) => {
     return res.data;
 };
 
+export const updateFileUploadStatus = async (fileId: string, status: FileStatus) => {
+    if (FileStatus.UPLOADED === status) {
+        const res = await privateRequest.patch<CompleteFileUploadApiResponse>(
+            END_POINTS.FILE_UPLOAD_COMPLETE(fileId),
+        );
+        return res.data;
+    } else if (FileStatus.FAILED === status) {
+        const res = await privateRequest.patch<CompleteFileUploadApiResponse>(
+            END_POINTS.FILE_UPLOAD_FAILED(fileId),
+        );
+        return res.data;
+    } else {
+        throw new Error('Invalid file status passed');
+    }
+};
+
 export const getUploadUrlAndUploadFile = async ({ body, file }: GetUploadUrlAndUploadFileArgs) => {
     const { data } = await getUploadUrl(body);
 
-    await axios.put(data.uploadUrl, file, {
-        headers: {
-            'Content-Type': body.contentType,
-        },
-    });
+    try {
+        await axios.put(data.uploadUrl, file, {
+            headers: {
+                'Content-Type': body.contentType,
+            },
+        });
+
+        await updateFileUploadStatus(data.id, FileStatus.UPLOADED);
+    } catch (error) {
+        await updateFileUploadStatus(data.id, FileStatus.FAILED);
+        throw error;
+    }
 };
