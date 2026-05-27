@@ -1,14 +1,17 @@
 import { type ChangeEventHandler, useRef, useState } from 'react';
 import { useNotification } from '../../../providers/notification-provider';
-import { ProfileImageUplaodState, type UseProfileHighlights } from './profile-highlights.types';
+import {
+    type ProfileImageUplaodState,
+    type UseProfileHighlights,
+} from './profile-highlights.types';
 import {
     FileType,
-    FileUploadPostRequest,
+    type FileUploadPostRequest,
     fileUploadPostRequestInitialValue,
-    GetUploadUrlAndUploadFileArgs,
+    type GetUploadUrlAndUploadFileArgs,
 } from '../../../types/file-upload.types';
 import { useMutation } from '@tanstack/react-query';
-import { ApiErrorResponse } from '../../../types/response.types';
+import { type ApiErrorResponse } from '../../../types/response.types';
 import { getUploadUrlAndUploadFile } from '../../../services/file-upload';
 import { QUERY_CONSTANT } from '../../../utils/query-constants';
 

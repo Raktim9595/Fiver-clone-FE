@@ -1,4 +1,4 @@
-import { BaseApiResponse } from './response.types';
+import { type BaseApiResponse } from './response.types';
 
 export const FileType = {
     PROFILE_PICTURE: 'PROFILE_PICTURE',
@@ -45,3 +45,10 @@ export type GetUploadUrlAndUploadFileArgs = {
     body: FileUploadPostRequest;
     file: File;
 };
+
+export type CompleteFileUploadResponseData = {
+    id: string;
+    status: FileStatus;
+};
+
+export type CompleteFileUploadApiResponse = BaseApiResponse<CompleteFileUploadResponseData>;
