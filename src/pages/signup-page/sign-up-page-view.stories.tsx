@@ -5,6 +5,9 @@ import { NotificationProvider } from '../../providers/notification-provider';
 import { MemoryRouter } from 'react-router';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+
 const meta = {
     title: 'Pages/SignupPage',
     component: SignupPageView,
@@ -17,13 +20,15 @@ const meta = {
             const client = new QueryClient();
 
             return (
-                <MemoryRouter>
-                    <NotificationProvider>
-                        <QueryClientProvider client={client}>
-                            <Story />
-                        </QueryClientProvider>
-                    </NotificationProvider>
-                </MemoryRouter>
+                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                    <MemoryRouter>
+                        <NotificationProvider>
+                            <QueryClientProvider client={client}>
+                                <Story />
+                            </QueryClientProvider>
+                        </NotificationProvider>
+                    </MemoryRouter>
+                </LocalizationProvider>
             );
         },
     ],

@@ -2,8 +2,12 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from 'storybook/test';
 import { useForm, type FieldErrors } from 'react-hook-form';
 import SignUpFormView from './sign-up-form-view';
-import { type SignUpFormType, UserRole } from './sign-up-form.types';
+import { signUpFormInitialValues, type SignUpFormType } from './sign-up-form.types';
 import { MemoryRouter } from 'react-router';
+
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { mockUserFormData } from '../../../__mocks__/user-mock-data';
 
 const meta: Meta<typeof SignUpFormView> = {
     title: 'Forms/SignUpForm',
@@ -20,29 +24,9 @@ type StoryWrapperProps = {
     errors?: FieldErrors<SignUpFormType>;
 };
 
-const baseValues: SignUpFormType = {
-    firstName: '',
-    lastName: '',
-    username: '',
-    email: '',
-    password: '',
-    age: 0,
-    phoneNumber: '',
-    address: '',
-    role: UserRole.BUYER,
-};
+const baseValues: SignUpFormType = signUpFormInitialValues;
 
-const defaultValues: SignUpFormType = {
-    firstName: 'Raktim',
-    lastName: 'Thapa',
-    username: 'raktimthapa',
-    email: 'raktim@example.com',
-    password: 'random',
-    age: 22,
-    phoneNumber: '0412345678',
-    address: 'Melbourne, Australia',
-    role: UserRole.BUYER,
-};
+const defaultValues: SignUpFormType = mockUserFormData();
 
 const StoryWrapper = ({
     defaultValues,
@@ -61,15 +45,17 @@ const StoryWrapper = ({
     });
 
     return (
-        <MemoryRouter>
-            <SignUpFormView
-                control={control}
-                errors={errorsOverride ?? errors}
-                handleSubmit={handleSubmit}
-                isSubmitting={isSubmitting ?? formIsSubmitting}
-                onSubmit={fn()}
-            />
-        </MemoryRouter>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <MemoryRouter>
+                <SignUpFormView
+                    control={control}
+                    errors={errorsOverride ?? errors}
+                    handleSubmit={handleSubmit}
+                    isSubmitting={isSubmitting ?? formIsSubmitting}
+                    onSubmit={fn()}
+                />
+            </MemoryRouter>
+        </LocalizationProvider>
     );
 };
 
@@ -105,10 +91,6 @@ export const SignupFormWithErrors: Story = {
                     type: 'pattern',
                     message: 'Invalid email',
                 },
-                age: {
-                    type: 'min',
-                    message: 'Age must be greater than 0',
-                },
                 phoneNumber: {
                     type: 'required',
                     message: 'Phone number is required',
@@ -120,6 +102,22 @@ export const SignupFormWithErrors: Story = {
                 password: {
                     type: 'required',
                     message: 'Password is required',
+                },
+                dateOfBirth: {
+                    type: 'required',
+                    message: 'Date of birth is required',
+                },
+                timeZone: {
+                    type: 'required',
+                    message: 'Time zone is required',
+                },
+                language: {
+                    type: 'required',
+                    message: 'Language is required',
+                },
+                country: {
+                    type: 'required',
+                    message: 'Country is required',
                 },
             }}
         />

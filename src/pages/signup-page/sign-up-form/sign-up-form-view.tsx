@@ -6,15 +6,17 @@ import {
     PersonAddAltOutlined,
     Email,
     LockOutlined,
-    CalendarMonth,
     LocalPhone,
     LocationOn,
+    Person2,
 } from '@mui/icons-material';
 import { CustomSelect } from '../../../components/select';
 import { Controller } from 'react-hook-form';
 import { FormInput } from '../../../components/form-input';
 import { Link } from 'react-router';
 import { PATH } from '../../../utils/routing/paths';
+import { ClockIcon, DatePicker } from '@mui/x-date-pickers';
+import dayjs from 'dayjs';
 
 const SignUpFormView = ({
     control,
@@ -84,14 +86,26 @@ const SignUpFormView = ({
                 error={errors.password}
             />
             <Stack direction="row" spacing={2}>
-                <FormInput
-                    name="age"
+                <Controller
                     control={control}
-                    label="Age"
-                    placeholder="Enter Age"
-                    icon={<CalendarMonth />}
-                    error={errors.age}
-                    type="number"
+                    name="dateOfBirth"
+                    render={({ field }) => (
+                        <DatePicker
+                            {...field}
+                            value={dayjs(field.value)}
+                            label="Date of Birth"
+                            onChange={(date) => {
+                                field.onChange(date ? date.format('YYYY-MM-DD') : '');
+                            }}
+                            slotProps={{
+                                textField: {
+                                    size: 'small',
+                                    error: !!errors.dateOfBirth,
+                                    helperText: errors.dateOfBirth?.message,
+                                },
+                            }}
+                        />
+                    )}
                 />
                 <FormInput
                     name="phoneNumber"
@@ -102,15 +116,42 @@ const SignUpFormView = ({
                     error={errors.phoneNumber}
                 />
             </Stack>
-            <FormInput
-                name="address"
-                control={control}
-                label="Address"
-                placeholder="Enter Address"
-                icon={<LocationOn />}
-                error={errors.address}
-            />
-
+            <Stack direction="row" spacing={2}>
+                <FormInput
+                    control={control}
+                    name="timeZone"
+                    label="Time Zone"
+                    placeholder="Enter TimeZone"
+                    icon={<ClockIcon />}
+                    error={errors.timeZone}
+                />
+                <FormInput
+                    control={control}
+                    name="country"
+                    label="Country"
+                    placeholder="Enter Country"
+                    icon={<LocationOn />}
+                    error={errors.country}
+                />
+            </Stack>
+            <Stack direction="row" spacing={2}>
+                <FormInput
+                    control={control}
+                    name="language"
+                    label="Language"
+                    placeholder="Enter Language"
+                    icon={<Person2 />}
+                    error={errors.language}
+                />
+                <FormInput
+                    name="address"
+                    control={control}
+                    label="Address"
+                    placeholder="Enter Address"
+                    icon={<LocationOn />}
+                    error={errors.address}
+                />
+            </Stack>
             <Controller
                 control={control}
                 name="role"
