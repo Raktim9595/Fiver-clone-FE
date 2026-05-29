@@ -10,8 +10,21 @@ export type User = {
     phoneNumber: string;
     firstName: string;
     lastName: string;
-    age: number;
     role: string;
+    status: UserStatus;
+    language: string;
+    timeZone: string;
+    country: string;
+    bio?: string;
+    dateOfBirth: string;
 };
 
 export type GetCurrentUserApiResponse = BaseApiResponse<User>;
+
+export const UserStatus = {
+    ACTIVE: 'ACTIVE',
+    DISABLED: 'DISABLED',
+    DELETED: 'DELETED',
+} as const;
+
+export type UserStatus = (typeof UserStatus)[keyof typeof UserStatus];

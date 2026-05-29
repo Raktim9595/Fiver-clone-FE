@@ -1,4 +1,5 @@
-import { type Control, type FieldErrors, type UseFormHandleSubmit } from 'react-hook-form';
+import type { Control, FieldErrors, UseFormHandleSubmit } from 'react-hook-form';
+import { UserStatus } from '../../../types/user.types';
 
 export const UserRole = {
     ADMIN: 'ADMIN',
@@ -14,15 +15,19 @@ export type SignUpFormType = {
     username: string;
     email: string;
     password: string;
-    age: number;
+    dateOfBirth: string;
     address: string;
     phoneNumber: string;
     role: UserRole;
+    status: UserStatus;
+    timeZone: string;
+    language: string;
+    country: string;
 };
 
 export const signUpFormInitialValues: SignUpFormType = {
     address: '',
-    age: 0,
+    dateOfBirth: '',
     email: '',
     firstName: '',
     lastName: '',
@@ -30,6 +35,10 @@ export const signUpFormInitialValues: SignUpFormType = {
     phoneNumber: '',
     username: '',
     role: UserRole.BUYER,
+    status: UserStatus.ACTIVE,
+    country: '',
+    language: '',
+    timeZone: '',
 };
 
 export type UseSignupForm = () => {
