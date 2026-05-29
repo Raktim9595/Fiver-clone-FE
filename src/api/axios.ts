@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { getAuthToken } from '../utils/auth-storage';
+import { getAuthToken, removeAuthToken } from '../utils/auth-storage';
 
 export const BASE_URL = import.meta.env.VITE_BACKEND_URI + '/api';
 
@@ -17,3 +17,14 @@ export const privateRequest = axios.create({
         Authorization: `Bearer ${getAuthToken()}`,
     },
 });
+
+privateRequest.interceptors.response.use(
+    (response) => response,
+    (error) => {
+        if (401 === error.response?.status) {
+            removeAuthToken();
+            location.reload();
+        }
+        return Promise.reject(error);
+    },
+);
