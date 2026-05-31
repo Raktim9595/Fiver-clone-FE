@@ -50,6 +50,16 @@ vi.mock('axios', () => {
         delete: vi.fn(),
         request: vi.fn(),
         create: vi.fn(),
+        interceptors: {
+            request: {
+                use: vi.fn((onFulfilled) => onFulfilled),
+                eject: vi.fn(),
+            },
+            response: {
+                use: vi.fn((onFulfilled) => onFulfilled),
+                eject: vi.fn(),
+            },
+        },
     };
 
     mockAxios.create.mockReturnValue(mockAxios);
