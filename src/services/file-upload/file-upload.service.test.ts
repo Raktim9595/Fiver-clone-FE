@@ -1,13 +1,23 @@
 import { beforeEach, describe, expect, test, vi } from 'vitest';
-import { FileStatus, FileType, type FileUploadPostRequest } from '../../types/file-upload.types';
+import {
+    type FilesSearchRequestBody,
+    FileStatus,
+    FileType,
+    type FileUploadPostRequest,
+} from '../../types/file-upload.types';
 import {
     getUploadUrl,
     getUploadUrlAndUploadFile,
+    searchFile,
     updateFileUploadStatus,
 } from './file-upload.service';
-import { mockGetUploadUrlResponse } from '../../__mocks__/file-upload-mock.data';
+import {
+    mockGetUploadUrlResponse,
+    mockSearchFileResponse,
+} from '../../__mocks__/file-upload-mock.data';
 import { mockedAxios } from '../../utils/test-setups';
 import axios from 'axios';
+import { v4 as uuid } from 'uuid';
 
 beforeEach(() => {
     vi.clearAllMocks();
@@ -38,6 +48,40 @@ describe('Given getUploadUrl, When called', () => {
             'http://raktim-backend:8080/api/files/upload-url',
             body,
         );
+    });
+});
+
+describe('Given searchFile', () => {
+    describe("When called with query key ['searchFile', { name: 'test' }]", () => {
+        test('Then it should hit the correct end-point and return the expected data', async () => {
+            const requestBody: FilesSearchRequestBody = {
+                userId: uuid(),
+                status: FileStatus.UPLOADED,
+                type: FileType.PROFILE_PICTURE,
+            };
+
+            const mockSearchResponseFile = mockSearchFileResponse();
+
+            mockedAxios.post.mockResolvedValue({
+                data: {
+                    data: [mockSearchResponseFile],
+                },
+            });
+
+            const queryKey: [string, FilesSearchRequestBody] = ['searchFile', requestBody];
+
+            const result = await searchFile({
+                queryKey,
+            } as any);
+
+            expect(axios.post).toHaveBeenCalledWith(
+                'http://raktim-backend:8080/api/files/search',
+                requestBody,
+            );
+
+            expect(result.data).toEqual([mockSearchResponseFile]);
+            expect(result.data).toHaveLength(1);
+        });
     });
 });
 

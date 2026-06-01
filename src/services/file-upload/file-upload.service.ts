@@ -1,5 +1,7 @@
 import {
     type CompleteFileUploadApiResponse,
+    type FileSearchApiResponse,
+    type FilesSearchRequestBody,
     FileStatus,
     type FileUploadPostRequest,
     type GetUploadUrlAndUploadFileArgs,
@@ -8,6 +10,7 @@ import {
 import { END_POINTS } from '../../api';
 import { privateRequest } from '../../api/axios';
 import axios from 'axios';
+import { type QueryFunctionContext } from '@tanstack/react-query';
 
 export const getUploadUrl = async (body: FileUploadPostRequest) => {
     const res = await privateRequest.post<GetUploadUrlApiResponse>(END_POINTS.UPLOAD_URL, body);
@@ -45,4 +48,14 @@ export const getUploadUrlAndUploadFile = async ({ body, file }: GetUploadUrlAndU
         await updateFileUploadStatus(data.id, FileStatus.FAILED);
         throw error;
     }
+};
+
+export const searchFile = async ({
+    queryKey,
+}: QueryFunctionContext<[string, FilesSearchRequestBody]>) => {
+    const res = await privateRequest.post<FileSearchApiResponse>(
+        END_POINTS.FILE_SEARCH,
+        queryKey[1],
+    );
+    return res.data;
 };

@@ -5,14 +5,18 @@ import {
     type UseProfileHighlights,
 } from './profile-highlights.types';
 import {
+    type FileSearchApiResponse,
+    FileSearchResponseData,
+    type FilesSearchRequestBody,
+    FileStatus,
     FileType,
     type FileUploadPostRequest,
     fileUploadPostRequestInitialValue,
     type GetUploadUrlAndUploadFileArgs,
 } from '../../../types/file-upload.types';
-import { useMutation } from '@tanstack/react-query';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import { type ApiErrorResponse } from '../../../types/response.types';
-import { getUploadUrlAndUploadFile } from '../../../services/file-upload';
+import { getUploadUrlAndUploadFile, searchFile } from '../../../services/file-upload';
 import { QUERY_CONSTANT } from '../../../utils/query-constants';
 
 export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
@@ -23,8 +27,8 @@ export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
         ApiErrorResponse,
         GetUploadUrlAndUploadFileArgs
     >({
-        mutationFn: getUploadUrlAndUploadFile,
         mutationKey: [QUERY_CONSTANT.GET_UPLOAD_URL, userId],
+        mutationFn: getUploadUrlAndUploadFile,
         onSuccess: () => {
             showNotification('Profile picture updated successfully', 'success');
             changeProfileImageUploadState({
@@ -35,6 +39,25 @@ export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
         onError: () => {
             showNotification('Failed to upload profile picture. Please try again.', 'error');
         },
+    });
+
+    const fileSearchRequestBody: FilesSearchRequestBody = {
+        userId,
+        type: FileType.PROFILE_PICTURE,
+        status: FileStatus.UPLOADED,
+    };
+
+    // Get the profile image of the user
+    const { data: files } = useQuery<
+        FileSearchApiResponse,
+        ApiErrorResponse,
+        // FileSearchResponseData[],
+        FileSearchApiResponse,
+        [string, FilesSearchRequestBody]
+    >({
+        queryKey: [QUERY_CONSTANT.USER_PROFILE_IMAGE, fileSearchRequestBody],
+        queryFn: searchFile,
+        enabled: !!userId,
     });
 
     // Hooks initialization
@@ -110,5 +133,6 @@ export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
         handleSavePhoto,
         handleCancelUpload,
         isUploading,
+        imageUrl: files?.data?.[0].imageUrl,
     };
 };

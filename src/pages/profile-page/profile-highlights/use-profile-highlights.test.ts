@@ -5,7 +5,10 @@ import { act, waitFor } from '@testing-library/react';
 import { mockedAxios, mockShowNotification } from '../../../utils/test-setups';
 import { FileStatus, FileType, type FileUploadPostRequest } from '../../../types/file-upload.types';
 import axios from 'axios';
-import { mockGetUploadUrlResponse } from '../../../__mocks__/file-upload-mock.data';
+import {
+    mockGetUploadUrlResponse,
+    mockSearchFileResponse,
+} from '../../../__mocks__/file-upload-mock.data';
 
 beforeEach(() => {
     vi.clearAllMocks();
@@ -16,8 +19,26 @@ const userId = 'test-user-id';
 
 describe('useProfileHighlights Hook, Unit Test', () => {
     describe('When initialized', () => {
-        test('Then it should return proper values', () => {
+        test('Then it should return proper values', async () => {
+            mockedAxios.post.mockResolvedValue({
+                data: {
+                    data: [mockSearchFileResponse()],
+                },
+            });
             const { result } = renderHookWithWrapper(() => useProfileHighlights(userId));
+
+            await waitFor(() => {
+                expect(mockedAxios.post).toHaveBeenCalledWith(
+                    'http://raktim-backend:8080/api/files/search',
+                    {
+                        userId,
+                        type: FileType.PROFILE_PICTURE,
+                        status: FileStatus.UPLOADED,
+                    },
+                );
+
+                expect(result.current.imageUrl).toBe(mockSearchFileResponse().imageUrl);
+            });
 
             expect(result.current).toEqual({
                 ref: expect.any(Object),
@@ -32,6 +53,7 @@ describe('useProfileHighlights Hook, Unit Test', () => {
                 handleSavePhoto: expect.any(Function),
                 handleCancelUpload: expect.any(Function),
                 isUploading: false,
+                imageUrl: expect.any(String),
             });
         });
     });
@@ -134,12 +156,19 @@ describe('useProfileHighlights Hook, Unit Test', () => {
         };
 
         const mockUploadUrlResponse = mockGetUploadUrlResponse();
+        const mockedFileResponse = mockSearchFileResponse();
 
         describe('And there is no error', () => {
             test('Then it should hit proper end-points and upload image, and close the modal', async () => {
-                mockedAxios.post.mockResolvedValue({
-                    data: { data: mockUploadUrlResponse },
-                });
+                mockedAxios.post
+                    .mockResolvedValueOnce({
+                        data: {
+                            data: [mockedFileResponse],
+                        },
+                    })
+                    .mockResolvedValueOnce({
+                        data: { data: mockUploadUrlResponse },
+                    });
 
                 mockedAxios.put.mockResolvedValue({});
                 mockedAxios.patch.mockResolvedValue({
@@ -167,7 +196,18 @@ describe('useProfileHighlights Hook, Unit Test', () => {
                 });
 
                 await waitFor(() => {
-                    expect(axios.post).toHaveBeenCalledWith(
+                    expect(axios.post).toHaveBeenNthCalledWith(
+                        1,
+                        'http://raktim-backend:8080/api/files/search',
+                        {
+                            userId,
+                            type: FileType.PROFILE_PICTURE,
+                            status: FileStatus.UPLOADED,
+                        },
+                    );
+
+                    expect(axios.post).toHaveBeenNthCalledWith(
+                        2,
                         'http://raktim-backend:8080/api/files/upload-url',
                         getUploadUrlRequestBody,
                     );
@@ -203,9 +243,15 @@ describe('useProfileHighlights Hook, Unit Test', () => {
 
         describe('And there is an error uploading file to the provided upload-url', () => {
             test('Then it should show error notification', async () => {
-                mockedAxios.post.mockResolvedValue({
-                    data: { data: mockUploadUrlResponse },
-                });
+                mockedAxios.post
+                    .mockResolvedValueOnce({
+                        data: {
+                            data: [mockedFileResponse],
+                        },
+                    })
+                    .mockResolvedValueOnce({
+                        data: { data: mockUploadUrlResponse },
+                    });
 
                 mockedAxios.put.mockRejectedValue(new Error('Upload error'));
                 mockedAxios.patch.mockResolvedValue({
@@ -310,9 +356,15 @@ describe('useProfileHighlights Hook, Unit Test', () => {
 
         describe('And there is an error in uploading file to the uploadUrl', () => {
             test('Then it should show error notification', async () => {
-                mockedAxios.post.mockResolvedValue({
-                    data: { data: mockUploadUrlResponse },
-                });
+                mockedAxios.post
+                    .mockResolvedValueOnce({
+                        data: {
+                            data: [mockedFileResponse],
+                        },
+                    })
+                    .mockResolvedValueOnce({
+                        data: { data: mockUploadUrlResponse },
+                    });
 
                 mockedAxios.put.mockRejectedValue(new Error('Upload error'));
 
@@ -376,6 +428,19 @@ describe('useProfileHighlights Hook, Unit Test', () => {
                 selectedImage: 'new-image-url',
                 confirmationModal: true,
                 file: null,
+            });
+        });
+    });
+
+    describe('When renderred, And userId is not passed', () => {
+        test('Then it should not call searchFile API', async () => {
+            const { result } = renderHookWithWrapper(() => useProfileHighlights(''));
+
+            await waitFor(() => {
+                expect(mockedAxios.post).not.toHaveBeenCalledWith(
+                    'http://raktim-backend:8080/api/files/search',
+                    expect.anything(),
+                );
             });
         });
     });

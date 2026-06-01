@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Card, CardContent, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Button, Card, CardContent, Skeleton, Stack, Typography } from '@mui/material';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import { Check, CloudUpload, DeleteOutlined, Person } from '@mui/icons-material';
@@ -17,6 +17,7 @@ export const ProfileHighlightsView = ({
     handleCancelUpload,
     user,
     isUploading,
+    imageUrl,
 }: ProfileHighlightsViewProps) => {
     const { selectedImage, fileUploadModal, confirmationModal } = profileImageUploadState;
     const actions: CustomMenuAction[] = useMemo(
@@ -43,7 +44,7 @@ export const ProfileHighlightsView = ({
                         <Stack direction="row" spacing={3} sx={{ alignItems: 'flex-start' }}>
                             <Box sx={{ position: 'relative' }}>
                                 <Avatar
-                                    src={selectedImage || undefined}
+                                    src={selectedImage ?? imageUrl ?? undefined}
                                     alt="John Smith"
                                     sx={{
                                         width: 120,
