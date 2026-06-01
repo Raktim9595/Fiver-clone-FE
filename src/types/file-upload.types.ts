@@ -52,3 +52,17 @@ export type CompleteFileUploadResponseData = {
 };
 
 export type CompleteFileUploadApiResponse = BaseApiResponse<CompleteFileUploadResponseData>;
+
+export type FilesSearchRequestBody = {
+    userId: string;
+    status: FileStatus;
+    type: FileType;
+};
+
+export type FileSearchResponseData = {
+    id: string;
+    imageUrl: string;
+    type: FileType;
+};
+
+export type FileSearchApiResponse = BaseApiResponse<FileSearchResponseData[]>;

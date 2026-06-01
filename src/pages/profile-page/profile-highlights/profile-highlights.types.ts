@@ -21,6 +21,7 @@ export type UseProfileHighlights = (userId: string) => {
     handleSavePhoto: () => void;
     handleCancelUpload: () => void;
     isUploading: boolean;
+    imageUrl?: string;
 };
 
 export type ProfileHighlightsViewProps = ReturnType<UseProfileHighlights> & ProfileHighlightsProps;

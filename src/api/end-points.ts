@@ -8,6 +8,7 @@ const END_POINTS = {
     UPLOAD_URL: `${BASE_URL}/files/upload-url`,
     FILE_UPLOAD_COMPLETE: (fileId: string) => `${BASE_URL}/files/${fileId}/complete`,
     FILE_UPLOAD_FAILED: (fileId: string) => `${BASE_URL}/files/${fileId}/failed`,
+    FILE_SEARCH: `${BASE_URL}/files/search`,
 };
 
 export default END_POINTS;
