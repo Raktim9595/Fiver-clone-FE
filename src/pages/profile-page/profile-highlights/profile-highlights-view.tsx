@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Card, CardContent, Skeleton, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Button, Card, CardContent, Stack, Typography } from '@mui/material';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import { Check, CloudUpload, DeleteOutlined, Person } from '@mui/icons-material';
@@ -18,6 +18,7 @@ export const ProfileHighlightsView = ({
     user,
     isUploading,
     imageUrl,
+    handleDeleteClick,
 }: ProfileHighlightsViewProps) => {
     const { selectedImage, fileUploadModal, confirmationModal } = profileImageUploadState;
     const actions: CustomMenuAction[] = useMemo(
@@ -29,11 +30,11 @@ export const ProfileHighlightsView = ({
             },
             {
                 label: 'Remove Photo',
-                onClick: () => {}, // TODO: Implement remove photo functionality from BE and then on s3
+                onClick: handleDeleteClick,
                 icon: <DeleteOutlined fontSize="small" color="error" />,
             },
         ],
-        [changeProfileImageUploadState],
+        [changeProfileImageUploadState, handleDeleteClick],
     );
 
     return (

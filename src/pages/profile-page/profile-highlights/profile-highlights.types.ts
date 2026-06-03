@@ -22,6 +22,7 @@ export type UseProfileHighlights = (userId: string) => {
     handleCancelUpload: () => void;
     isUploading: boolean;
     imageUrl?: string;
+    handleDeleteClick: () => void;
 };
 
 export type ProfileHighlightsViewProps = ReturnType<UseProfileHighlights> & ProfileHighlightsProps;

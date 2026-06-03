@@ -500,9 +500,9 @@ exports[`Storybook snapshots > /src/components/navbar/navbar-view.stories.tsx - 
         type="button"
       >
         <div
-          class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-lq7vx7-MuiAvatar-root"
+          class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-566141-MuiAvatar-root"
         >
-          JD
+          ru
         </div>
       </button>
     </div>

@@ -59,3 +59,8 @@ export const searchFile = async ({
     );
     return res.data;
 };
+
+export const deleteFile = async (id: string) => {
+    const res = await privateRequest.delete<string>(END_POINTS.DELETE_FILE(id));
+    return res.data;
+};
