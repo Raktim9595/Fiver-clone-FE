@@ -6,6 +6,7 @@ import {
     type FileUploadPostRequest,
 } from '../../types/file-upload.types';
 import {
+    deleteFile,
     getUploadUrl,
     getUploadUrlAndUploadFile,
     searchFile,
@@ -268,5 +269,20 @@ describe('Given getUploadUrlAndUploadFile, When called', () => {
 
             expect(axios.put).not.toHaveBeenCalled();
         });
+    });
+});
+
+describe('Given deleteFile, When called with a fileId', () => {
+    test('Then it should hit the correct end-point and delete the file', async () => {
+        const fileId = uuid();
+
+        mockedAxios.delete.mockResolvedValue({
+            data: 'done',
+        });
+
+        const res = await deleteFile(fileId);
+
+        expect(axios.delete).toHaveBeenCalledWith(`http://raktim-backend:8080/api/files/${fileId}`);
+        expect(res).toBe('done');
     });
 });

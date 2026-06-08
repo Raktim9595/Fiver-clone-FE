@@ -54,6 +54,7 @@ describe('useProfileHighlights Hook, Unit Test', () => {
                 handleCancelUpload: expect.any(Function),
                 isUploading: false,
                 imageUrl: expect.any(String),
+                handleDeleteClick: expect.any(Function),
             });
         });
     });
@@ -432,9 +433,151 @@ describe('useProfileHighlights Hook, Unit Test', () => {
         });
     });
 
+    describe('When called handleDeleteClick', () => {
+        describe('And there is a profile picture to delete', () => {
+            describe("And deleteFileMutation doesn't return error", () => {
+                test('Then it should call deleteFile API', async () => {
+                    const file = mockSearchFileResponse();
+                    mockedAxios.post.mockResolvedValue({
+                        data: {
+                            data: [file],
+                        },
+                    });
+
+                    mockedAxios.delete.mockResolvedValue({
+                        data: 'done',
+                    });
+                    const { result } = renderHookWithWrapper(() => useProfileHighlights(userId));
+
+                    await waitFor(() => {
+                        expect(axios.post).toHaveBeenCalledWith(
+                            'http://raktim-backend:8080/api/files/search',
+                            {
+                                userId,
+                                type: FileType.PROFILE_PICTURE,
+                                status: FileStatus.UPLOADED,
+                            },
+                        );
+                        expect(result.current.imageUrl).toBe('https://example.com/image.png');
+                    });
+
+                    act(() => {
+                        result.current.handleDeleteClick();
+                    });
+
+                    await waitFor(() => {
+                        expect(mockedAxios.delete).toHaveBeenCalledWith(
+                            `http://raktim-backend:8080/api/files/${file.id}`,
+                        );
+                    });
+
+                    expect(mockShowNotification).toHaveBeenCalledWith(
+                        'Profile picture deleted successfully',
+                        'success',
+                    );
+
+                    expect(result.current.profileImageUploadState).toEqual({
+                        selectedImage: '',
+                        fileUploadModal: false,
+                        confirmationModal: false,
+                        file: null,
+                    });
+
+                    expect(mockedAxios.post).toHaveBeenCalledTimes(2);
+                });
+            });
+
+            describe('And deleteFileMutation returns error', () => {
+                test('Then it should show error notification', async () => {
+                    const file = mockSearchFileResponse();
+                    mockedAxios.post.mockResolvedValue({
+                        data: {
+                            data: [file],
+                        },
+                    });
+
+                    mockedAxios.delete.mockRejectedValue(new Error('Delete error'));
+                    const { result } = renderHookWithWrapper(() => useProfileHighlights(userId));
+
+                    await waitFor(() => {
+                        expect(axios.post).toHaveBeenCalledWith(
+                            'http://raktim-backend:8080/api/files/search',
+                            {
+                                userId,
+                                type: FileType.PROFILE_PICTURE,
+                                status: FileStatus.UPLOADED,
+                            },
+                        );
+
+                        expect(result.current.imageUrl).toBe(mockSearchFileResponse().imageUrl);
+                    });
+
+                    act(() => {
+                        result.current.handleDeleteClick();
+                    });
+
+                    await waitFor(() => {
+                        expect(mockedAxios.delete).toHaveBeenCalledWith(
+                            `http://raktim-backend:8080/api/files/${file.id}`,
+                        );
+                    });
+
+                    expect(mockShowNotification).toHaveBeenCalledWith(
+                        'Failed to delete profile picture. Please try again.',
+                        'error',
+                    );
+
+                    expect(result.current.profileImageUploadState).toEqual({
+                        selectedImage: null,
+                        fileUploadModal: false,
+                        confirmationModal: false,
+                        file: null,
+                    }); // One for initial fetch and one for refetch after deletion
+                });
+            });
+        });
+
+        describe('And there is no profile picture to delete', () => {
+            test('Then it should show error notification', async () => {
+                mockedAxios.post.mockResolvedValue({
+                    data: {
+                        data: [],
+                    },
+                });
+
+                const { result } = renderHookWithWrapper(() => useProfileHighlights(userId));
+
+                await waitFor(() => {
+                    expect(axios.post).toHaveBeenCalledWith(
+                        'http://raktim-backend:8080/api/files/search',
+                        {
+                            userId,
+                            type: FileType.PROFILE_PICTURE,
+                            status: FileStatus.UPLOADED,
+                        },
+                    );
+
+                    expect(result.current.imageUrl).toBe('');
+                });
+
+                act(() => {
+                    result.current.handleDeleteClick();
+                });
+
+                expect(mockShowNotification).toHaveBeenCalledWith(
+                    'No profile picture found to delete.',
+                    'error',
+                );
+
+                expect(mockedAxios.delete).not.toHaveBeenCalled();
+                expect(mockedAxios.post).toHaveBeenCalledTimes(1);
+            });
+        });
+    });
+
     describe('When renderred, And userId is not passed', () => {
         test('Then it should not call searchFile API', async () => {
-            const { result } = renderHookWithWrapper(() => useProfileHighlights(''));
+            renderHookWithWrapper(() => useProfileHighlights(''));
 
             await waitFor(() => {
                 expect(mockedAxios.post).not.toHaveBeenCalledWith(

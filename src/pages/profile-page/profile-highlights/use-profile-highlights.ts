@@ -6,7 +6,6 @@ import {
 } from './profile-highlights.types';
 import {
     type FileSearchApiResponse,
-    FileSearchResponseData,
     type FilesSearchRequestBody,
     FileStatus,
     FileType,
@@ -16,7 +15,7 @@ import {
 } from '../../../types/file-upload.types';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { type ApiErrorResponse } from '../../../types/response.types';
-import { getUploadUrlAndUploadFile, searchFile } from '../../../services/file-upload';
+import { deleteFile, getUploadUrlAndUploadFile, searchFile } from '../../../services/file-upload';
 import { QUERY_CONSTANT } from '../../../utils/query-constants';
 
 export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
@@ -29,7 +28,7 @@ export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
     >({
         mutationKey: [QUERY_CONSTANT.GET_UPLOAD_URL, userId],
         mutationFn: getUploadUrlAndUploadFile,
-        onSuccess: () => {
+        onSuccess: async () => {
             showNotification('Profile picture updated successfully', 'success');
             changeProfileImageUploadState({
                 confirmationModal: false,
@@ -41,6 +40,7 @@ export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
         },
     });
 
+    // fetch file
     const fileSearchRequestBody: FilesSearchRequestBody = {
         userId,
         type: FileType.PROFILE_PICTURE,
@@ -48,7 +48,7 @@ export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
     };
 
     // Get the profile image of the user
-    const { data: files } = useQuery<
+    const { data: files, refetch: refetchFiles } = useQuery<
         FileSearchApiResponse,
         ApiErrorResponse,
         // FileSearchResponseData[],
@@ -58,6 +58,24 @@ export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
         queryKey: [QUERY_CONSTANT.USER_PROFILE_IMAGE, fileSearchRequestBody],
         queryFn: searchFile,
         enabled: !!userId,
+    });
+
+    // delete file mutation
+    const { mutate: deleteFileMutation } = useMutation<string, ApiErrorResponse, string>({
+        mutationKey: [QUERY_CONSTANT.DELETE_FILE, userId],
+        mutationFn: deleteFile,
+        onSuccess: async () => {
+            showNotification('Profile picture deleted successfully', 'success');
+            changeProfileImageUploadState({
+                selectedImage: '',
+                file: null,
+            });
+
+            await refetchFiles();
+        },
+        onError: () => {
+            showNotification('Failed to delete profile picture. Please try again.', 'error');
+        },
     });
 
     // Hooks initialization
@@ -125,6 +143,15 @@ export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
         });
     };
 
+    const handleDeleteClick = () => {
+        const fileId = files?.data?.[0]?.id;
+        if (!fileId) {
+            showNotification('No profile picture found to delete.', 'error');
+            return;
+        }
+        deleteFileMutation(fileId);
+    };
+
     return {
         ref,
         profileImageUploadState,
@@ -133,6 +160,7 @@ export const useProfileHighlights: UseProfileHighlights = (userId: string) => {
         handleSavePhoto,
         handleCancelUpload,
         isUploading,
-        imageUrl: files?.data?.[0].imageUrl,
+        imageUrl: files?.data?.[0]?.imageUrl ?? '',
+        handleDeleteClick,
     };
 };
