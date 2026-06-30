@@ -1,7 +1,6 @@
 import z from 'zod';
 import { UserRole } from './sign-up-form.types';
 import { UserStatus } from '../../../types/user.types';
-import dayjs, { Dayjs } from 'dayjs';
 
 export const signupFormSchema = z.object({
     email: z.email('Invalid email').nonempty('Email is required'),
