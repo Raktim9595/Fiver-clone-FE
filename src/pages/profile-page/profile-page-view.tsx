@@ -2,6 +2,7 @@ import { Stack } from '@mui/material';
 import { ProfileHighlights } from './profile-highlights';
 import { LoadingView } from '../../components/loading';
 import { type ProfilePageViewProps } from './profile-page.types';
+import { ProfileDetails } from './profile-details';
 
 export const ProfilePageView = ({ user, isLoading }: ProfilePageViewProps) => {
     if (isLoading) return <LoadingView />;
@@ -18,7 +19,6 @@ export const ProfilePageView = ({ user, isLoading }: ProfilePageViewProps) => {
             <Stack
                 sx={{
                     flex: 3,
-                    bgcolor: 'red',
                 }}
             >
                 <ProfileHighlights user={user!} />
@@ -28,10 +28,9 @@ export const ProfilePageView = ({ user, isLoading }: ProfilePageViewProps) => {
             <Stack
                 sx={{
                     flex: 7,
-                    bgcolor: 'green',
                 }}
             >
-                done again
+                <ProfileDetails />
             </Stack>
         </Stack>
     );

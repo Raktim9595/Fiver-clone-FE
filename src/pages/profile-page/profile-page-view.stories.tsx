@@ -3,6 +3,8 @@ import { ProfilePageView } from './profile-page-view';
 import { NotificationProvider } from '../../providers/notification-provider';
 import { mockUserDataFromServer } from '../../__mocks__/user-mock-data';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 const user = mockUserDataFromServer({
     createdAt: '2025-01-01T00:00:00.000Z',
@@ -22,7 +24,9 @@ const meta: Meta<typeof ProfilePageView> = {
             return (
                 <NotificationProvider>
                     <QueryClientProvider client={client}>
-                        <Story />
+                        <LocalizationProvider dateAdapter={AdapterDayjs}>
+                            <Story />
+                        </LocalizationProvider>
                     </QueryClientProvider>
                 </NotificationProvider>
             );
