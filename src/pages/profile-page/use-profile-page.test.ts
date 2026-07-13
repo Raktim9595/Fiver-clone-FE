@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { renderHookWithWrapper } from '../../utils/test-wrapper';
 import { useProfilePage } from './use-profile-page';
 import { mockedAxios, mockUseOutletContext } from '../../utils/test-setups';
-import { mockUserDataFromServer } from '../../__mocks__/user-mock-data';
+import { mockUserDataFromServer } from '../../__mocks__/user-mock.data';
 import { waitFor } from '@testing-library/react';
 import axios from 'axios';
 
