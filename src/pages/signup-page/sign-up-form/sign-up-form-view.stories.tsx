@@ -7,7 +7,7 @@ import { MemoryRouter } from 'react-router';
 
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { mockUserFormData } from '../../../__mocks__/user-mock-data';
+import { mockUserFormData } from '../../../__mocks__/user-mock.data';
 
 const meta: Meta<typeof SignUpFormView> = {
     title: 'Forms/SignUpForm',

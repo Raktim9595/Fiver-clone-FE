@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { renderHookWithWrapper } from '../../../utils/test-wrapper';
 import { useLoginForm } from './use-login-form';
-import { mockLoginFormData } from '../../../__mocks__/user-mock-data';
+import { mockLoginFormData } from '../../../__mocks__/user-mock.data';
 import {
     mockedAxios,
     mockNavigate,
