@@ -1041,6 +1041,245 @@ exports[`Storybook snapshots > /src/components/sidebar/sidebar-view.stories.tsx 
 </div>
 `;
 
+exports[`Storybook snapshots > /src/components/virtualized-autocomplete/virtualized-autocomplete.stories.tsx -  VirtualizedAutoCompleteWithDefaultValue matches snapshot 1`] = `
+<div
+  class="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon css-28116y-MuiAutocomplete-root"
+>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="true"
+      for="_r_u_"
+      id="_r_u_-label"
+    >
+      Select countries
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-invalid="false"
+        autocapitalize="none"
+        autocomplete="off"
+        class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-1dune0f-MuiInputBase-input-MuiOutlinedInput-input"
+        id="_r_u_"
+        role="combobox"
+        spellcheck="false"
+        type="text"
+        value="United Kingdom"
+      />
+      <div
+        class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
+      >
+        <button
+          aria-label="Clear"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-clearIndicator css-1x7n7v0-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator"
+          tabindex="-1"
+          title="Clear"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+            data-testid="CloseIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </button>
+        <button
+          aria-label="Open"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+          tabindex="-1"
+          title="Open"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </button>
+      </div>
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-ex8a5f-MuiNotchedOutlined-root"
+        >
+          <span>
+            Select countries
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook snapshots > /src/components/virtualized-autocomplete/virtualized-autocomplete.stories.tsx -  VirtualizedAutoCompleteWithErros matches snapshot 1`] = `
+<div
+  class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-28116y-MuiAutocomplete-root"
+>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="false"
+      for="_r_12_"
+      id="_r_12_-label"
+    >
+      Select countries
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-describedby="_r_12_-helper-text"
+        aria-expanded="false"
+        aria-invalid="true"
+        autocapitalize="none"
+        autocomplete="off"
+        class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-1dune0f-MuiInputBase-input-MuiOutlinedInput-input"
+        id="_r_12_"
+        role="combobox"
+        spellcheck="false"
+        type="text"
+        value=""
+      />
+      <div
+        class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
+      >
+        <button
+          aria-label="Open"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+          tabindex="-1"
+          title="Open"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </button>
+      </div>
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-1n64csd-MuiNotchedOutlined-root"
+        >
+          <span>
+            Select countries
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+    <p
+      class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained css-er619e-MuiFormHelperText-root"
+      id="_r_12_-helper-text"
+    >
+      Country is required
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storybook snapshots > /src/components/virtualized-autocomplete/virtualized-autocomplete.stories.tsx -  VirtualizedAutocompleteDefault matches snapshot 1`] = `
+<div
+  class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-28116y-MuiAutocomplete-root"
+>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink="false"
+      for="_r_r_"
+      id="_r_r_-label"
+    >
+      Select countries
+    </label>
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-invalid="false"
+        autocapitalize="none"
+        autocomplete="off"
+        class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-1dune0f-MuiInputBase-input-MuiOutlinedInput-input"
+        id="_r_r_"
+        role="combobox"
+        spellcheck="false"
+        type="text"
+        value=""
+      />
+      <div
+        class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
+      >
+        <button
+          aria-label="Open"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+          tabindex="-1"
+          title="Open"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </button>
+      </div>
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-1n64csd-MuiNotchedOutlined-root"
+        >
+          <span>
+            Select countries
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storybook snapshots > /src/pages/home-page/home-page-view.stories.tsx -  HomePage matches snapshot 1`] = `
 <section
   class="MuiBox-root css-0"
@@ -1554,7 +1793,7 @@ exports[`Storybook snapshots > /src/pages/login-page/login-form/login-form-view.
   <button
     class="MuiButtonBase-root MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-fullWidth MuiButton-loadingPositionCenter Mui-disabled MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-fullWidth MuiButton-loadingPositionCenter css-1f0ob1q-MuiButtonBase-root-MuiButton-root"
     disabled=""
-    id="_r_13_"
+    id="_r_1d_"
     tabindex="-1"
     type="submit"
   >
@@ -1566,7 +1805,7 @@ exports[`Storybook snapshots > /src/pages/login-page/login-form/login-form-view.
         class="MuiButton-loadingIndicator css-14m8o6v-MuiButton-loadingIndicator"
       >
         <span
-          aria-labelledby="_r_13_"
+          aria-labelledby="_r_1d_"
           class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorInherit css-gxw4l9-MuiCircularProgress-root"
           role="progressbar"
           style="width: 16px; height: 16px;"
@@ -2407,14 +2646,14 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_1e_"
-              id="_r_1e_-label"
+              for="_r_1o_"
+              id="_r_1o_-label"
             >
               Date of Birth
             </label>
             <div
               aria-invalid="false"
-              aria-labelledby="_r_1e_-label"
+              aria-labelledby="_r_1o_-label"
               class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-fullWidth MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-8lo064-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
               role="group"
             >
@@ -2555,7 +2794,7 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
               <input
                 aria-hidden="true"
                 class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-                id="_r_1e_"
+                id="_r_1o_"
                 name="dateOfBirth"
                 tabindex="-1"
                 value=""
@@ -3048,14 +3287,14 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for="_r_1p_"
-              id="_r_1p_-label"
+              for="_r_23_"
+              id="_r_23_-label"
             >
               Date of Birth
             </label>
             <div
               aria-invalid="false"
-              aria-labelledby="_r_1p_-label"
+              aria-labelledby="_r_23_-label"
               class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-fullWidth MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-8lo064-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
               role="group"
             >
@@ -3198,7 +3437,7 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
               <input
                 aria-hidden="true"
                 class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-                id="_r_1p_"
+                id="_r_23_"
                 name="dateOfBirth"
                 tabindex="-1"
                 value="02/25/2001"
@@ -3691,14 +3930,14 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for="_r_24_"
-              id="_r_24_-label"
+              for="_r_2e_"
+              id="_r_2e_-label"
             >
               Date of Birth
             </label>
             <div
               aria-invalid="false"
-              aria-labelledby="_r_24_-label"
+              aria-labelledby="_r_2e_-label"
               class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-fullWidth MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-8lo064-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
               role="group"
             >
@@ -3841,7 +4080,7 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
               <input
                 aria-hidden="true"
                 class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-                id="_r_24_"
+                id="_r_2e_"
                 name="dateOfBirth"
                 tabindex="-1"
                 value="02/25/2001"
@@ -4044,7 +4283,7 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter Mui-disabled MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter css-1elmdwi-MuiButtonBase-root-MuiButton-root"
             disabled=""
-            id="_r_2a_"
+            id="_r_2k_"
             tabindex="-1"
             type="submit"
           >
@@ -4056,7 +4295,7 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
                 class="MuiButton-loadingIndicator css-14m8o6v-MuiButton-loadingIndicator"
               >
                 <span
-                  aria-labelledby="_r_2a_"
+                  aria-labelledby="_r_2k_"
                   class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorInherit css-gxw4l9-MuiCircularProgress-root"
                   role="progressbar"
                   style="width: 16px; height: 16px;"
@@ -4389,15 +4628,15 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_2f_"
-              id="_r_2f_-label"
+              for="_r_2p_"
+              id="_r_2p_-label"
             >
               Date of Birth
             </label>
             <div
-              aria-describedby="_r_2f_-helper-text"
+              aria-describedby="_r_2p_-helper-text"
               aria-invalid="true"
-              aria-labelledby="_r_2f_-label"
+              aria-labelledby="_r_2p_-label"
               aria-live="polite"
               class="MuiPickersInputBase-root MuiPickersOutlinedInput-root Mui-error MuiPickersInputBase-fullWidth MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-8lo064-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
               role="group"
@@ -4539,7 +4778,7 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
               <input
                 aria-hidden="true"
                 class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-                id="_r_2f_"
+                id="_r_2p_"
                 name="dateOfBirth"
                 tabindex="-1"
                 value=""
@@ -4547,7 +4786,7 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
             </div>
             <p
               class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-2s8ubb-MuiFormHelperText-root"
-              id="_r_2f_-helper-text"
+              id="_r_2p_-helper-text"
             >
               Date of birth is required
             </p>
@@ -5220,14 +5459,14 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-page-view.stories
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="false"
-                  for="_r_2r_"
-                  id="_r_2r_-label"
+                  for="_r_35_"
+                  id="_r_35_-label"
                 >
                   Date of Birth
                 </label>
                 <div
                   aria-invalid="false"
-                  aria-labelledby="_r_2r_-label"
+                  aria-labelledby="_r_35_-label"
                   class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-fullWidth MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-8lo064-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
                   role="group"
                 >
@@ -5368,7 +5607,7 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-page-view.stories
                   <input
                     aria-hidden="true"
                     class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-                    id="_r_2r_"
+                    id="_r_35_"
                     name="dateOfBirth"
                     tabindex="-1"
                     value=""
@@ -5941,14 +6180,14 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
-        for="_r_37_"
-        id="_r_37_-label"
+        for="_r_3h_"
+        id="_r_3h_-label"
       >
         Date of Birth
       </label>
       <div
         aria-invalid="false"
-        aria-labelledby="_r_37_-label"
+        aria-labelledby="_r_3h_-label"
         class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
         role="group"
       >
@@ -6089,7 +6328,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <input
           aria-hidden="true"
           class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-          id="_r_37_"
+          id="_r_3h_"
           name="dateOfBirth"
           tabindex="-1"
           value=""
@@ -6448,7 +6687,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_3g_"
+        id="_r_3q_"
         tabindex="-1"
         value="BUYER"
       />
@@ -6830,14 +7069,14 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="true"
-        for="_r_3n_"
-        id="_r_3n_-label"
+        for="_r_41_"
+        id="_r_41_-label"
       >
         Date of Birth
       </label>
       <div
         aria-invalid="false"
-        aria-labelledby="_r_3n_-label"
+        aria-labelledby="_r_41_-label"
         class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
         role="group"
       >
@@ -6980,7 +7219,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <input
           aria-hidden="true"
           class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-          id="_r_3n_"
+          id="_r_41_"
           name="dateOfBirth"
           tabindex="-1"
           value="02/25/2001"
@@ -7339,7 +7578,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_40_"
+        id="_r_4a_"
         tabindex="-1"
         value="BUYER"
       />
@@ -7721,14 +7960,14 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="true"
-        for="_r_47_"
-        id="_r_47_-label"
+        for="_r_4h_"
+        id="_r_4h_-label"
       >
         Date of Birth
       </label>
       <div
         aria-invalid="false"
-        aria-labelledby="_r_47_-label"
+        aria-labelledby="_r_4h_-label"
         class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
         role="group"
       >
@@ -7871,7 +8110,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <input
           aria-hidden="true"
           class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-          id="_r_47_"
+          id="_r_4h_"
           name="dateOfBirth"
           tabindex="-1"
           value="02/25/2001"
@@ -8230,7 +8469,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_4g_"
+        id="_r_4q_"
         tabindex="-1"
         value="BUYER"
       />
@@ -8262,7 +8501,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
   <button
     class="MuiButtonBase-root MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter Mui-disabled MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter css-1elmdwi-MuiButtonBase-root-MuiButton-root"
     disabled=""
-    id="_r_4h_"
+    id="_r_4r_"
     tabindex="-1"
     type="submit"
   >
@@ -8274,7 +8513,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         class="MuiButton-loadingIndicator css-14m8o6v-MuiButton-loadingIndicator"
       >
         <span
-          aria-labelledby="_r_4h_"
+          aria-labelledby="_r_4r_"
           class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorInherit css-gxw4l9-MuiCircularProgress-root"
           role="progressbar"
           style="width: 16px; height: 16px;"
@@ -8674,15 +8913,15 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
-        for="_r_4n_"
-        id="_r_4n_-label"
+        for="_r_51_"
+        id="_r_51_-label"
       >
         Date of Birth
       </label>
       <div
-        aria-describedby="_r_4n_-helper-text"
+        aria-describedby="_r_51_-helper-text"
         aria-invalid="true"
-        aria-labelledby="_r_4n_-label"
+        aria-labelledby="_r_51_-label"
         aria-live="polite"
         class="MuiPickersInputBase-root MuiPickersOutlinedInput-root Mui-error MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
         role="group"
@@ -8824,7 +9063,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <input
           aria-hidden="true"
           class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-          id="_r_4n_"
+          id="_r_51_"
           name="dateOfBirth"
           tabindex="-1"
           value=""
@@ -8832,7 +9071,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
       </div>
       <p
         class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-2s8ubb-MuiFormHelperText-root"
-        id="_r_4n_-helper-text"
+        id="_r_51_-helper-text"
       >
         Date of birth is required
       </p>
@@ -9224,7 +9463,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_50_"
+        id="_r_5a_"
         tabindex="-1"
         value="BUYER"
       />
@@ -9761,14 +10000,14 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_57_"
-              id="_r_57_-label"
+              for="_r_5h_"
+              id="_r_5h_-label"
             >
               Date of Birth
             </label>
             <div
               aria-invalid="false"
-              aria-labelledby="_r_57_-label"
+              aria-labelledby="_r_5h_-label"
               class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
               role="group"
             >
@@ -9909,7 +10148,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
               <input
                 aria-hidden="true"
                 class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-                id="_r_57_"
+                id="_r_5h_"
                 name="dateOfBirth"
                 tabindex="-1"
                 value=""
@@ -10268,7 +10507,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
               aria-hidden="true"
               aria-invalid="false"
               class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-              id="_r_5g_"
+              id="_r_5q_"
               tabindex="-1"
               value="BUYER"
             />

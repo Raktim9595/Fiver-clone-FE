@@ -1,9 +1,9 @@
 import { END_POINTS } from '../../api';
 import { privateRequest } from '../../api/axios';
 import {
-    CountriesApiResponse,
-    LanguagesApiResponse,
-    TimezonesApiResponse,
+    type CountriesApiResponse,
+    type LanguagesApiResponse,
+    type TimezonesApiResponse,
 } from '../../types/info.types';
 
 export const getCountries = async () => {
