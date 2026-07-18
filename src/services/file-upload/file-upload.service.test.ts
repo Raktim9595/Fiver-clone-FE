@@ -15,7 +15,7 @@ import {
 import {
     mockGetUploadUrlResponse,
     mockSearchFileResponse,
-} from '../../__mocks__/file-upload-mock.data';
+} from '../../__mocks__/data/file-upload-mock.data';
 import { mockedAxios } from '../../utils/test-setups';
 import axios from 'axios';
 import { v4 as uuid } from 'uuid';

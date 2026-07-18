@@ -10,6 +10,7 @@ import { forwardRef, useCallback, useEffect, useMemo, useRef } from 'react';
 import {
     type ItemData,
     LISTBOX_PADDING,
+    ListboxComponentProps,
     type VirtualizedAutoCompleteViewProps,
 } from './virtualized-autocomplete.types';
 
@@ -36,12 +37,12 @@ const RowComponent = <T,>({
         );
     }
 
-    const [optionProps, option, rowIndex] = dataSet;
+    const [optionProps, option, _] = dataSet;
     const { key, ...rest } = optionProps;
 
     return (
         <Typography key={key} component="li" {...rest} noWrap style={inlineStyle}>
-            {`#${rowIndex + 1} - ${getOptionLabel(option)}`}
+            {getOptionLabel(option)}
         </Typography>
     );
 };
@@ -142,6 +143,7 @@ const VirtualizedAutoComplete = <T,>({
     getOptionLabel,
     error = false,
     helperText,
+    isLoading = false,
 }: VirtualizedAutoCompleteViewProps<T>) => {
     // Use react-window v2's useListRef hook for imperative API access
     const internalListRef = useListRef(null);
@@ -167,8 +169,16 @@ const VirtualizedAutoComplete = <T,>({
             disableListWrap
             options={options}
             groupBy={(option) => getOptionLabel(option)[0].toUpperCase()}
+            size="small"
             renderInput={(params) => (
-                <TextField {...params} label={label} error={error} helperText={helperText} />
+                <TextField
+                    {...params}
+                    label={label}
+                    error={error}
+                    helperText={helperText}
+                    size="small"
+                    fullWidth
+                />
             )}
             renderOption={(props, option, state) => [props, option, state.index] as React.ReactNode}
             renderGroup={(params) => params as any}
@@ -177,15 +187,17 @@ const VirtualizedAutoComplete = <T,>({
             slots={{
                 popper: StyledPopper,
             }}
+            loading={isLoading}
             value={value}
             onChange={onChange}
+            fullWidth
             slotProps={{
                 listbox: {
                     component: ListboxComponent,
                     internalListRef,
                     onItemsBuilt: handleItemsBuilt,
                     getOptionLabel,
-                } as any,
+                } as unknown as ListboxComponentProps<T>,
             }}
         />
     );

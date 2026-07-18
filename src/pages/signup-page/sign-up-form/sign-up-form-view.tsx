@@ -17,6 +17,7 @@ import { Link } from 'react-router';
 import { PATH } from '../../../utils/routing/paths';
 import { ClockIcon, DatePicker } from '@mui/x-date-pickers';
 import dayjs from 'dayjs';
+import { CountriesSelect } from '../../../components/countries-select';
 
 const SignUpFormView = ({
     control,
@@ -125,13 +126,17 @@ const SignUpFormView = ({
                     icon={<ClockIcon />}
                     error={errors.timeZone}
                 />
-                <FormInput
+                <Controller
                     control={control}
                     name="country"
-                    label="Country"
-                    placeholder="Enter Country"
-                    icon={<LocationOn />}
-                    error={errors.country}
+                    render={({ field }) => (
+                        <CountriesSelect
+                            value={field.value}
+                            onChange={(_, v) => field.onChange(v)}
+                            error={!!errors.country}
+                            helperText={errors.country?.message}
+                        />
+                    )}
                 />
             </Stack>
             <Stack direction="row" spacing={2}>

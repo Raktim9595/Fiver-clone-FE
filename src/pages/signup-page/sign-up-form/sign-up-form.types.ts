@@ -1,5 +1,6 @@
 import type { Control, FieldErrors, UseFormHandleSubmit } from 'react-hook-form';
 import { UserStatus } from '../../../types/user.types';
+import { Country } from '../../../types/info.types';
 
 export const UserRole = {
     ADMIN: 'ADMIN',
@@ -22,7 +23,7 @@ export type SignUpFormType = {
     status: UserStatus;
     timeZone: string;
     language: string;
-    country: string;
+    country: Country | null;
 };
 
 export const signUpFormInitialValues: SignUpFormType = {
@@ -36,7 +37,7 @@ export const signUpFormInitialValues: SignUpFormType = {
     username: '',
     role: UserRole.BUYER,
     status: UserStatus.ACTIVE,
-    country: '',
+    country: null,
     language: '',
     timeZone: '',
 };

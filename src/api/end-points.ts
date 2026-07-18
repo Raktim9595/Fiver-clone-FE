@@ -10,9 +10,9 @@ const END_POINTS = {
     FILE_UPLOAD_FAILED: (fileId: string) => `${BASE_URL}/files/${fileId}/failed`,
     FILE_SEARCH: `${BASE_URL}/files/search`,
     DELETE_FILE: (fileId: string) => `${BASE_URL}/files/${fileId}`,
-    GET_COUNTRIES: `${BASE_URL}/country`,
-    GET_TIMEZONES: `${BASE_URL}/timezone`,
-    GET_LANGUAGES: `${BASE_URL}/language`,
+    GET_COUNTRIES: `${BASE_URL}/info/country`,
+    GET_TIMEZONES: `${BASE_URL}/info/timezone`,
+    GET_LANGUAGES: `${BASE_URL}/info/language`,
 };
 
 export default END_POINTS;

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { mockLoginFormData, mockUserFormData } from '../../__mocks__/user-mock.data';
+import { mockLoginFormData, mockUserFormData } from '../../__mocks__/data/user-mock.data';
 import { signin, signUp } from './auth.service';
 import axios from 'axios';
 import { mockedAxios } from '../../utils/test-setups';
