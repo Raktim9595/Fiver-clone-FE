@@ -1,4 +1,4 @@
-import { type Country, type Language, type Timezone } from '../types/info.types';
+import { type Country, type Language, type Timezone } from '../../types/info.types';
 import { v4 as uuid } from 'uuid';
 
 export const mockCountryData = (data?: Partial<Country>): Country => ({

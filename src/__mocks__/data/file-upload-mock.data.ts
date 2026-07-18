@@ -2,7 +2,7 @@ import {
     type FileSearchResponseData,
     FileStatus,
     type UploadUrlResponse,
-} from '../types/file-upload.types';
+} from '../../types/file-upload.types';
 import { v4 as uuid } from 'uuid';
 
 export const mockGetUploadUrlResponse = (

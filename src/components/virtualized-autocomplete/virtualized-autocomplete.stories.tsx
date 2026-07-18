@@ -1,6 +1,6 @@
 import { type Meta, type StoryObj } from '@storybook/react-vite';
 import VirtualizedAutoComplete from './virtualized-autocomplete';
-import { mockCountriesList } from '../../__mocks__/info-mock.data';
+import { mockCountriesList } from '../../__mocks__/data/info-mock.data';
 import { Controller, useForm } from 'react-hook-form';
 import { type Country } from '../../types/info.types';
 import type SignUpFormView from '../../pages/signup-page/sign-up-form/sign-up-form-view';
@@ -22,10 +22,12 @@ const StoryWrapper = ({
     error,
     helperText,
     value = null,
+    isLoading = false,
 }: {
     error?: boolean;
     helperText?: string;
     value?: Country | null;
+    isLoading?: boolean;
 }) => {
     const { control } = useForm<{
         country: Country | null;
@@ -48,6 +50,7 @@ const StoryWrapper = ({
                     onChange={field.onChange}
                     error={error}
                     helperText={helperText}
+                    isLoading={isLoading}
                 />
             )}
         />
@@ -64,4 +67,8 @@ export const VirtualizedAutoCompleteWithDefaultValue: Story = {
 
 export const VirtualizedAutoCompleteWithErros: Story = {
     render: () => <StoryWrapper error helperText="Country is required" />,
+};
+
+export const VirtualizedAutoCompleteLoading: Story = {
+    render: () => <StoryWrapper isLoading />,
 };

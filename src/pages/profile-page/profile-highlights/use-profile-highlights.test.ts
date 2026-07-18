@@ -8,7 +8,7 @@ import axios from 'axios';
 import {
     mockGetUploadUrlResponse,
     mockSearchFileResponse,
-} from '../../../__mocks__/file-upload-mock.data';
+} from '../../../__mocks__/data/file-upload-mock.data';
 
 beforeEach(() => {
     vi.clearAllMocks();
@@ -105,7 +105,7 @@ describe('useProfileHighlights Hook, Unit Test', () => {
                     result.current.handleFileChange(event);
                 });
 
-                expect(result.current.profileImageUploadState.selectedImage).toBe(null);
+                expect(result.current.profileImageUploadState.selectedImage).toBeNull();
                 expect(result.current.profileImageUploadState.fileUploadModal).toBe(false);
                 expect(result.current.profileImageUploadState.confirmationModal).toBe(false);
                 expect(mockShowNotification).toHaveBeenCalledWith(
@@ -131,7 +131,7 @@ describe('useProfileHighlights Hook, Unit Test', () => {
                     result.current.handleFileChange(event);
                 });
 
-                expect(result.current.profileImageUploadState.selectedImage).toBe(null);
+                expect(result.current.profileImageUploadState.selectedImage).toBeNull();
                 expect(result.current.profileImageUploadState.fileUploadModal).toBe(false);
                 expect(result.current.profileImageUploadState.confirmationModal).toBe(false);
                 expect(mockShowNotification).toHaveBeenCalledWith(

@@ -5,7 +5,7 @@ import { useRootLayout } from './use-root-layout';
 import { waitFor } from '@testing-library/react';
 import { expect } from 'storybook/test';
 import axios from 'axios';
-import { mockUserDataFromServer } from '../__mocks__/user-mock.data';
+import { mockUserDataFromServer } from '../__mocks__/data/user-mock.data';
 
 describe('useRootLayout, Unit Test', () => {
     describe('When initialized', () => {

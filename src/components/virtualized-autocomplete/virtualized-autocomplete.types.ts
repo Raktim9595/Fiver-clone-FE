@@ -7,6 +7,7 @@ export type VirtualizedAutoCompleteViewProps<T> = {
     options: T[];
     getOptionLabel: (option: T) => string;
     error?: boolean;
+    isLoading?: boolean;
     helperText?: string;
 } & Pick<AutocompleteProps<T, false, false, false>, 'onChange' | 'value'>;
 

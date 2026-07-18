@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { useSignupForm } from './use-sign-up-form';
 
-import { mockUserFormData } from '../../../__mocks__/user-mock.data';
+import { mockUserFormData } from '../../../__mocks__/data/user-mock.data';
 import { act, waitFor } from '@testing-library/react';
 import axios from 'axios';
 import { PATH } from '../../../utils/routing/paths';

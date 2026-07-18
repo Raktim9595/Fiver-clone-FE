@@ -5,7 +5,7 @@ import {
     mockCountryData,
     mockLanguageData,
     mockTimezonedata,
-} from '../../__mocks__/info-mock.data';
+} from '../../__mocks__/data/info-mock.data';
 
 beforeEach(() => {
     vi.clearAllMocks();
@@ -23,7 +23,9 @@ describe('Info services, Unit Test', () => {
             });
             const res = await getCountries();
             expect(res.data).toStrictEqual([mockedCountry, mockedCountry1]);
-            expect(mockedAxios.get).toHaveBeenCalledWith('http://raktim-backend:8080/api/country');
+            expect(mockedAxios.get).toHaveBeenCalledWith(
+                'http://raktim-backend:8080/api/info/country',
+            );
         });
     });
 
@@ -42,7 +44,9 @@ describe('Info services, Unit Test', () => {
             });
             const res = await getTimezones();
             expect(res.data).toStrictEqual([mockedTimezone, mockedTimezone1]);
-            expect(mockedAxios.get).toHaveBeenCalledWith('http://raktim-backend:8080/api/timezone');
+            expect(mockedAxios.get).toHaveBeenCalledWith(
+                'http://raktim-backend:8080/api/info/timezone',
+            );
         });
     });
 
@@ -63,7 +67,9 @@ describe('Info services, Unit Test', () => {
             });
             const res = await getLanguages();
             expect(res.data).toStrictEqual([mockedLanguage, mockedLanguage1]);
-            expect(mockedAxios.get).toHaveBeenCalledWith('http://raktim-backend:8080/api/language');
+            expect(mockedAxios.get).toHaveBeenCalledWith(
+                'http://raktim-backend:8080/api/info/language',
+            );
         });
     });
 });

@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
 import { getCurrentUser, getUserById } from './user.services';
 import axios from 'axios';
-import { mockUserDataFromServer } from '../../__mocks__/user-mock.data';
+import { mockUserDataFromServer } from '../../__mocks__/data/user-mock.data';
 import { mockedAxios } from '../../utils/test-setups';
 
 describe('UserService, Unit Test', () => {
