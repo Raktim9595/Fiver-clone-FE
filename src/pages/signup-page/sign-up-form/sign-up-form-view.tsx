@@ -8,7 +8,6 @@ import {
     LockOutlined,
     LocalPhone,
     LocationOn,
-    Person2,
 } from '@mui/icons-material';
 import { CustomSelect } from '../../../components/select';
 import { Controller } from 'react-hook-form';

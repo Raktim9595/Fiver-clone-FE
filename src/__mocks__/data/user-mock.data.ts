@@ -4,6 +4,7 @@ import {
     UserRole,
 } from '../../pages/signup-page/sign-up-form/sign-up-form.types';
 import { UserStatus, type User } from '../../types/user.types';
+import { mockCountryData, mockLanguageData, mockTimezonedata } from './info-mock.data';
 
 export const mockUserFormData = (data?: Partial<SignUpFormType>): SignUpFormType => ({
     address: 'Melbourne, Australia',
@@ -16,9 +17,9 @@ export const mockUserFormData = (data?: Partial<SignUpFormType>): SignUpFormType
     username: 'random',
     role: UserRole.BUYER,
     status: UserStatus.ACTIVE,
-    country: 'Australia',
-    language: 'English',
-    timeZone: 'Australia/Melbourne',
+    country: mockCountryData({ name: 'Australia' }),
+    language: mockLanguageData({ code: 'En', language: 'English' }),
+    timeZone: mockTimezonedata({ code: 'Australia/Melbourne' }),
     ...data,
 });
 

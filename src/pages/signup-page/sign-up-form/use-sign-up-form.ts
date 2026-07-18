@@ -9,7 +9,7 @@ import { signupFormSchema } from './validaton-schema';
 import { useMutation } from '@tanstack/react-query';
 import { signUp } from '../../../services/auth';
 import { useNotification } from '../../../providers/notification-provider';
-import { type SignupApiResponse } from '../../../types/auth.types';
+import { SignupRequestBody, type SignupApiResponse } from '../../../types/auth.types';
 import { type ApiErrorResponse } from '../../../types/response.types';
 import { useNavigate } from 'react-router';
 import { PATH } from '../../../utils/routing/paths';
@@ -28,7 +28,7 @@ export const useSignupForm: UseSignupForm = () => {
     const { showNotification } = useNotification();
     const navigate = useNavigate();
 
-    const signupMutation = useMutation<SignupApiResponse, ApiErrorResponse, SignUpFormType>({
+    const signupMutation = useMutation<SignupApiResponse, ApiErrorResponse, SignupRequestBody>({
         mutationFn: signUp,
         onSuccess: async () => {
             showNotification('Successfully signed up', 'success');
@@ -42,7 +42,12 @@ export const useSignupForm: UseSignupForm = () => {
     });
 
     const onSubmit = (data: SignUpFormType) => {
-        signupMutation.mutate(data);
+        signupMutation.mutate({
+            ...data,
+            language: data.language?.language,
+            timeZone: data.timeZone?.code,
+            country: data.country?.name,
+        });
     };
 
     return {
