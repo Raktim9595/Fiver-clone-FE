@@ -3,11 +3,18 @@ import { mockLoginFormData, mockUserFormData } from '../../__mocks__/data/user-m
 import { signin, signUp } from './auth.service';
 import axios from 'axios';
 import { mockedAxios } from '../../utils/test-setups';
+import { SignupRequestBody } from '../../types/auth.types';
 
 describe('AuthService, Unit Test', () => {
     describe('Given signUp, when called', () => {
         test('Then it should hit correct end-point, with correct data', async () => {
             const data = mockUserFormData();
+            const expextedRequestBody: SignupRequestBody = {
+                ...data,
+                timeZone: data.timeZone?.code,
+                country: data.country?.name,
+                language: data.language?.language,
+            };
 
             mockedAxios.post.mockResolvedValue({
                 data: {
@@ -15,10 +22,10 @@ describe('AuthService, Unit Test', () => {
                 },
             });
 
-            const res = await signUp(data);
+            const res = await signUp(expextedRequestBody);
             expect(axios.post).toHaveBeenCalledWith(
                 'http://raktim-backend:8080/api/auth/signup',
-                data,
+                expextedRequestBody,
             );
             expect(res).toEqual({
                 data,

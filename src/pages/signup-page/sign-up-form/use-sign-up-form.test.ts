@@ -39,6 +39,12 @@ describe('useSignupFormHook, Unit Test', () => {
 
     describe('When called handleSubmit, And valid data is passed', () => {
         const data = mockUserFormData();
+        const expextedRequestBody = {
+            ...data,
+            timeZone: data.timeZone?.code,
+            country: data.country?.name,
+            language: data.language?.language,
+        };
         describe('And server does not give any error', () => {
             test('Then it should create user and redirect to login', async () => {
                 const { result } = renderHookWithWrapper(() => useSignupForm());
@@ -56,7 +62,7 @@ describe('useSignupFormHook, Unit Test', () => {
                 await waitFor(() => {
                     expect(axios.post).toHaveBeenCalledWith(
                         'http://raktim-backend:8080/api/auth/signup',
-                        data,
+                        expextedRequestBody,
                     );
                 });
 
@@ -88,7 +94,7 @@ describe('useSignupFormHook, Unit Test', () => {
                     await waitFor(() => {
                         expect(axios.post).toHaveBeenCalledWith(
                             'http://raktim-backend:8080/api/auth/signup',
-                            data,
+                            expextedRequestBody,
                         );
                     });
 
@@ -113,7 +119,7 @@ describe('useSignupFormHook, Unit Test', () => {
                     await waitFor(() => {
                         expect(axios.post).toHaveBeenCalledWith(
                             'http://raktim-backend:8080/api/auth/signup',
-                            data,
+                            expextedRequestBody,
                         );
                     });
 
