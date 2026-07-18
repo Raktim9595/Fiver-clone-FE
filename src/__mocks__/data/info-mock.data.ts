@@ -60,3 +60,44 @@ export const mockLargeeCountriesList = (): Country[] => {
         phoneCode: `+${index}`,
     }));
 };
+
+export const mockTimezonesList = () => [
+    mockTimezonedata({
+        code: 'Australia/Melbourne',
+    }),
+    mockTimezonedata({
+        code: 'America/New_York',
+    }),
+    mockTimezonedata({
+        code: 'Europe/London',
+    }),
+    mockTimezonedata({
+        code: 'Europe/Berlin',
+    }),
+    mockTimezonedata({
+        code: 'Europe/Paris',
+    }),
+];
+
+export const mockLanguagesList = () => [
+    mockLanguageData({
+        code: 'en',
+        language: 'English',
+    }),
+    mockLanguageData({
+        code: 'es',
+        language: 'Spanish',
+    }),
+    mockLanguageData({
+        code: 'fr',
+        language: 'French',
+    }),
+    mockLanguageData({
+        code: 'de',
+        language: 'German',
+    }),
+    mockLanguageData({
+        code: 'it',
+        language: 'Italian',
+    }),
+];

@@ -9,6 +9,8 @@ import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { getCountriesHandler } from '../../__mocks__/handlers/countries.handlers';
 import { queryClient } from '../../utils/query-client';
+import { getTimeZonesHandler } from '../../__mocks__/handlers/timezones.handlers';
+import { getLanguagesHandler } from '../../__mocks__/handlers/language.handlers';
 
 const meta = {
     title: 'Pages/SignupPage',
@@ -17,7 +19,7 @@ const meta = {
     parameters: {
         layout: 'fullscreen',
         msw: {
-            handlers: [getCountriesHandler],
+            handlers: [getCountriesHandler, getTimeZonesHandler, getLanguagesHandler],
         },
     },
     decorators: [

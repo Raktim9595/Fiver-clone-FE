@@ -15,9 +15,11 @@ import { Controller } from 'react-hook-form';
 import { FormInput } from '../../../components/form-input';
 import { Link } from 'react-router';
 import { PATH } from '../../../utils/routing/paths';
-import { ClockIcon, DatePicker } from '@mui/x-date-pickers';
+import { DatePicker } from '@mui/x-date-pickers';
 import dayjs from 'dayjs';
 import { CountriesSelect } from '../../../components/countries-select';
+import { TimezoneSelect } from '../../../components/timezone-select';
+import { LanguageSelect } from '../../../components/language-select';
 
 const SignUpFormView = ({
     control,
@@ -118,13 +120,17 @@ const SignUpFormView = ({
                 />
             </Stack>
             <Stack direction="row" spacing={2}>
-                <FormInput
+                <Controller
                     control={control}
                     name="timeZone"
-                    label="Time Zone"
-                    placeholder="Enter TimeZone"
-                    icon={<ClockIcon />}
-                    error={errors.timeZone}
+                    render={({ field }) => (
+                        <TimezoneSelect
+                            value={field.value}
+                            onChange={(_, v) => field.onChange(v)}
+                            error={!!errors.timeZone}
+                            helperText={errors.timeZone?.message}
+                        />
+                    )}
                 />
                 <Controller
                     control={control}
@@ -140,13 +146,17 @@ const SignUpFormView = ({
                 />
             </Stack>
             <Stack direction="row" spacing={2}>
-                <FormInput
+                <Controller
                     control={control}
                     name="language"
-                    label="Language"
-                    placeholder="Enter Language"
-                    icon={<Person2 />}
-                    error={errors.language}
+                    render={({ field }) => (
+                        <LanguageSelect
+                            value={field.value}
+                            onChange={(_, v) => field.onChange(v)}
+                            error={!!errors.language}
+                            helperText={errors.language?.message}
+                        />
+                    )}
                 />
                 <FormInput
                     name="address"

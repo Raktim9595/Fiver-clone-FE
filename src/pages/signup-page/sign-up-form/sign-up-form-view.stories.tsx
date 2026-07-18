@@ -10,6 +10,8 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { mockUserFormData } from '../../../__mocks__/data/user-mock.data';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { getCountriesHandler } from '../../../__mocks__/handlers/countries.handlers';
+import { getTimeZonesHandler } from '../../../__mocks__/handlers/timezones.handlers';
+import { getLanguagesHandler } from '../../../__mocks__/handlers/language.handlers';
 
 const meta: Meta<typeof SignUpFormView> = {
     title: 'Forms/SignUpForm',
@@ -18,7 +20,7 @@ const meta: Meta<typeof SignUpFormView> = {
     parameters: {
         layout: 'fullscreen',
         msw: {
-            handlers: [getCountriesHandler],
+            handlers: [getCountriesHandler, getTimeZonesHandler, getLanguagesHandler],
         },
     },
 };

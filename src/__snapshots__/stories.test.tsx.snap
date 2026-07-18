@@ -6469,64 +6469,71 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Time Zone
-      </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for="_r_3o_"
+          id="_r_3o_-label"
+        >
+          Select Timezone
+        </label>
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
         >
-          <span
-            aria-hidden="true"
-            class="notranslate"
+          <input
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-invalid="false"
+            autocapitalize="none"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_3o_"
+            role="combobox"
+            spellcheck="false"
+            type="text"
+            value=""
+          />
+          <div
+            class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
           >
-            ​
-          </span>
-          <svg
+            <button
+              aria-label="Open"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+              tabindex="-1"
+              title="Open"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <fieldset
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="ClockIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
-            <path
-              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-            />
-            <path
-              d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
-            />
-          </svg>
+            <legend
+              class="css-1n64csd-MuiNotchedOutlined-root"
+            >
+              <span>
+                Select Timezone
+              </span>
+            </legend>
+          </fieldset>
         </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          name="timeZone"
-          placeholder="Enter TimeZone"
-          type="text"
-          value=""
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Time Zone
-            </span>
-          </legend>
-        </fieldset>
       </div>
     </div>
     <div
@@ -6538,8 +6545,8 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for="_r_3p_"
-          id="_r_3p_-label"
+          for="_r_3r_"
+          id="_r_3r_-label"
         >
           Select Countries
         </label>
@@ -6553,7 +6560,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
             autocapitalize="none"
             autocomplete="off"
             class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_3p_"
+            id="_r_3r_"
             role="combobox"
             spellcheck="false"
             type="text"
@@ -6602,61 +6609,71 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Language
-      </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for="_r_3u_"
+          id="_r_3u_-label"
+        >
+          Select Language
+        </label>
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
         >
-          <span
-            aria-hidden="true"
-            class="notranslate"
+          <input
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-invalid="false"
+            autocapitalize="none"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_3u_"
+            role="combobox"
+            spellcheck="false"
+            type="text"
+            value=""
+          />
+          <div
+            class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
           >
-            ​
-          </span>
-          <svg
+            <button
+              aria-label="Open"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+              tabindex="-1"
+              title="Open"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <fieldset
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="Person2Icon"
-            focusable="false"
-            viewBox="0 0 24 24"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
-            <path
-              d="M18.39 14.56C16.71 13.7 14.53 13 12 13s-4.71.7-6.39 1.56C4.61 15.07 4 16.1 4 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M9.78 12h4.44c1.21 0 2.14-1.06 1.98-2.26l-.32-2.45C15.57 5.39 13.92 4 12 4S8.43 5.39 8.12 7.29L7.8 9.74c-.16 1.2.77 2.26 1.98 2.26"
-            />
-          </svg>
+            <legend
+              class="css-1n64csd-MuiNotchedOutlined-root"
+            >
+              <span>
+                Select Language
+              </span>
+            </legend>
+          </fieldset>
         </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          name="language"
-          placeholder="Enter Language"
-          type="text"
-          value=""
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Language
-            </span>
-          </legend>
-        </fieldset>
       </div>
     </div>
     <div
@@ -6768,7 +6785,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_3v_"
+        id="_r_43_"
         tabindex="-1"
         value="BUYER"
       />
@@ -7150,14 +7167,14 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="true"
-        for="_r_46_"
-        id="_r_46_-label"
+        for="_r_4a_"
+        id="_r_4a_-label"
       >
         Date of Birth
       </label>
       <div
         aria-invalid="false"
-        aria-labelledby="_r_46_-label"
+        aria-labelledby="_r_4a_-label"
         class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
         role="group"
       >
@@ -7300,7 +7317,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <input
           aria-hidden="true"
           class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-          id="_r_46_"
+          id="_r_4a_"
           name="dateOfBirth"
           tabindex="-1"
           value="02/25/2001"
@@ -7370,64 +7387,90 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Time Zone
-      </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for="_r_4e_"
+          id="_r_4e_-label"
+        >
+          Select Timezone
+        </label>
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
         >
-          <span
-            aria-hidden="true"
-            class="notranslate"
+          <input
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-invalid="false"
+            autocapitalize="none"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_4e_"
+            role="combobox"
+            spellcheck="false"
+            type="text"
+            value="undefined"
+          />
+          <div
+            class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
           >
-            ​
-          </span>
-          <svg
+            <button
+              aria-label="Clear"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-clearIndicator css-1x7n7v0-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator"
+              tabindex="-1"
+              title="Clear"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                data-testid="CloseIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Open"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+              tabindex="-1"
+              title="Open"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <fieldset
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="ClockIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
-            <path
-              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-            />
-            <path
-              d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
-            />
-          </svg>
+            <legend
+              class="css-ex8a5f-MuiNotchedOutlined-root"
+            >
+              <span>
+                Select Timezone
+              </span>
+            </legend>
+          </fieldset>
         </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          name="timeZone"
-          placeholder="Enter TimeZone"
-          type="text"
-          value="Australia/Melbourne"
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Time Zone
-            </span>
-          </legend>
-        </fieldset>
       </div>
     </div>
     <div
@@ -7439,8 +7482,8 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for="_r_4b_"
-          id="_r_4b_-label"
+          for="_r_4i_"
+          id="_r_4i_-label"
         >
           Select Countries
         </label>
@@ -7454,7 +7497,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
             autocapitalize="none"
             autocomplete="off"
             class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_4b_"
+            id="_r_4i_"
             role="combobox"
             spellcheck="false"
             type="text"
@@ -7522,61 +7565,90 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Language
-      </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for="_r_4m_"
+          id="_r_4m_-label"
+        >
+          Select Language
+        </label>
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
         >
-          <span
-            aria-hidden="true"
-            class="notranslate"
+          <input
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-invalid="false"
+            autocapitalize="none"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_4m_"
+            role="combobox"
+            spellcheck="false"
+            type="text"
+            value="undefined"
+          />
+          <div
+            class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
           >
-            ​
-          </span>
-          <svg
+            <button
+              aria-label="Clear"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-clearIndicator css-1x7n7v0-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator"
+              tabindex="-1"
+              title="Clear"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                data-testid="CloseIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Open"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+              tabindex="-1"
+              title="Open"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <fieldset
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="Person2Icon"
-            focusable="false"
-            viewBox="0 0 24 24"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
-            <path
-              d="M18.39 14.56C16.71 13.7 14.53 13 12 13s-4.71.7-6.39 1.56C4.61 15.07 4 16.1 4 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M9.78 12h4.44c1.21 0 2.14-1.06 1.98-2.26l-.32-2.45C15.57 5.39 13.92 4 12 4S8.43 5.39 8.12 7.29L7.8 9.74c-.16 1.2.77 2.26 1.98 2.26"
-            />
-          </svg>
+            <legend
+              class="css-ex8a5f-MuiNotchedOutlined-root"
+            >
+              <span>
+                Select Language
+              </span>
+            </legend>
+          </fieldset>
         </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          name="language"
-          placeholder="Enter Language"
-          type="text"
-          value="English"
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Language
-            </span>
-          </legend>
-        </fieldset>
       </div>
     </div>
     <div
@@ -7688,7 +7760,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_4i_"
+        id="_r_4s_"
         tabindex="-1"
         value="BUYER"
       />
@@ -8070,14 +8142,14 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="true"
-        for="_r_4p_"
-        id="_r_4p_-label"
+        for="_r_53_"
+        id="_r_53_-label"
       >
         Date of Birth
       </label>
       <div
         aria-invalid="false"
-        aria-labelledby="_r_4p_-label"
+        aria-labelledby="_r_53_-label"
         class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
         role="group"
       >
@@ -8220,7 +8292,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <input
           aria-hidden="true"
           class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-          id="_r_4p_"
+          id="_r_53_"
           name="dateOfBirth"
           tabindex="-1"
           value="02/25/2001"
@@ -8290,64 +8362,90 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Time Zone
-      </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for="_r_57_"
+          id="_r_57_-label"
+        >
+          Select Timezone
+        </label>
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
         >
-          <span
-            aria-hidden="true"
-            class="notranslate"
+          <input
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-invalid="false"
+            autocapitalize="none"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_57_"
+            role="combobox"
+            spellcheck="false"
+            type="text"
+            value="undefined"
+          />
+          <div
+            class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
           >
-            ​
-          </span>
-          <svg
+            <button
+              aria-label="Clear"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-clearIndicator css-1x7n7v0-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator"
+              tabindex="-1"
+              title="Clear"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                data-testid="CloseIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Open"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+              tabindex="-1"
+              title="Open"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <fieldset
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="ClockIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
-            <path
-              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-            />
-            <path
-              d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
-            />
-          </svg>
+            <legend
+              class="css-ex8a5f-MuiNotchedOutlined-root"
+            >
+              <span>
+                Select Timezone
+              </span>
+            </legend>
+          </fieldset>
         </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          name="timeZone"
-          placeholder="Enter TimeZone"
-          type="text"
-          value="Australia/Melbourne"
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Time Zone
-            </span>
-          </legend>
-        </fieldset>
       </div>
     </div>
     <div
@@ -8359,8 +8457,8 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for="_r_4u_"
-          id="_r_4u_-label"
+          for="_r_5b_"
+          id="_r_5b_-label"
         >
           Select Countries
         </label>
@@ -8374,7 +8472,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
             autocapitalize="none"
             autocomplete="off"
             class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_4u_"
+            id="_r_5b_"
             role="combobox"
             spellcheck="false"
             type="text"
@@ -8442,61 +8540,90 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Language
-      </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for="_r_5f_"
+          id="_r_5f_-label"
+        >
+          Select Language
+        </label>
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
         >
-          <span
-            aria-hidden="true"
-            class="notranslate"
+          <input
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-invalid="false"
+            autocapitalize="none"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_5f_"
+            role="combobox"
+            spellcheck="false"
+            type="text"
+            value="undefined"
+          />
+          <div
+            class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
           >
-            ​
-          </span>
-          <svg
+            <button
+              aria-label="Clear"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-clearIndicator css-1x7n7v0-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator"
+              tabindex="-1"
+              title="Clear"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                data-testid="CloseIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Open"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+              tabindex="-1"
+              title="Open"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <fieldset
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="Person2Icon"
-            focusable="false"
-            viewBox="0 0 24 24"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
-            <path
-              d="M18.39 14.56C16.71 13.7 14.53 13 12 13s-4.71.7-6.39 1.56C4.61 15.07 4 16.1 4 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M9.78 12h4.44c1.21 0 2.14-1.06 1.98-2.26l-.32-2.45C15.57 5.39 13.92 4 12 4S8.43 5.39 8.12 7.29L7.8 9.74c-.16 1.2.77 2.26 1.98 2.26"
-            />
-          </svg>
+            <legend
+              class="css-ex8a5f-MuiNotchedOutlined-root"
+            >
+              <span>
+                Select Language
+              </span>
+            </legend>
+          </fieldset>
         </div>
-        <input
-          aria-invalid="false"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          name="language"
-          placeholder="Enter Language"
-          type="text"
-          value="English"
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Language
-            </span>
-          </legend>
-        </fieldset>
       </div>
     </div>
     <div
@@ -8608,7 +8735,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_55_"
+        id="_r_5l_"
         tabindex="-1"
         value="BUYER"
       />
@@ -8640,7 +8767,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
   <button
     class="MuiButtonBase-root MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter Mui-disabled MuiButton-root MuiButton-loading MuiButton-contained MuiButton-sizeMedium MuiButton-colorSuccess MuiButton-loadingPositionCenter css-1elmdwi-MuiButtonBase-root-MuiButton-root"
     disabled=""
-    id="_r_56_"
+    id="_r_5m_"
     tabindex="-1"
     type="submit"
   >
@@ -8652,7 +8779,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         class="MuiButton-loadingIndicator css-14m8o6v-MuiButton-loadingIndicator"
       >
         <span
-          aria-labelledby="_r_56_"
+          aria-labelledby="_r_5m_"
           class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorInherit css-gxw4l9-MuiCircularProgress-root"
           role="progressbar"
           style="width: 16px; height: 16px;"
@@ -9052,15 +9179,15 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
         data-shrink="false"
-        for="_r_5c_"
-        id="_r_5c_-label"
+        for="_r_5s_"
+        id="_r_5s_-label"
       >
         Date of Birth
       </label>
       <div
-        aria-describedby="_r_5c_-helper-text"
+        aria-describedby="_r_5s_-helper-text"
         aria-invalid="true"
-        aria-labelledby="_r_5c_-label"
+        aria-labelledby="_r_5s_-label"
         aria-live="polite"
         class="MuiPickersInputBase-root MuiPickersOutlinedInput-root Mui-error MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
         role="group"
@@ -9202,7 +9329,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <input
           aria-hidden="true"
           class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-          id="_r_5c_"
+          id="_r_5s_"
           name="dateOfBirth"
           tabindex="-1"
           value=""
@@ -9210,7 +9337,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
       </div>
       <p
         class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-2s8ubb-MuiFormHelperText-root"
-        id="_r_5c_-helper-text"
+        id="_r_5s_-helper-text"
       >
         Date of birth is required
       </p>
@@ -9285,72 +9412,79 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Time Zone
-      </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for="_r_60_"
+          id="_r_60_-label"
+        >
+          Select Timezone
+        </label>
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
         >
-          <span
-            aria-hidden="true"
-            class="notranslate"
+          <input
+            aria-autocomplete="list"
+            aria-describedby="_r_60_-helper-text"
+            aria-expanded="false"
+            aria-invalid="true"
+            autocapitalize="none"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_60_"
+            role="combobox"
+            spellcheck="false"
+            type="text"
+            value=""
+          />
+          <div
+            class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
           >
-            ​
-          </span>
-          <svg
+            <button
+              aria-label="Open"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+              tabindex="-1"
+              title="Open"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <fieldset
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="ClockIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
-            <path
-              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-            />
-            <path
-              d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
-            />
-          </svg>
+            <legend
+              class="css-1n64csd-MuiNotchedOutlined-root"
+            >
+              <span>
+                Select Timezone
+              </span>
+            </legend>
+          </fieldset>
         </div>
-        <input
-          aria-describedby="outlined-basic-helper-text"
-          aria-invalid="true"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          name="timeZone"
-          placeholder="Enter TimeZone"
-          type="text"
-          value=""
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+        <p
+          class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-2s8ubb-MuiFormHelperText-root"
+          id="_r_60_-helper-text"
         >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Time Zone
-            </span>
-          </legend>
-        </fieldset>
+          Time zone is required
+        </p>
       </div>
-      <p
-        class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-2s8ubb-MuiFormHelperText-root"
-        id="outlined-basic-helper-text"
-      >
-        Time zone is required
-      </p>
     </div>
     <div
       class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
@@ -9361,8 +9495,8 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for="_r_5h_"
-          id="_r_5h_-label"
+          for="_r_63_"
+          id="_r_63_-label"
         >
           Select Countries
         </label>
@@ -9371,13 +9505,13 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         >
           <input
             aria-autocomplete="list"
-            aria-describedby="_r_5h_-helper-text"
+            aria-describedby="_r_63_-helper-text"
             aria-expanded="false"
             aria-invalid="true"
             autocapitalize="none"
             autocomplete="off"
             class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_5h_"
+            id="_r_63_"
             role="combobox"
             spellcheck="false"
             type="text"
@@ -9421,7 +9555,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         </div>
         <p
           class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-2s8ubb-MuiFormHelperText-root"
-          id="_r_5h_-helper-text"
+          id="_r_63_-helper-text"
         >
           Country is required
         </p>
@@ -9432,69 +9566,79 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
     class="MuiStack-root css-pl8gqh-MuiStack-root"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+      class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
     >
-      <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-        data-shrink="true"
-        for="outlined-basic"
-        id="outlined-basic-label"
-      >
-        Language
-      </label>
       <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
       >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for="_r_66_"
+          id="_r_66_-label"
+        >
+          Select Language
+        </label>
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
         >
-          <span
-            aria-hidden="true"
-            class="notranslate"
+          <input
+            aria-autocomplete="list"
+            aria-describedby="_r_66_-helper-text"
+            aria-expanded="false"
+            aria-invalid="true"
+            autocapitalize="none"
+            autocomplete="off"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_66_"
+            role="combobox"
+            spellcheck="false"
+            type="text"
+            value=""
+          />
+          <div
+            class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
           >
-            ​
-          </span>
-          <svg
+            <button
+              aria-label="Open"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+              tabindex="-1"
+              title="Open"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <fieldset
             aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="Person2Icon"
-            focusable="false"
-            viewBox="0 0 24 24"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
           >
-            <path
-              d="M18.39 14.56C16.71 13.7 14.53 13 12 13s-4.71.7-6.39 1.56C4.61 15.07 4 16.1 4 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M9.78 12h4.44c1.21 0 2.14-1.06 1.98-2.26l-.32-2.45C15.57 5.39 13.92 4 12 4S8.43 5.39 8.12 7.29L7.8 9.74c-.16 1.2.77 2.26 1.98 2.26"
-            />
-          </svg>
+            <legend
+              class="css-1n64csd-MuiNotchedOutlined-root"
+            >
+              <span>
+                Select Language
+              </span>
+            </legend>
+          </fieldset>
         </div>
-        <input
-          aria-describedby="outlined-basic-helper-text"
-          aria-invalid="true"
-          class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-          id="outlined-basic"
-          name="language"
-          placeholder="Enter Language"
-          type="text"
-          value=""
-        />
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+        <p
+          class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-2s8ubb-MuiFormHelperText-root"
+          id="_r_66_-helper-text"
         >
-          <legend
-            class="css-ex8a5f-MuiNotchedOutlined-root"
-          >
-            <span>
-              Language
-            </span>
-          </legend>
-        </fieldset>
+          Language is required
+        </p>
       </div>
-      <p
-        class="MuiFormHelperText-root Mui-error MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-2s8ubb-MuiFormHelperText-root"
-        id="outlined-basic-helper-text"
-      >
-        Language is required
-      </p>
     </div>
     <div
       class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
@@ -9612,7 +9756,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-form/sign-up-form-
         aria-hidden="true"
         aria-invalid="false"
         class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-        id="_r_5n_"
+        id="_r_6b_"
         tabindex="-1"
         value="BUYER"
       />
@@ -10149,14 +10293,14 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_5u_"
-              id="_r_5u_-label"
+              for="_r_6i_"
+              id="_r_6i_-label"
             >
               Date of Birth
             </label>
             <div
               aria-invalid="false"
-              aria-labelledby="_r_5u_-label"
+              aria-labelledby="_r_6i_-label"
               class="MuiPickersInputBase-root MuiPickersOutlinedInput-root MuiPickersInputBase-colorPrimary MuiPickersInputBase-inputSizeSmall MuiPickersInputBase-adornedEnd css-1014916-MuiPickersInputBase-root-MuiPickersOutlinedInput-root"
               role="group"
             >
@@ -10297,7 +10441,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
               <input
                 aria-hidden="true"
                 class="MuiPickersInputBase-input MuiPickersOutlinedInput-input css-31lcvl-MuiPickersInputBase-input"
-                id="_r_5u_"
+                id="_r_6i_"
                 name="dateOfBirth"
                 tabindex="-1"
                 value=""
@@ -10367,64 +10511,71 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
           class="MuiStack-root css-pl8gqh-MuiStack-root"
         >
           <div
-            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+            class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
           >
-            <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for="outlined-basic"
-              id="outlined-basic-label"
-            >
-              Time Zone
-            </label>
             <div
-              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+              class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
             >
+              <label
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
+                data-shrink="false"
+                for="_r_6m_"
+                id="_r_6m_-label"
+              >
+                Select Timezone
+              </label>
               <div
-                class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
               >
-                <span
-                  aria-hidden="true"
-                  class="notranslate"
+                <input
+                  aria-autocomplete="list"
+                  aria-expanded="false"
+                  aria-invalid="false"
+                  autocapitalize="none"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+                  id="_r_6m_"
+                  role="combobox"
+                  spellcheck="false"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
                 >
-                  ​
-                </span>
-                <svg
+                  <button
+                    aria-label="Open"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+                    tabindex="-1"
+                    title="Open"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="ArrowDropDownIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <fieldset
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                  data-testid="ClockIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
+                  class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
                 >
-                  <path
-                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                  />
-                  <path
-                    d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
-                  />
-                </svg>
+                  <legend
+                    class="css-1n64csd-MuiNotchedOutlined-root"
+                  >
+                    <span>
+                      Select Timezone
+                    </span>
+                  </legend>
+                </fieldset>
               </div>
-              <input
-                aria-invalid="false"
-                class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-                id="outlined-basic"
-                name="timeZone"
-                placeholder="Enter TimeZone"
-                type="text"
-                value=""
-              />
-              <fieldset
-                aria-hidden="true"
-                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-              >
-                <legend
-                  class="css-ex8a5f-MuiNotchedOutlined-root"
-                >
-                  <span>
-                    Time Zone
-                  </span>
-                </legend>
-              </fieldset>
             </div>
           </div>
           <div
@@ -10436,8 +10587,8 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
               <label
                 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
                 data-shrink="false"
-                for="_r_63_"
-                id="_r_63_-label"
+                for="_r_6p_"
+                id="_r_6p_-label"
               >
                 Select Countries
               </label>
@@ -10451,7 +10602,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
                   autocapitalize="none"
                   autocomplete="off"
                   class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
-                  id="_r_63_"
+                  id="_r_6p_"
                   role="combobox"
                   spellcheck="false"
                   type="text"
@@ -10500,61 +10651,71 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
           class="MuiStack-root css-pl8gqh-MuiStack-root"
         >
           <div
-            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+            class="MuiAutocomplete-root MuiAutocomplete-fullWidth MuiAutocomplete-hasPopupIcon css-193hb48-MuiAutocomplete-root"
           >
-            <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for="outlined-basic"
-              id="outlined-basic-label"
-            >
-              Language
-            </label>
             <div
-              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"
+              class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
             >
+              <label
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
+                data-shrink="false"
+                for="_r_6s_"
+                id="_r_6s_-label"
+              >
+                Select Language
+              </label>
               <div
-                class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nowbqt-MuiInputAdornment-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1n04w30-MuiInputBase-root-MuiOutlinedInput-root"
               >
-                <span
-                  aria-hidden="true"
-                  class="notranslate"
+                <input
+                  aria-autocomplete="list"
+                  aria-expanded="false"
+                  aria-invalid="false"
+                  autocapitalize="none"
+                  autocomplete="off"
+                  class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input"
+                  id="_r_6s_"
+                  role="combobox"
+                  spellcheck="false"
+                  type="text"
+                  value=""
+                />
+                <div
+                  class="MuiAutocomplete-endAdornment css-1uhhrmm-MuiAutocomplete-endAdornment"
                 >
-                  ​
-                </span>
-                <svg
+                  <button
+                    aria-label="Open"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-2y136s-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+                    tabindex="-1"
+                    title="Open"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="ArrowDropDownIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <fieldset
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                  data-testid="Person2Icon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
+                  class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
                 >
-                  <path
-                    d="M18.39 14.56C16.71 13.7 14.53 13 12 13s-4.71.7-6.39 1.56C4.61 15.07 4 16.1 4 17.22V20h16v-2.78c0-1.12-.61-2.15-1.61-2.66M9.78 12h4.44c1.21 0 2.14-1.06 1.98-2.26l-.32-2.45C15.57 5.39 13.92 4 12 4S8.43 5.39 8.12 7.29L7.8 9.74c-.16 1.2.77 2.26 1.98 2.26"
-                  />
-                </svg>
+                  <legend
+                    class="css-1n64csd-MuiNotchedOutlined-root"
+                  >
+                    <span>
+                      Select Language
+                    </span>
+                  </legend>
+                </fieldset>
               </div>
-              <input
-                aria-invalid="false"
-                class="MuiInputBase-input MuiOutlinedInput-input css-1q55ijt-MuiInputBase-input-MuiOutlinedInput-input"
-                id="outlined-basic"
-                name="language"
-                placeholder="Enter Language"
-                type="text"
-                value=""
-              />
-              <fieldset
-                aria-hidden="true"
-                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-              >
-                <legend
-                  class="css-ex8a5f-MuiNotchedOutlined-root"
-                >
-                  <span>
-                    Language
-                  </span>
-                </legend>
-              </fieldset>
             </div>
           </div>
           <div
@@ -10666,7 +10827,7 @@ exports[`Storybook snapshots > /src/pages/signup-page/sign-up-page-view.stories.
               aria-hidden="true"
               aria-invalid="false"
               class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-              id="_r_69_"
+              id="_r_71_"
               tabindex="-1"
               value="BUYER"
             />
