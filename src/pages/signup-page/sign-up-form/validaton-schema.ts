@@ -1,23 +1,7 @@
 import z from 'zod';
 import { UserRole } from './sign-up-form.types';
 import { UserStatus } from '../../../types/user.types';
-
-const countrySchema = z.object({
-    id: z.string(),
-    name: z.string(),
-    phoneCode: z.string(),
-});
-
-const timezoneSchema = z.object({
-    id: z.string(),
-    code: z.string(),
-});
-
-const languageSchema = z.object({
-    id: z.string(),
-    code: z.string(),
-    language: z.string(),
-});
+import { countrySchema, languageSchema, timezoneSchema } from '../../../types/info.types';
 
 export const signupFormSchema = z.object({
     email: z.email('Invalid email').nonempty('Email is required'),

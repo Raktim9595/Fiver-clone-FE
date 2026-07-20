@@ -1,17 +1,21 @@
 import { Box, Button, Card, CardContent, Grid, Typography } from '@mui/material';
 import { type ProfileDetailsViewProps } from './profile-detils.types';
 import { FormInput } from '../../../components/form-input';
-import { Email, LocalPhone, LocationOn, Person2, PersonAddAltOutlined } from '@mui/icons-material';
+import { Email, LocalPhone, LocationOn, PersonAddAltOutlined } from '@mui/icons-material';
 import { Controller } from 'react-hook-form';
-import { ClockIcon, DatePicker } from '@mui/x-date-pickers';
+import { DatePicker } from '@mui/x-date-pickers';
 import dayjs from 'dayjs';
+import { CountriesSelect } from '../../../components/countries-select';
+import { LanguageSelect } from '../../../components/language-select';
+import { TimezoneSelect } from '../../../components/timezone-select';
 
 export const ProfileDetailsView = ({
     control,
     errors,
-    handleSubmit,
     isSubmitting,
     onSubmit,
+    isDirty,
+    handleSubmit,
 }: ProfileDetailsViewProps) => {
     return (
         <Box>
@@ -95,33 +99,45 @@ export const ProfileDetailsView = ({
                             />
                         </Grid>
                         <Grid size={6}>
-                            <FormInput
+                            <Controller
                                 control={control}
                                 name="country"
-                                label="Country"
-                                error={errors.country}
-                                placeholder="Enter country"
-                                icon={<LocationOn />}
+                                render={({ field }) => (
+                                    <CountriesSelect
+                                        error={!!errors.country}
+                                        helperText={errors.country?.message}
+                                        onChange={(_, v) => field.onChange(v)}
+                                        value={field.value}
+                                    />
+                                )}
                             />
                         </Grid>
                         <Grid size={6}>
-                            <FormInput
+                            <Controller
                                 control={control}
                                 name="language"
-                                label="Language"
-                                error={errors.language}
-                                placeholder="Enter language"
-                                icon={<Person2 />}
+                                render={({ field }) => (
+                                    <LanguageSelect
+                                        error={!!errors.language}
+                                        helperText={errors.language?.message}
+                                        onChange={(_, v) => field.onChange(v)}
+                                        value={field.value}
+                                    />
+                                )}
                             />
                         </Grid>
                         <Grid size={6}>
-                            <FormInput
+                            <Controller
                                 control={control}
                                 name="timeZone"
-                                label="Time Zone"
-                                error={errors.timeZone}
-                                placeholder="Enter time zone"
-                                icon={<ClockIcon />}
+                                render={({ field }) => (
+                                    <TimezoneSelect
+                                        error={!!errors.timeZone}
+                                        helperText={errors.timeZone?.message}
+                                        onChange={(_, v) => field.onChange(v)}
+                                        value={field.value}
+                                    />
+                                )}
                             />
                         </Grid>
                         <Box sx={{ marginLeft: 'auto' }}>
@@ -130,6 +146,7 @@ export const ProfileDetailsView = ({
                                 loading={isSubmitting}
                                 color="success"
                                 variant="contained"
+                                disabled={!isDirty}
                             >
                                 Save Changes
                             </Button>

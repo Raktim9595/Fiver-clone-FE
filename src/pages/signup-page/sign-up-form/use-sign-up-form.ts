@@ -3,7 +3,7 @@ import {
     type SignUpFormType,
     type UseSignupForm,
 } from './sign-up-form.types';
-import { useForm } from 'react-hook-form';
+import { Resolver, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { signupFormSchema } from './validaton-schema';
 import { useMutation } from '@tanstack/react-query';
@@ -21,7 +21,7 @@ export const useSignupForm: UseSignupForm = () => {
         formState: { errors, isSubmitting },
         reset,
     } = useForm<SignUpFormType>({
-        resolver: zodResolver(signupFormSchema),
+        resolver: zodResolver(signupFormSchema) as Resolver<SignUpFormType>,
         defaultValues: signUpFormInitialValues,
     });
 

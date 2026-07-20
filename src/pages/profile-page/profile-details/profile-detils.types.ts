@@ -1,4 +1,5 @@
 import { type Control, type FieldErrors, type UseFormHandleSubmit } from 'react-hook-form';
+import { Country, Language, Timezone } from '../../../types/info.types';
 
 export type ProfileDetailsFormType = {
     username: string;
@@ -6,9 +7,9 @@ export type ProfileDetailsFormType = {
     phoneNumber: string;
     address: string;
     dateOfBirth: string;
-    country: string;
-    language: string;
-    timeZone: string;
+    country: Country | null;
+    language: Language | null;
+    timeZone: Timezone | null;
 };
 
 export const profileDetailsFormInitialValues: ProfileDetailsFormType = {
@@ -17,9 +18,9 @@ export const profileDetailsFormInitialValues: ProfileDetailsFormType = {
     phoneNumber: '',
     address: '',
     dateOfBirth: '',
-    country: '',
-    language: '',
-    timeZone: '',
+    country: null,
+    language: null,
+    timeZone: null,
 };
 
 export type UseProfileDetails = () => {
@@ -28,6 +29,7 @@ export type UseProfileDetails = () => {
     errors: FieldErrors<ProfileDetailsFormType>;
     isSubmitting: boolean;
     handleSubmit: UseFormHandleSubmit<ProfileDetailsFormType, ProfileDetailsFormType>;
+    isDirty: boolean;
 };
 
 export type ProfileDetailsViewProps = ReturnType<UseProfileDetails>;

@@ -13,6 +13,7 @@ const END_POINTS = {
     GET_COUNTRIES: `${BASE_URL}/info/country`,
     GET_TIMEZONES: `${BASE_URL}/info/timezone`,
     GET_LANGUAGES: `${BASE_URL}/info/language`,
+    UPDATE_USER: (id: string) => `${BASE_URL}/user/${id}`,
 };
 
 export default END_POINTS;
