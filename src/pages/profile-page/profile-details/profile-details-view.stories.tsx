@@ -8,22 +8,33 @@ import { type FieldErrors, useForm } from 'react-hook-form';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { fn } from 'storybook/test';
+import {
+    mockCountryData,
+    mockLanguageData,
+    mockTimezonedata,
+} from '../../../__mocks__/data/info-mock.data';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from '../../../utils/query-client';
+import { getCountriesHandler } from '../../../__mocks__/handlers/countries.handlers';
+import { getTimeZonesHandler } from '../../../__mocks__/handlers/timezones.handlers';
+import { getLanguagesHandler } from '../../../__mocks__/handlers/language.handlers';
 
 type StoryWrapperProps = {
     defaultValues?: Partial<ProfileDetailsFormType>;
     isSubmitting?: boolean;
     errors?: FieldErrors<ProfileDetailsFormType>;
+    isDirty?: boolean;
 };
 
 const baseValues: ProfileDetailsFormType = profileDetailsFormInitialValues;
 const defaultValues: ProfileDetailsFormType = {
     address: 'Melbourne, Victoria',
-    country: 'Australia',
+    country: mockCountryData(),
     dateOfBirth: '2001-02-25',
     email: 'bXOyO@example.com',
-    language: 'English',
+    language: mockLanguageData(),
     phoneNumber: '0412345678',
-    timeZone: 'Australia/Melbourne',
+    timeZone: mockTimezonedata(),
     username: 'JohnDoe',
 };
 
@@ -33,6 +44,9 @@ const meta = {
     tags: ['autodocs'],
     parameters: {
         layout: 'fullscreen',
+        msw: {
+            handlers: [getCountriesHandler, getTimeZonesHandler, getLanguagesHandler],
+        },
     },
 } satisfies Meta<typeof ProfileDetailsView>;
 
@@ -44,6 +58,7 @@ const StoryWrapper = ({
     defaultValues,
     errors: errorsOverride,
     isSubmitting,
+    isDirty = false,
 }: StoryWrapperProps) => {
     const {
         control,
@@ -58,13 +73,16 @@ const StoryWrapper = ({
 
     return (
         <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <ProfileDetailsView
-                control={control}
-                errors={errorsOverride ?? errors}
-                handleSubmit={handleSubmit}
-                isSubmitting={isSubmitting ?? formIsSubmitting}
-                onSubmit={fn()}
-            />
+            <QueryClientProvider client={queryClient}>
+                <ProfileDetailsView
+                    control={control}
+                    errors={errorsOverride ?? errors}
+                    handleSubmit={handleSubmit}
+                    isSubmitting={isSubmitting ?? formIsSubmitting}
+                    onSubmit={fn()}
+                    isDirty={isDirty}
+                />
+            </QueryClientProvider>
         </LocalizationProvider>
     );
 };
@@ -79,6 +97,10 @@ export const ProfileDetailsFormFilled: Story = {
 
 export const ProfileDetailsFormSubmitting: Story = {
     render: (args) => <StoryWrapper {...args} defaultValues={defaultValues} isSubmitting />,
+};
+
+export const ProfileDetailsFormDirty: Story = {
+    render: (args) => <StoryWrapper {...args} defaultValues={defaultValues} isDirty />,
 };
 
 export const ProfileDetailsFormWithErrors: Story = {

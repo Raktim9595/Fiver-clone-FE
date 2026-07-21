@@ -165,7 +165,6 @@ const VirtualizedAutoComplete = <T,>({
 
     return (
         <Autocomplete<T>
-            sx={{ width: 300 }}
             disableListWrap
             options={options}
             groupBy={(option) => getOptionLabel(option)[0].toUpperCase()}

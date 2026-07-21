@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { getCurrentUser, getUserById } from './user.services';
+import { getCurrentUser, getUserById, updateUser } from './user.services';
 import axios from 'axios';
 import { mockUserDataFromServer } from '../../__mocks__/data/user-mock.data';
 import { mockedAxios } from '../../utils/test-setups';
@@ -35,6 +35,29 @@ describe('UserService, Unit Test', () => {
             const res = await getUserById(userId);
             expect(axios.get).toHaveBeenCalledWith(`http://raktim-backend:8080/api/user/${userId}`);
             expect(res).toEqual({ data: user });
+        });
+    });
+
+    describe('Given updateUser, when called', () => {
+        test('Then it should hit correct end-point', async () => {
+            const user = mockUserDataFromServer();
+
+            const { id, ...body } = user;
+
+            mockedAxios.put.mockResolvedValue({
+                data: {
+                    data: user,
+                },
+            });
+
+            const res = await updateUser(user);
+            expect(axios.put).toHaveBeenCalledExactlyOnceWith(
+                `http://raktim-backend:8080/api/user/${id}`,
+                body,
+            );
+            expect(res).toEqual({
+                data: user,
+            });
         });
     });
 });
