@@ -1,4 +1,5 @@
 import { type LoginFormType } from '../../pages/login-page/login-form/login-form.types';
+import { ProfileDetailsFormType } from '../../pages/profile-page/profile-details/profile-detils.types';
 import {
     type SignUpFormType,
     UserRole,
@@ -45,5 +46,19 @@ export const mockUserDataFromServer = (data?: Partial<User>): User => ({
     language: 'English',
     status: UserStatus.ACTIVE,
     timeZone: 'Australia/Melbourne',
+    ...data,
+});
+
+export const mockProfileDetailsFormData = (
+    data?: Partial<ProfileDetailsFormType>,
+): ProfileDetailsFormType => ({
+    address: 'Melbourne, Australia',
+    dateOfBirth: '2001-02-25',
+    email: 'random@gmail.com',
+    phoneNumber: '0412345678',
+    username: 'random',
+    country: mockCountryData({ name: 'Australia' }),
+    language: mockLanguageData({ code: 'En', language: 'English' }),
+    timeZone: mockTimezonedata({ code: 'Australia/Melbourne' }),
     ...data,
 });

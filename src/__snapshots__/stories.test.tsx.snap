@@ -3090,6 +3090,48 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
           </div>
         </div>
         <div
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+            >
+              Enter Bio
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-multiline css-xrmkj5-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <textarea
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                style="height: 0px; overflow: hidden;"
+              />
+              <textarea
+                aria-hidden="true"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                readonly=""
+                style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); padding-top: 0px; padding-bottom: 0px; width: 100%;"
+                tabindex="-1"
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-1n64csd-MuiNotchedOutlined-root"
+                >
+                  <span>
+                    Enter Bio
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div
           class="MuiBox-root css-zdpt2t"
         >
           <button
@@ -3814,6 +3856,50 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
                   </legend>
                 </fieldset>
               </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="true"
+            >
+              Enter Bio
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-multiline css-xrmkj5-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <textarea
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                style="height: 0px; overflow: hidden;"
+              >
+                I am a software developer
+              </textarea>
+              <textarea
+                aria-hidden="true"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                readonly=""
+                style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); padding-top: 0px; padding-bottom: 0px; width: 100%;"
+                tabindex="-1"
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-ex8a5f-MuiNotchedOutlined-root"
+                >
+                  <span>
+                    Enter Bio
+                  </span>
+                </legend>
+              </fieldset>
             </div>
           </div>
         </div>
@@ -4545,6 +4631,50 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
           </div>
         </div>
         <div
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="true"
+            >
+              Enter Bio
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-multiline css-xrmkj5-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <textarea
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                style="height: 0px; overflow: hidden;"
+              >
+                I am a software developer
+              </textarea>
+              <textarea
+                aria-hidden="true"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                readonly=""
+                style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); padding-top: 0px; padding-bottom: 0px; width: 100%;"
+                tabindex="-1"
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-ex8a5f-MuiNotchedOutlined-root"
+                >
+                  <span>
+                    Enter Bio
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div
           class="MuiBox-root css-zdpt2t"
         >
           <button
@@ -5269,6 +5399,50 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
                   </legend>
                 </fieldset>
               </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="true"
+            >
+              Enter Bio
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-multiline css-xrmkj5-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <textarea
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                style="height: 0px; overflow: hidden;"
+              >
+                I am a software developer
+              </textarea>
+              <textarea
+                aria-hidden="true"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                readonly=""
+                style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); padding-top: 0px; padding-bottom: 0px; width: 100%;"
+                tabindex="-1"
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-ex8a5f-MuiNotchedOutlined-root"
+                >
+                  <span>
+                    Enter Bio
+                  </span>
+                </legend>
+              </fieldset>
             </div>
           </div>
         </div>
@@ -6021,6 +6195,48 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-details/profile-d
               >
                 Time zone is required
               </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+            >
+              Enter Bio
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-multiline css-xrmkj5-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <textarea
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                style="height: 0px; overflow: hidden;"
+              />
+              <textarea
+                aria-hidden="true"
+                class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                readonly=""
+                style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); padding-top: 0px; padding-bottom: 0px; width: 100%;"
+                tabindex="-1"
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-1n64csd-MuiNotchedOutlined-root"
+                >
+                  <span>
+                    Enter Bio
+                  </span>
+                </legend>
+              </fieldset>
             </div>
           </div>
         </div>
@@ -6851,6 +7067,48 @@ exports[`Storybook snapshots > /src/pages/profile-page/profile-page-view.stories
                       </legend>
                     </fieldset>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-12 css-yqiqnf-MuiGrid-root"
+            >
+              <div
+                class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+              >
+                <label
+                  class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+                  data-shrink="false"
+                >
+                  Enter Bio
+                </label>
+                <div
+                  class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-multiline css-xrmkj5-MuiInputBase-root-MuiOutlinedInput-root"
+                >
+                  <textarea
+                    aria-invalid="false"
+                    class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                    style="height: 0px; overflow: hidden;"
+                  />
+                  <textarea
+                    aria-hidden="true"
+                    class="MuiInputBase-input MuiOutlinedInput-input css-w4nesw-MuiInputBase-input-MuiOutlinedInput-input"
+                    readonly=""
+                    style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); padding-top: 0px; padding-bottom: 0px; width: 100%;"
+                    tabindex="-1"
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="css-1n64csd-MuiNotchedOutlined-root"
+                    >
+                      <span>
+                        Enter Bio
+                      </span>
+                    </legend>
+                  </fieldset>
                 </div>
               </div>
             </div>

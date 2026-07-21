@@ -3,8 +3,10 @@ import { renderHookWithWrapper } from '../../../utils/test-wrapper';
 import { useProfileDetails } from './use-profile-details';
 import { act, waitFor } from '@testing-library/react';
 import { mockedAxios, mockShowNotification } from '../../../utils/test-setups';
-import { mockUserDataFromServer, mockUserFormData } from '../../../__mocks__/data/user-mock.data';
-import { QUERY_CONSTANT } from '../../../utils/query-constants';
+import {
+    mockProfileDetailsFormData,
+    mockUserDataFromServer,
+} from '../../../__mocks__/data/user-mock.data';
 
 beforeEach(() => {
     vi.clearAllMocks();
@@ -59,7 +61,9 @@ describe('useProfileDetails, Unit Test', () => {
     });
 
     describe('onSubmit, When called', () => {
-        const mockFormData = mockUserFormData();
+        const mockFormData = mockProfileDetailsFormData({
+            bio: 'I am a softeware developer',
+        });
         const { id, ...mockRequestBody } = mockUserDataFromServer({
             ...user,
             ...mockFormData,
