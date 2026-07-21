@@ -44,6 +44,7 @@ export const useProfileDetails: UseProfileDetails = () => {
                   timeZone: {
                       code: currentUser.data.timeZone,
                   } as Timezone,
+                  bio: currentUser.data.bio,
               }
             : profileDetailsFormInitialValues,
         resolver: zodResolver(profileDetailsValidationSchema) as Resolver<ProfileDetailsFormType>,

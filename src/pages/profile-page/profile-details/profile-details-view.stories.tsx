@@ -36,6 +36,7 @@ const defaultValues: ProfileDetailsFormType = {
     phoneNumber: '0412345678',
     timeZone: mockTimezonedata(),
     username: 'JohnDoe',
+    bio: 'I am a software developer',
 };
 
 const meta = {
