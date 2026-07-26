@@ -16,4 +16,5 @@ export const profileDetailsValidationSchema = z.object({
         message: 'Language is required',
     }),
     address: z.string().nonempty('Address is required'),
+    bio: z.string().optional(),
 });

@@ -1,4 +1,15 @@
-import { Box, Button, Card, CardContent, Grid, Typography } from '@mui/material';
+import {
+    Box,
+    Button,
+    Card,
+    CardContent,
+    FormControl,
+    Grid,
+    InputLabel,
+    OutlinedInput,
+    TextareaAutosize,
+    Typography,
+} from '@mui/material';
 import { type ProfileDetailsViewProps } from './profile-detils.types';
 import { FormInput } from '../../../components/form-input';
 import { Email, LocalPhone, LocationOn, PersonAddAltOutlined } from '@mui/icons-material';
@@ -137,6 +148,24 @@ export const ProfileDetailsView = ({
                                         onChange={(_, v) => field.onChange(v)}
                                         value={field.value}
                                     />
+                                )}
+                            />
+                        </Grid>
+                        <Grid size={12}>
+                            <Controller
+                                control={control}
+                                name="bio"
+                                render={({ field }) => (
+                                    <FormControl fullWidth>
+                                        <InputLabel>Enter Bio</InputLabel>
+                                        <OutlinedInput
+                                            label="Enter Bio"
+                                            multiline
+                                            minRows={4}
+                                            onChange={field.onChange}
+                                            value={field.value}
+                                        />
+                                    </FormControl>
                                 )}
                             />
                         </Grid>

@@ -10,6 +10,7 @@ export type ProfileDetailsFormType = {
     country: Country | null;
     language: Language | null;
     timeZone: Timezone | null;
+    bio?: string;
 };
 
 export const profileDetailsFormInitialValues: ProfileDetailsFormType = {
@@ -21,6 +22,7 @@ export const profileDetailsFormInitialValues: ProfileDetailsFormType = {
     country: null,
     language: null,
     timeZone: null,
+    bio: '',
 };
 
 export type UseProfileDetails = () => {
