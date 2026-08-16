@@ -9,6 +9,7 @@ export type VirtualizedAutoCompleteViewProps<T> = {
     error?: boolean;
     isLoading?: boolean;
     helperText?: string;
+    groupBy?: (option: T) => string;
 } & Pick<AutocompleteProps<T, false, false, false>, 'onChange' | 'value'>;
 
 export const LISTBOX_PADDING = 8; // px
