@@ -144,6 +144,7 @@ const VirtualizedAutoComplete = <T,>({
     error = false,
     helperText,
     isLoading = false,
+    groupBy,
 }: VirtualizedAutoCompleteViewProps<T>) => {
     // Use react-window v2's useListRef hook for imperative API access
     const internalListRef = useListRef(null);
@@ -163,11 +164,14 @@ const VirtualizedAutoComplete = <T,>({
         }
     };
 
+    const defaultGroupBy = (option: T): string => getOptionLabel(option)[0]?.toUpperCase() ?? '';
+    const resolvedGroupBy = groupBy ?? defaultGroupBy;
+
     return (
         <Autocomplete<T>
             disableListWrap
             options={options}
-            groupBy={(option) => getOptionLabel(option)[0].toUpperCase()}
+            groupBy={resolvedGroupBy}
             size="small"
             renderInput={(params) => (
                 <TextField

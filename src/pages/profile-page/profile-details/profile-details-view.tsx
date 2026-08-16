@@ -7,7 +7,6 @@ import {
     Grid,
     InputLabel,
     OutlinedInput,
-    TextareaAutosize,
     Typography,
 } from '@mui/material';
 import { type ProfileDetailsViewProps } from './profile-detils.types';
