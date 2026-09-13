@@ -1,6 +1,5 @@
 import { Button, Stack, Typography } from '@mui/material';
-import { type SignupFormViewProps, UserRole } from './sign-up-form.types';
-import { capitalize, upperCase } from 'lodash';
+import { type SignupFormViewProps } from './sign-up-form.types';
 import {
     AccountCircle,
     PersonAddAltOutlined,
@@ -27,11 +26,6 @@ const SignUpFormView = ({
     isSubmitting,
     onSubmit,
 }: SignupFormViewProps) => {
-    const options = Object.values(UserRole).map((role) => ({
-        label: capitalize(role),
-        value: upperCase(role),
-    }));
-
     return (
         <Stack spacing={3} component="form" onSubmit={handleSubmit(onSubmit)}>
             <Stack>
