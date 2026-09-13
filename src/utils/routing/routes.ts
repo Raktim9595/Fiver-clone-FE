@@ -7,6 +7,8 @@ import { ProtectedLayout } from '../../components/protected-layout';
 import { publicOnlyLoader } from '../public-only-loader';
 import HomePageView from '../../pages/home-page/home-page-view';
 import { RootLayout } from '../../root-layout';
+import { PATH } from './paths';
+import { BecomeASellerPage } from '../../pages/become-a-seller-page';
 
 export const router = createBrowserRouter([
     {
@@ -22,8 +24,12 @@ export const router = createBrowserRouter([
                 Component: ProtectedLayout,
                 children: [
                     {
-                        path: '/profile',
+                        path: PATH.PROFILE,
                         Component: ProfilePage,
+                    },
+                    {
+                        path: PATH.BECOME_A_SELLER,
+                        Component: BecomeASellerPage,
                     },
                 ],
             },

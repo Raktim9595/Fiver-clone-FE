@@ -1,6 +1,5 @@
 import { Box, Stack } from '@mui/material';
 import { Outlet, useOutletContext } from 'react-router';
-import { Sidebar } from '../sidebar';
 import { type GetCurrentUserApiResponse } from '../../types/user.types';
 
 const ProtectedLayout = () => {
@@ -16,7 +15,7 @@ const ProtectedLayout = () => {
                 borderTop: '1px solid #e0e0de',
             }}
         >
-            <Box
+            {/* <Box
                 sx={{
                     width: '16%',
                     backgroundColor: '#ffffff',
@@ -25,7 +24,7 @@ const ProtectedLayout = () => {
                 }}
             >
                 <Sidebar />
-            </Box>
+            </Box> */}
 
             <Box
                 sx={{
