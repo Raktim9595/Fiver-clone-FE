@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { NavbarView } from './navbar-view';
 import { fn } from 'storybook/test';
 import { mockUserDataFromServer } from '../../__mocks__/data/user-mock.data';
+import { MemoryRouter } from 'react-router';
 
 const meta = {
     title: 'Components/Navbar',
@@ -12,6 +13,13 @@ const meta = {
         logOut: fn(),
         navigate: fn(),
     },
+    decorators: [
+        (Story) => (
+            <MemoryRouter>
+                <Story />
+            </MemoryRouter>
+        ),
+    ],
 } satisfies Meta<typeof NavbarView>;
 
 const user = mockUserDataFromServer();

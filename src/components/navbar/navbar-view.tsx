@@ -1,12 +1,20 @@
-import { AppBar, Avatar, Box, Toolbar } from '@mui/material';
+import { AppBar, Avatar, Box, Toolbar, Typography } from '@mui/material';
+
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+
+import { Link } from 'react-router';
+
 import logo from '../../assets/fiver-main.png';
+
 import { CustomInput } from '../input';
-import { SearchOutlined } from '@mui/icons-material';
-import { type CustomMenuAction } from '../custom-menu/custom-menu-view.types';
 import { CustomMenu } from '../custom-menu';
-import { type NavbarViewProps } from './navbar.types';
+
 import { PATH } from '../../utils/routing/paths';
+
 import { stringAvatar } from './helpers';
+
+import type { CustomMenuAction } from '../custom-menu/custom-menu-view.types';
+import type { NavbarViewProps } from './navbar.types';
 
 export const NavbarView = ({ isLoggedin, navigate, logOut, user }: NavbarViewProps) => {
     const loggedInActions: CustomMenuAction[] = [
@@ -31,56 +39,119 @@ export const NavbarView = ({ isLoggedin, navigate, logOut, user }: NavbarViewPro
         },
     ];
 
-    const actions: CustomMenuAction[] = isLoggedin && user ? loggedInActions : loggedOutActions;
+    const actions = isLoggedin && user ? loggedInActions : loggedOutActions;
 
     return (
-        <Box
+        <AppBar
+            component="header"
+            position="sticky"
+            elevation={0}
             sx={{
-                flexGrow: 1,
+                top: 0,
+
+                width: '100%',
+
+                bgcolor: 'background.paper',
+                color: 'text.primary',
+
+                borderBottom: '0.0625rem solid',
+                borderColor: 'divider',
+
+                zIndex: (theme) => theme.zIndex.appBar,
             }}
         >
-            <AppBar
-                position="static"
+            <Toolbar
+                component="nav"
+                aria-label="Primary navigation"
                 sx={{
-                    padding: 0,
-                    margin: 0,
-                    backgroundColor: 'white',
+                    minHeight: {
+                        xs: '4rem',
+                        md: '4.5rem',
+                    },
+
+                    px: {
+                        xs: '1rem',
+                        sm: '1.5rem',
+                        md: '2rem',
+                    },
+
+                    gap: {
+                        xs: '1rem',
+                        md: '2rem',
+                    },
                 }}
             >
-                <Toolbar
-                    sx={{
-                        padding: 0,
-                        margin: 0,
-                        gap: '2rem',
+                <Link
+                    to={PATH.HOME}
+                    aria-label="Go to homepage"
+                    style={{
+                        display: 'inline-flex',
+                        flexShrink: 0,
+                        textDecoration: 'none',
                     }}
                 >
                     <Box
+                        component="img"
+                        src={logo}
+                        alt="Fiverr"
                         sx={{
-                            height: '4rem',
+                            display: 'block',
                             width: '6rem',
+                            height: 'auto',
                         }}
-                    >
-                        <img src={logo} alt="fiver-logo" width="100%" height="100%" />
-                    </Box>
+                    />
+                </Link>
 
+                <Box
+                    sx={{
+                        flex: 1,
+                        minWidth: 0,
+                    }}
+                >
                     <CustomInput
-                        icon={<SearchOutlined />}
+                        icon={<SearchOutlinedIcon />}
                         iconposition="end"
                         placeholder="Search..."
                     />
-                    <CustomMenu
-                        actions={actions}
-                        iconButton
-                        icon={
-                            isLoggedin && user ? (
-                                <Avatar {...stringAvatar(`${user?.firstName} ${user?.lastName}`)} />
-                            ) : (
-                                <Avatar />
-                            )
-                        }
-                    />
-                </Toolbar>
-            </AppBar>
-        </Box>
+                </Box>
+
+                <Link
+                    to={PATH.BECOME_A_SELLER}
+                    style={{
+                        textDecoration: 'none',
+                    }}
+                >
+                    <Typography
+                        component="span"
+                        sx={{
+                            whiteSpace: 'nowrap',
+
+                            color: 'success.main',
+
+                            fontSize: '1rem',
+                            fontWeight: 600,
+
+                            '&:hover': {
+                                textDecoration: 'underline',
+                            },
+                        }}
+                    >
+                        Become a Seller
+                    </Typography>
+                </Link>
+
+                <CustomMenu
+                    actions={actions}
+                    iconButton
+                    icon={
+                        isLoggedin && user ? (
+                            <Avatar {...stringAvatar(`${user.firstName} ${user.lastName}`)} />
+                        ) : (
+                            <Avatar />
+                        )
+                    }
+                />
+            </Toolbar>
+        </AppBar>
     );
 };

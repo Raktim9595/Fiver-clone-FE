@@ -3,4 +3,5 @@ export const PATH = {
     SIGNUP: '/signup',
     LOGIN: '/login',
     PROFILE: '/profile',
+    BECOME_A_SELLER: '/become-a-seller',
 };
