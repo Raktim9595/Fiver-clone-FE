@@ -12,6 +12,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { getCountriesHandler } from '../../../__mocks__/handlers/countries.handlers';
 import { getTimeZonesHandler } from '../../../__mocks__/handlers/timezones.handlers';
 import { getLanguagesHandler } from '../../../__mocks__/handlers/language.handlers';
+import { getUserRolesHandler } from '../../../__mocks__/handlers/user-roles.hadlers';
 
 const meta: Meta<typeof SignUpFormView> = {
     title: 'Forms/SignUpForm',
@@ -20,7 +21,12 @@ const meta: Meta<typeof SignUpFormView> = {
     parameters: {
         layout: 'fullscreen',
         msw: {
-            handlers: [getCountriesHandler, getTimeZonesHandler, getLanguagesHandler],
+            handlers: [
+                getCountriesHandler,
+                getTimeZonesHandler,
+                getLanguagesHandler,
+                getUserRolesHandler,
+            ],
         },
     },
 };

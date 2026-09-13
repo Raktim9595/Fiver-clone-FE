@@ -1,4 +1,5 @@
-import { type Country, type Language, type Timezone } from '../../types/info.types';
+import { UserRole } from '../../pages/signup-page/sign-up-form/sign-up-form.types';
+import { Role, type Country, type Language, type Timezone } from '../../types/info.types';
 import { v4 as uuid } from 'uuid';
 
 export const mockCountryData = (data?: Partial<Country>): Country => ({
@@ -18,6 +19,12 @@ export const mockLanguageData = (data?: Partial<Language>): Language => ({
 export const mockTimezonedata = (data?: Partial<Timezone>): Timezone => ({
     id: uuid(),
     code: 'Australia/Melbourne',
+    ...data,
+});
+
+export const mockRoleData = (data?: Partial<Role>): Role => ({
+    id: uuid(),
+    name: UserRole.ADMIN,
     ...data,
 });
 
@@ -99,5 +106,17 @@ export const mockLanguagesList = () => [
     mockLanguageData({
         code: 'it',
         language: 'Italian',
+    }),
+];
+
+export const mockRoleList = () => [
+    mockRoleData({
+        name: UserRole.ADMIN,
+    }),
+    mockRoleData({
+        name: UserRole.BUYER,
+    }),
+    mockRoleData({
+        name: UserRole.SELLER,
     }),
 ];

@@ -9,7 +9,6 @@ import {
     LocalPhone,
     LocationOn,
 } from '@mui/icons-material';
-import { CustomSelect } from '../../../components/select';
 import { Controller } from 'react-hook-form';
 import { FormInput } from '../../../components/form-input';
 import { Link } from 'react-router';
@@ -19,6 +18,7 @@ import dayjs from 'dayjs';
 import { CountriesSelect } from '../../../components/countries-select';
 import { TimezoneSelect } from '../../../components/timezone-select';
 import { LanguageSelect } from '../../../components/language-select';
+import { RolesSelect } from '../../../components/roles-select';
 
 const SignUpFormView = ({
     control,
@@ -170,12 +170,11 @@ const SignUpFormView = ({
                 control={control}
                 name="role"
                 render={({ field }) => (
-                    <CustomSelect
+                    <RolesSelect
                         value={field.value}
-                        label="Role"
-                        onChange={field.onChange}
-                        options={options}
-                        icon={<PersonAddAltOutlined />}
+                        onChange={(_, v) => field.onChange(v)}
+                        error={!!errors.role}
+                        helperText={errors.role?.message}
                     />
                 )}
             />

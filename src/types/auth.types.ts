@@ -1,4 +1,3 @@
-import { UserRole } from '../pages/signup-page/sign-up-form/sign-up-form.types';
 import { type BaseApiResponse } from './response.types';
 import { UserStatus } from './user.types';
 
@@ -25,7 +24,7 @@ export type SignupRequestBody = {
     dateOfBirth: string;
     address: string;
     phoneNumber: string;
-    role: UserRole;
+    roleId?: string;
     status: UserStatus;
     timeZone?: string;
     language?: string;
