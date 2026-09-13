@@ -14,6 +14,9 @@ const END_POINTS = {
     GET_TIMEZONES: `${BASE_URL}/info/timezone`,
     GET_LANGUAGES: `${BASE_URL}/info/language`,
     UPDATE_USER: (id: string) => `${BASE_URL}/user/${id}`,
+    SELLER_APPLICATION: {
+        START: `${BASE_URL}/seller-application`,
+    },
 };
 
 export default END_POINTS;

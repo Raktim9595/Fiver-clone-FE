@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
                         Component: ProfilePage,
                     },
                     {
-                        path: PATH.BECOME_A_SELLER,
+                        path: PATH.SELLER_APPLICATION.ROOT,
                         Component: BecomeASellerPage,
                     },
                 ],

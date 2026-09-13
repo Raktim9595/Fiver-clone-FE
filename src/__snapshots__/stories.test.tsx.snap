@@ -498,7 +498,7 @@ exports[`Storybook snapshots > /src/components/navbar/navbar-view.stories.tsx - 
     </div>
     <a
       data-discover="true"
-      href="/become-a-seller"
+      href="/seller-application"
       style="text-decoration: none;"
     >
       <span
@@ -596,7 +596,7 @@ exports[`Storybook snapshots > /src/components/navbar/navbar-view.stories.tsx - 
     </div>
     <a
       data-discover="true"
-      href="/become-a-seller"
+      href="/seller-application"
       style="text-decoration: none;"
     >
       <span
@@ -704,7 +704,7 @@ exports[`Storybook snapshots > /src/components/navbar/navbar-view.stories.tsx - 
     </div>
     <a
       data-discover="true"
-      href="/become-a-seller"
+      href="/seller-application"
       style="text-decoration: none;"
     >
       <span
@@ -12678,7 +12678,7 @@ exports[`Storybook snapshots > /src/root-layout/root-layout-view.stories.tsx -  
     </div>
     <a
       data-discover="true"
-      href="/become-a-seller"
+      href="/seller-application"
       style="text-decoration: none;"
     >
       <span
@@ -12786,7 +12786,7 @@ exports[`Storybook snapshots > /src/root-layout/root-layout-view.stories.tsx -  
     </div>
     <a
       data-discover="true"
-      href="/become-a-seller"
+      href="/seller-application"
       style="text-decoration: none;"
     >
       <span

@@ -18,3 +18,9 @@ export type BaseErrorResponse = {
 };
 
 export type ApiErrorResponse = AxiosError<BaseErrorResponse>;
+
+export type BaseCommonResponse = {
+    id: string;
+    createdAt: string;
+    updatedAt?: string;
+};
