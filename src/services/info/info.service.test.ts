@@ -1,9 +1,10 @@
 import { beforeEach, describe, expect, test, vi } from 'vitest';
-import { getCountries, getLanguages, getTimezones } from './info.service';
+import { getCountries, getLanguages, getTimezones, getUserRoles } from './info.service';
 import { mockedAxios } from '../../utils/test-setups';
 import {
     mockCountryData,
     mockLanguageData,
+    mockRoleList,
     mockTimezonedata,
 } from '../../__mocks__/data/info-mock.data';
 
@@ -70,6 +71,20 @@ describe('Info services, Unit Test', () => {
             expect(mockedAxios.get).toHaveBeenCalledWith(
                 'http://raktim-backend:8080/api/info/language',
             );
+        });
+    });
+
+    describe('Given getRoles, When called', () => {
+        test('Then it should hit the correct end point and return the correct data', async () => {
+            const roles = mockRoleList();
+            mockedAxios.get.mockResolvedValueOnce({
+                data: {
+                    data: roles,
+                },
+            });
+            const res = await getUserRoles();
+            expect(res.data).toStrictEqual(roles);
+            expect(mockedAxios.get).toHaveBeenCalledWith('http://raktim-backend:8080/api/roles');
         });
     });
 });

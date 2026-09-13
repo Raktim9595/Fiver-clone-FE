@@ -5,7 +5,12 @@ import {
     UserRole,
 } from '../../pages/signup-page/sign-up-form/sign-up-form.types';
 import { UserStatus, type User } from '../../types/user.types';
-import { mockCountryData, mockLanguageData, mockTimezonedata } from './info-mock.data';
+import {
+    mockCountryData,
+    mockLanguageData,
+    mockRoleData,
+    mockTimezonedata,
+} from './info-mock.data';
 
 export const mockUserFormData = (data?: Partial<SignUpFormType>): SignUpFormType => ({
     address: 'Melbourne, Australia',
@@ -16,7 +21,7 @@ export const mockUserFormData = (data?: Partial<SignUpFormType>): SignUpFormType
     password: 'random',
     phoneNumber: '0412345678',
     username: 'random',
-    role: UserRole.BUYER,
+    role: mockRoleData({ name: UserRole.SELLER }),
     status: UserStatus.ACTIVE,
     country: mockCountryData({ name: 'Australia' }),
     language: mockLanguageData({ code: 'En', language: 'English' }),

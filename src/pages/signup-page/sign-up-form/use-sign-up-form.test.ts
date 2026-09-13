@@ -38,12 +38,13 @@ describe('useSignupFormHook, Unit Test', () => {
     });
 
     describe('When called handleSubmit, And valid data is passed', () => {
-        const data = mockUserFormData();
+        const { role, ...data } = mockUserFormData();
         const expextedRequestBody = {
             ...data,
             timeZone: data.timeZone?.code,
             country: data.country?.name,
             language: data.language?.language,
+            roleId: role?.id,
         };
         describe('And server does not give any error', () => {
             test('Then it should create user and redirect to login', async () => {
@@ -56,7 +57,10 @@ describe('useSignupFormHook, Unit Test', () => {
                 });
 
                 act(() => {
-                    result.current.onSubmit(data);
+                    result.current.onSubmit({
+                        ...data,
+                        role,
+                    });
                 });
 
                 await waitFor(() => {
@@ -88,7 +92,10 @@ describe('useSignupFormHook, Unit Test', () => {
                     });
 
                     act(() => {
-                        result.current.onSubmit(data);
+                        result.current.onSubmit({
+                            ...data,
+                            role,
+                        });
                     });
 
                     await waitFor(() => {
@@ -113,7 +120,10 @@ describe('useSignupFormHook, Unit Test', () => {
                     mockedAxios.post.mockRejectedValue(new Error('wrong'));
 
                     act(() => {
-                        result.current.onSubmit(data);
+                        result.current.onSubmit({
+                            ...data,
+                            role,
+                        });
                     });
 
                     await waitFor(() => {

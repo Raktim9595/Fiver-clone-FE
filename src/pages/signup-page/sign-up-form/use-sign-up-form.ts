@@ -41,12 +41,13 @@ export const useSignupForm: UseSignupForm = () => {
         },
     });
 
-    const onSubmit = (data: SignUpFormType) => {
+    const onSubmit = ({ role, ...data }: SignUpFormType) => {
         signupMutation.mutate({
             ...data,
             language: data.language?.language,
             timeZone: data.timeZone?.code,
             country: data.country?.name,
+            roleId: role?.id,
         });
     };
 

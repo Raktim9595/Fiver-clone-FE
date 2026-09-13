@@ -116,7 +116,7 @@ export const NavbarView = ({ isLoggedin, navigate, logOut, user }: NavbarViewPro
                 </Box>
 
                 <Link
-                    to={PATH.BECOME_A_SELLER}
+                    to={PATH.SELLER_APPLICATION.ROOT}
                     style={{
                         textDecoration: 'none',
                     }}

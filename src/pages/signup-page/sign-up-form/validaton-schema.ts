@@ -1,7 +1,11 @@
 import z from 'zod';
-import { UserRole } from './sign-up-form.types';
 import { UserStatus } from '../../../types/user.types';
-import { countrySchema, languageSchema, timezoneSchema } from '../../../types/info.types';
+import {
+    countrySchema,
+    languageSchema,
+    roleSchema,
+    timezoneSchema,
+} from '../../../types/info.types';
 
 export const signupFormSchema = z.object({
     email: z.email('Invalid email').nonempty('Email is required'),
@@ -21,8 +25,8 @@ export const signupFormSchema = z.object({
     language: languageSchema.nullable().refine((value) => value !== null, {
         message: 'Language is required',
     }),
-    role: z.enum(UserRole, {
-        error: 'Invalid role',
+    role: roleSchema.nullable().refine((value) => value !== null, {
+        message: 'Role is required',
     }),
     status: z.enum(UserStatus, {
         error: 'Invalid status',

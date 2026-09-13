@@ -18,9 +18,15 @@ export type Language = {
     language: string;
 };
 
+export type Role = {
+    id: string;
+    name: string;
+};
+
 export type CountriesApiResponse = BaseApiResponse<Country[]>;
 export type TimezonesApiResponse = BaseApiResponse<Timezone[]>;
 export type LanguagesApiResponse = BaseApiResponse<Language[]>;
+export type RolesApiResponse = BaseApiResponse<Role[]>;
 
 export const countrySchema = z.object({
     id: z.string().optional(),
@@ -37,4 +43,9 @@ export const languageSchema = z.object({
     id: z.string().optional(),
     code: z.string().optional(),
     language: z.string(),
+});
+
+export const roleSchema = z.object({
+    id: z.string(),
+    name: z.string().optional(),
 });

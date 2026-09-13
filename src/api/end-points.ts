@@ -10,10 +10,16 @@ const END_POINTS = {
     FILE_UPLOAD_FAILED: (fileId: string) => `${BASE_URL}/files/${fileId}/failed`,
     FILE_SEARCH: `${BASE_URL}/files/search`,
     DELETE_FILE: (fileId: string) => `${BASE_URL}/files/${fileId}`,
-    GET_COUNTRIES: `${BASE_URL}/info/country`,
-    GET_TIMEZONES: `${BASE_URL}/info/timezone`,
-    GET_LANGUAGES: `${BASE_URL}/info/language`,
     UPDATE_USER: (id: string) => `${BASE_URL}/user/${id}`,
+    INFO: {
+        GET_ROLES: `${BASE_URL}/roles`,
+        GET_COUNTRIES: `${BASE_URL}/info/country`,
+        GET_TIMEZONES: `${BASE_URL}/info/timezone`,
+        GET_LANGUAGES: `${BASE_URL}/info/language`,
+    },
+    SELLER_APPLICATION: {
+        START: `${BASE_URL}/seller-application`,
+    },
 };
 
 export default END_POINTS;
